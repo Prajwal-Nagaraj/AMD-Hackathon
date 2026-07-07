@@ -1,0 +1,182 @@
+[
+  {
+    "task_id": "t61",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following passage in exactly one sentence: \"The Amazon rainforest, often referred to as the 'lungs of the Earth', spans over 5.5 million square kilometres across nine countries in South America. It is home to an estimated 10% of all species on Earth, including more than 40,000 plant species, 1,300 bird species, and 3,000 types of fish. The forest plays a critical role in regulating the global climate by absorbing vast quantities of carbon dioxide and releasing oxygen. However, deforestation driven by agriculture, logging, and infrastructure development has destroyed roughly 17% of the forest over the past five decades, raising urgent concerns among scientists about tipping points beyond which the forest could transition to savannah.\""
+  },
+  {
+    "task_id": "t62",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Condense the following paragraph into a single bullet-point list of no more than four key facts: \"Blockchain is a distributed ledger technology in which data is stored in linked blocks, each cryptographically secured and time-stamped. Once a block is added to the chain it cannot be altered without changing all subsequent blocks, making the record tamper-resistant. The technology underpins cryptocurrencies like Bitcoin and Ethereum but is also being explored for use in supply-chain management, healthcare records, and voting systems. Its decentralised nature means no single entity controls the ledger, which can improve transparency but also raises regulatory challenges.\""
+  },
+  {
+    "task_id": "t63",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following news article in two sentences, written for a non-specialist audience: \"Scientists at the European Space Agency have confirmed the detection of water-ice deposits near the lunar south pole using data from the SMART-1 and LRO missions. The deposits, found in permanently shadowed craters that receive no sunlight, are estimated to contain hundreds of millions of tonnes of ice. Researchers believe the ice arrived via comet and asteroid impacts over billions of years. The discovery is considered significant for future crewed lunar missions, as the ice could be processed into drinking water and split into hydrogen and oxygen to produce rocket propellant.\""
+  },
+  {
+    "task_id": "t64",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Write an executive summary of the following in three sentences or fewer: \"Over the past decade, remote work has shifted from a niche arrangement to a mainstream employment model, accelerated sharply by the COVID-19 pandemic. A 2024 survey of 10,000 knowledge workers across 20 countries found that 58% now work remotely at least three days per week. Productivity data from the same study were mixed: employees reported higher job satisfaction and lower commute-related stress, while managers flagged concerns over collaboration, mentorship of junior staff, and maintaining company culture. A growing number of firms are adopting hybrid models that require two days per week in the office, attempting to balance individual flexibility with organisational cohesion.\""
+  },
+  {
+    "task_id": "t65",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following legal clause in plain English in one short paragraph: \"Notwithstanding any other provision of this Agreement, neither party shall be liable to the other for any indirect, incidental, special, consequential, or punitive damages arising out of or related to this Agreement, including but not limited to loss of revenue, loss of profits, loss of business, or loss of data, whether based on contract, tort (including negligence), strict liability, or otherwise, even if such party has been advised of the possibility of such damages. The total aggregate liability of either party under this Agreement shall not exceed the total fees paid or payable by the Client in the twelve-month period preceding the event giving rise to the claim.\""
+  },
+  {
+    "task_id": "t66",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following biographical passage in exactly two sentences: \"Marie Curie, born Maria Sklodowska in Warsaw in 1867, became one of the most influential scientists of the twentieth century. She moved to Paris to study at the Sorbonne, where she earned degrees in both physics and mathematics. Working alongside her husband Pierre Curie, she pioneered research into radioactivity\u2014a term she herself coined\u2014and discovered two new elements, polonium and radium. She was awarded the Nobel Prize in Physics in 1903 and the Nobel Prize in Chemistry in 1911, becoming the first person ever to win the prize in two different scientific disciplines. She died in 1934 from aplastic anaemia, likely caused by decades of exposure to ionising radiation.\""
+  },
+  {
+    "task_id": "t67",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Condense the following product description into a three-word tagline and a single-sentence elevator pitch: \"NovaSleep is a smart mattress topper that uses embedded temperature-regulating gel microbeads and a companion app to learn your sleep preferences over time. It actively cools or warms different zones of the bed throughout the night, syncs with major sleep-tracking platforms, and features a silent dual-zone system so couples with different temperature preferences can both sleep comfortably. A washable outer layer and a ten-year warranty round out the package.\""
+  },
+  {
+    "task_id": "t68",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following scientific abstract in one sentence that a 16-year-old could understand: \"This study investigated the effect of moderate-intensity aerobic exercise on hippocampal neurogenesis in adult male Sprague-Dawley rats. Subjects underwent 8 weeks of treadmill running (30 min/day, 5 days/week) at 60% VO\u2082max. Bromodeoxyuridine (BrdU) labelling combined with NeuN immunofluorescence was used to quantify newly born neurons in the dentate gyrus. Exercise subjects showed a 34% increase in BrdU+/NeuN+ cell density compared with sedentary controls (p < 0.01). These findings suggest that sustained aerobic exercise promotes the growth of new neurons in the memory-related region of the brain.\""
+  },
+  {
+    "task_id": "t69",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following meeting transcript in a structured format with three sections \u2014 Decisions Made, Action Items, and Open Questions: \"Attendees discussed the Q3 marketing budget shortfall of \u00a345,000. Sarah proposed reallocating funds from the print advertising line, which all agreed to. Tom confirmed the new social media agency would be onboarded by 14 August. The team debated whether to push the product launch from September to October but did not reach a conclusion \u2014 this will depend on the engineering timeline, which James said he would circulate by end of week. Everyone agreed the weekly stand-up should move from Monday to Tuesday starting next week.\""
+  },
+  {
+    "task_id": "t70",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following policy in no more than 50 words: \"Employees are entitled to 28 days of paid annual leave per calendar year, inclusive of public holidays. Leave must be requested a minimum of two weeks in advance via the HR portal, subject to manager approval. Unused leave may be carried over to the following year up to a maximum of 5 days. Leave cannot be carried over beyond 31 March of the following year without written approval from a department head.\""
+  },
+  {
+    "task_id": "t71",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Write a one-paragraph abstract (80\u2013100 words) for the following research findings: \"A longitudinal study tracking 12,000 adults over 15 years found that those who consumed at least five portions of fruit and vegetables per day had a 28% lower risk of cardiovascular disease compared to those eating fewer than two portions. The protective effect was strongest for leafy green vegetables and berries. Crucially, fresh and frozen produce showed equivalent benefits, while fruit juice showed little protective effect. The findings held after controlling for smoking, physical activity, BMI, and socioeconomic status.\""
+  },
+  {
+    "task_id": "t72",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following chat conversation into a one-sentence status update suitable for a project manager: \"[09:02] Dev: The API integration is done but we're blocked waiting for the QA team to set up the test environment. [09:15] QA: We should have it ready by Thursday. [09:17] Dev: Great, once that's up I can run the end-to-end tests \u2014 probably two days of work. [09:20] PM: So we're looking at results by next Monday at the earliest? [09:21] Dev: Yes, that's the best-case scenario.\""
+  },
+  {
+    "task_id": "t73",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following speech extract in three bullet points, each no longer than 15 words: \"We stand at a crossroads. The decisions we make in the next ten years on climate, on inequality, and on the governance of artificial intelligence will determine the kind of world our children inherit. We cannot afford to kick these problems down the road any further. Bold policy, international cooperation, and genuine sacrifice from those of us with the most will be required. I believe we are capable of meeting this moment \u2014 but only if we choose to act together, not apart.\""
+  },
+  {
+    "task_id": "t74",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Rewrite the following technical incident report in plain English, suitable for a non-technical stakeholder, in no more than three sentences: \"At 03:42 UTC on 4 July 2025, a misconfigured auto-scaling policy caused the primary database connection pool to exhaust its maximum thread limit. This triggered a cascading failure across the API gateway layer, resulting in HTTP 503 responses for approximately 94% of requests during a 47-minute window. The root cause was identified as an undocumented change to the connection timeout parameter deployed at 23:55 UTC on 3 July; the change was rolled back and normal service resumed at 04:29 UTC.\""
+  },
+  {
+    "task_id": "t75",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following passage about a historical event in one sentence, capturing the who, what, when, and why: \"On 9 November 1989, the East German government announced that citizens could cross the Berlin Wall freely. Crowds gathered on both sides of the wall, and people began dismantling it with hammers and pickaxes. The announcement came after weeks of mass protests across East Germany demanding political reform and freedom of movement, and it effectively signalled the end of the Cold War division of Europe. Reunification of East and West Germany formally followed on 3 October 1990.\""
+  },
+  {
+    "task_id": "t76",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following terms and conditions excerpt into a single, plain-English sentence that captures the most important implication for the user: \"By using this Service, you grant the Company a worldwide, royalty-free, sublicensable, and transferable licence to use, reproduce, modify, adapt, publish, translate, distribute, and display any content you submit, post, or transmit through the Service, in any format and through any channel, including for promotional purposes, without further consent from or compensation to you.\""
+  },
+  {
+    "task_id": "t77",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following company quarterly update into a TLDR of no more than 30 words: \"This quarter we launched three new product features, grew our customer base by 22%, reduced average support ticket resolution time from 48 to 18 hours, and secured a \u00a32 million Series A funding round to accelerate international expansion into European markets.\""
+  },
+  {
+    "task_id": "t78",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Condense the following nutritional advice paragraph into a five-item, plain-language checklist: \"A balanced diet should include a variety of whole grains such as oats, brown rice, and wholemeal bread, which provide sustained energy and fibre. Lean proteins \u2014 including chicken, fish, legumes, and eggs \u2014 support muscle repair and immune function. At least five portions of fruit and vegetables per day supply essential vitamins and minerals. Healthy fats from sources such as avocados, nuts, and olive oil support brain and heart health. Processed foods high in added sugar, saturated fat, and sodium should be minimised. Adequate hydration, typically 1.5 to 2 litres of water per day, is essential for all bodily functions.\""
+  },
+  {
+    "task_id": "t79",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following paragraph in a tweet of no more than 280 characters, including a relevant hashtag: \"A new report by the International Energy Agency found that global renewable energy capacity grew by a record 295 gigawatts in 2024, driven largely by solar and wind installations in China, the United States, and the European Union. The report concludes that renewables now account for 30% of global electricity generation, up from 22% in 2019.\""
+  },
+  {
+    "task_id": "t80",
+    "category": "text_summarisation",
+    "complexity": "standard",
+    "prompt": "Summarise the following multi-paragraph essay introduction in one sentence that captures the central argument: \"For centuries, cities have been designed primarily around the movement of cars. Roads widen, parking lots multiply, and pedestrians are forced to navigate spaces that treat them as afterthoughts. This approach, dominant from roughly the 1950s onwards, has produced urban environments that are efficient for motor vehicles but hostile to human beings \u2014 loud, polluted, fragmented, and difficult to traverse on foot or by bicycle. A growing body of urban planning research, however, suggests that car-centric design is neither economically nor socially optimal. Cities that invest in walkable neighbourhoods, cycling infrastructure, and high-quality public transport consistently outperform their car-dependent counterparts on measures of public health, economic productivity, environmental sustainability, and resident wellbeing. The central argument of this essay is that reversing decades of car-centric planning is not merely desirable \u2014 it is essential for building cities that can thrive in the twenty-first century.\""
+  },
+  {
+    "task_id": "t96",
+    "category": "text_summarisation",
+    "complexity": "complex",
+    "prompt": "You are given two conflicting expert opinions on the same topic. Summarise both positions in a single balanced paragraph of no more than 100 words that: (a) accurately represents each view without editorialising, (b) identifies the crux of the disagreement, and (c) does not take a side. Opinion A (Prof. Chen): \"Universal basic income would permanently reduce the labour supply by enabling people to opt out of low-wage work, causing inflation and reducing overall productivity.\" Opinion B (Dr. Osei): \"Universal basic income would actually increase productive labour by funding entrepreneurship, reducing the desperation that traps people in low-value jobs, and improving health outcomes that raise long-run productivity.\""
+  },
+  {
+    "task_id": "t97",
+    "category": "text_summarisation",
+    "complexity": "complex",
+    "prompt": "Summarise the following three-paragraph research study into a structured abstract with exactly four labelled sections \u2014 Background, Method, Results, Conclusion \u2014 each no longer than 25 words: \"Background: Sleep deprivation is increasingly common in modern society, yet its cognitive effects are often underestimated by those affected. Method: Forty-two healthy adults were randomly assigned to either 8 hours or 5 hours of sleep per night for two weeks. Cognitive performance was assessed daily using validated tests of working memory, reaction time, and executive function. Participants were blinded to the study hypothesis. Results: The restricted-sleep group showed a 31% decline in working memory scores, a 24% increase in reaction time, and significantly impaired executive function by day 7, with deficits compounding over time. Critically, participants in the restricted group consistently underestimated their own impairment. Conclusion: Five hours of sleep significantly degrades cognitive performance in a cumulative manner, and self-reported alertness is an unreliable proxy for actual cognitive capacity.\""
+  },
+  {
+    "task_id": "t98",
+    "category": "text_summarisation",
+    "complexity": "complex",
+    "prompt": "Rewrite the following dense academic passage as (a) a one-paragraph summary for a policy maker with no scientific background, (b) a single tweet of under 280 characters for a general audience, and (c) one bullet point suitable for inclusion in a government briefing document: \"Recent meta-analytic evidence (k=47 studies, N=190,000) indicates a robust inverse association between ambient particulate matter (PM2.5) exposure and cognitive function across the adult lifespan (pooled \u03b2 = -0.42 SD per 10 \u03bcg/m\u00b3 increase, 95% CI [-0.51, -0.33]). Effects were more pronounced in older adults and those with pre-existing cardiovascular comorbidities. Longitudinal analyses further suggest that sustained exposure accelerates neurodegeneration trajectories consistent with Alzheimer's-type pathology, independent of socioeconomic confounders.\""
+  },
+  {
+    "task_id": "t99",
+    "category": "text_summarisation",
+    "complexity": "complex",
+    "prompt": "The following five customer reviews for the same product contain contradictory claims. Synthesise them into a single, balanced 80-word summary that captures the dominant themes of both praise and criticism without attributing any claim to a specific reviewer: (1) \"Incredible battery \u2014 lasted 3 days on one charge.\" (2) \"My battery died within 18 hours. Very disappointed.\" (3) \"Best camera I've ever used on a phone \u2014 colours are stunning.\" (4) \"The camera is fine but nothing special compared to competitors.\" (5) \"Build quality is superb and the software is clean and fast. Worth every penny.\""
+  },
+  {
+    "task_id": "t100",
+    "category": "text_summarisation",
+    "complexity": "complex",
+    "prompt": "Read the following contract clause and produce three outputs: (a) a one-sentence plain-English summary of what the clause requires, (b) the single greatest risk this clause poses to the signing party, and (c) a suggested alternative phrasing that better protects the signing party's interests, in no more than 40 words: \"The Client shall indemnify, defend, and hold harmless the Service Provider and its officers, directors, employees, and agents from and against any and all claims, liabilities, damages, losses, and expenses, including reasonable legal fees, arising out of or in connection with the Client's use of the Service or breach of any representation or warranty contained herein.\""
+  },
+  {
+    "task_id": "t116",
+    "category": "text_summarisation",
+    "complexity": "unclear",
+    "prompt": "Can you shorten this? 'The quarterly results exceeded analyst expectations driven by strong performance in the cloud division and improved operational efficiency across all business units, though headwinds in the consumer segment remain a concern going into Q4.'"
+  },
+  {
+    "task_id": "t117",
+    "category": "text_summarisation",
+    "complexity": "unclear",
+    "prompt": "Make this easier to understand and also shorter but keep all the details."
+  },
+  {
+    "task_id": "t118",
+    "category": "text_summarisation",
+    "complexity": "unclear",
+    "prompt": "Give me a summary. Here's the article: [ARTICLE TEXT NOT PROVIDED]"
+  },
+  {
+    "task_id": "t119",
+    "category": "text_summarisation",
+    "complexity": "unclear",
+    "prompt": "Write a short version of what happened in the meeting I just told you about."
+  },
+  {
+    "task_id": "t120",
+    "category": "text_summarisation",
+    "complexity": "unclear",
+    "prompt": "Summarise the following in the right format for my boss: 'We conducted user research across three cohorts over six weeks. Findings suggest that onboarding drop-off correlates strongly with the second step of the sign-up flow, where users are asked for payment details before experiencing the product's core value. Recommendations include introducing a 7-day free trial before payment capture and redesigning the progress indicator to set clearer expectations.'"
+  }
+]

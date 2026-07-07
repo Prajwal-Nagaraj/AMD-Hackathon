@@ -1,0 +1,182 @@
+[
+  {
+    "task_id": "t1",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "What is photosynthesis and how does it enable plants to produce energy?"
+  },
+  {
+    "task_id": "t2",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "Explain the difference between RAM and ROM in a computer system."
+  },
+  {
+    "task_id": "t3",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "What causes a solar eclipse, and why does it not happen every month?"
+  },
+  {
+    "task_id": "t4",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "How does the immune system recognise and fight off a bacterial infection?"
+  },
+  {
+    "task_id": "t5",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "What is the role of the mitochondria in a eukaryotic cell?"
+  },
+  {
+    "task_id": "t6",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "Explain what machine learning is and how it differs from traditional programming."
+  },
+  {
+    "task_id": "t7",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "What is the greenhouse effect and how does it relate to climate change?"
+  },
+  {
+    "task_id": "t8",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "How does GPS determine your location, and what satellites are involved?"
+  },
+  {
+    "task_id": "t9",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "What is the difference between a virus and a bacterium?"
+  },
+  {
+    "task_id": "t10",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "Explain how the internet works, from typing a URL to a webpage loading."
+  },
+  {
+    "task_id": "t11",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "What is quantum entanglement and why is it considered unusual in physics?"
+  },
+  {
+    "task_id": "t12",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "How do vaccines work to protect against infectious diseases?"
+  },
+  {
+    "task_id": "t13",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "What is the water cycle and what processes drive it?"
+  },
+  {
+    "task_id": "t14",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "Explain the concept of supply and demand in economics."
+  },
+  {
+    "task_id": "t15",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "What is CRISPR-Cas9 and how is it used in genetic editing?"
+  },
+  {
+    "task_id": "t16",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "How does a lithium-ion battery store and release electrical energy?"
+  },
+  {
+    "task_id": "t17",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "What is the difference between a democracy and a republic?"
+  },
+  {
+    "task_id": "t18",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "Explain how neural networks are structured and how they learn from data."
+  },
+  {
+    "task_id": "t19",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "What is the Big Bang theory and what evidence supports it?"
+  },
+  {
+    "task_id": "t20",
+    "category": "factual_knowledge",
+    "complexity": "standard",
+    "prompt": "How does encryption protect data sent over the internet?"
+  },
+  {
+    "task_id": "t81",
+    "category": "factual_knowledge",
+    "complexity": "complex",
+    "prompt": "Explain how mRNA vaccines work at a molecular level \u2014 from lipid nanoparticle delivery to antigen presentation on MHC class I and II molecules \u2014 and why this mechanism does not alter the recipient's DNA."
+  },
+  {
+    "task_id": "t82",
+    "category": "factual_knowledge",
+    "complexity": "complex",
+    "prompt": "Compare and contrast how a transformer-based large language model and the human brain process and generate language. Where do the architectural analogies hold, and where do they fundamentally break down?"
+  },
+  {
+    "task_id": "t83",
+    "category": "factual_knowledge",
+    "complexity": "complex",
+    "prompt": "Explain the concept of entropy in the context of both thermodynamics and information theory. How did Shannon's definition borrow from Boltzmann's, and what is the conceptual relationship between disorder in physical systems and uncertainty in information systems?"
+  },
+  {
+    "task_id": "t84",
+    "category": "factual_knowledge",
+    "complexity": "complex",
+    "prompt": "A country is experiencing stagflation \u2014 simultaneous high inflation and high unemployment. Explain why this situation is particularly difficult for central banks to address, and describe the trade-offs inherent in the policy tools available to them."
+  },
+  {
+    "task_id": "t85",
+    "category": "factual_knowledge",
+    "complexity": "complex",
+    "prompt": "Explain the CAP theorem in distributed systems. Given a network partition, why must a system choose between consistency and availability? Provide a concrete example of a real-world system that prioritises each, and justify the design choice."
+  },
+  {
+    "task_id": "t101",
+    "category": "factual_knowledge",
+    "complexity": "unclear",
+    "prompt": "Tell me about black holes."
+  },
+  {
+    "task_id": "t102",
+    "category": "factual_knowledge",
+    "complexity": "unclear",
+    "prompt": "What do you think about climate change? Is it real?"
+  },
+  {
+    "task_id": "t103",
+    "category": "factual_knowledge",
+    "complexity": "unclear",
+    "prompt": "How does the brain work? My nephew asked me and I didn't know what to say."
+  },
+  {
+    "task_id": "t104",
+    "category": "factual_knowledge",
+    "complexity": "unclear",
+    "prompt": "Can you explain quantum physics? Like, the basics but also the hard stuff."
+  },
+  {
+    "task_id": "t105",
+    "category": "factual_knowledge",
+    "complexity": "unclear",
+    "prompt": "What is the best programming language and why? I want to learn more."
+  }
+]

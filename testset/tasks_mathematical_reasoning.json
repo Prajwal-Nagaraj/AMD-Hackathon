@@ -1,0 +1,182 @@
+[
+  {
+    "task_id": "t21",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A train travels 240 km at 80 km/h, then 150 km at 50 km/h. What is the total journey time in hours and minutes?"
+  },
+  {
+    "task_id": "t22",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A shop sells a jacket for \u00a3120 after applying a 25% discount. What was the original price before the discount?"
+  },
+  {
+    "task_id": "t23",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "If you invest \u00a35,000 at an annual compound interest rate of 6%, how much will you have after 10 years? Round to the nearest pound."
+  },
+  {
+    "task_id": "t24",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A recipe for 4 people requires 320 g of flour, 2 eggs, and 200 ml of milk. How much of each ingredient is needed to make the recipe for 7 people?"
+  },
+  {
+    "task_id": "t25",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "Three workers can paint a house in 12 days. How many days would it take 9 workers to paint the same house, assuming constant work rate?"
+  },
+  {
+    "task_id": "t26",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A car's fuel efficiency is 14 km per litre. Petrol costs \u00a31.65 per litre. How much does it cost in fuel to drive 490 km?"
+  },
+  {
+    "task_id": "t27",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "In a class of 32 students, 75% passed their exam. Of those who passed, 40% scored above 85%. How many students scored above 85%?"
+  },
+  {
+    "task_id": "t28",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A company's revenue grew from \u00a32.4 million to \u00a33.18 million over two years. What was the percentage increase over the two-year period?"
+  },
+  {
+    "task_id": "t29",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A cylindrical water tank has a radius of 3 m and a height of 5 m. How many litres of water can it hold? (1 m\u00b3 = 1,000 litres, use \u03c0 \u2248 3.14159)"
+  },
+  {
+    "task_id": "t30",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "Alice is three times as old as Bob. In 8 years, Alice will be twice as old as Bob. How old are they now?"
+  },
+  {
+    "task_id": "t31",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A laptop is listed at $950. There is a 12% sales tax and a $45 delivery fee. What is the total cost?"
+  },
+  {
+    "task_id": "t32",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A population of bacteria doubles every 3 hours. Starting with 500 bacteria, how many will there be after 24 hours?"
+  },
+  {
+    "task_id": "t33",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "An investor buys 200 shares at $45 each and later sells them at $63 each. After paying a flat brokerage fee of $50, what is the net profit?"
+  },
+  {
+    "task_id": "t34",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A rectangular garden measures 18 m by 12 m. A 1.5 m wide path runs around the outside of it. What is the total area including the path?"
+  },
+  {
+    "task_id": "t35",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "If 5 apples and 3 oranges cost \u00a34.45, and 2 apples and 6 oranges cost \u00a34.30, what is the price of one apple and one orange?"
+  },
+  {
+    "task_id": "t36",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A salesperson earns a base salary of \u00a32,200 per month plus 4% commission on sales. In a month where they made \u00a338,500 in sales, what was their total earnings?"
+  },
+  {
+    "task_id": "t37",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A flight departs at 21:45 local time and lands 14 hours 35 minutes later. The destination is 5.5 hours ahead. What is the local arrival time at the destination?"
+  },
+  {
+    "task_id": "t38",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A data centre uses 850 kWh of electricity per day. Electricity costs \u00a30.28 per kWh. What is the annual electricity cost?"
+  },
+  {
+    "task_id": "t39",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A mixture is made by combining 3 parts water to 1 part cordial. If you want to make 2.4 litres of the mixture, how many millilitres of cordial do you need?"
+  },
+  {
+    "task_id": "t40",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "On a map, the scale is 1:250,000. Two cities are 8.4 cm apart on the map. What is the actual distance between them in kilometres?"
+  },
+  {
+    "task_id": "t86",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A company has fixed costs of \u00a3180,000 per month and a variable cost of \u00a312 per unit. It sells each unit for \u00a320. (a) What is the break-even quantity? (b) If the company wants to achieve a profit of \u00a360,000 per month, how many units must it sell? (c) If a competitor forces the selling price down to \u00a317, by how much must the variable cost per unit be reduced to maintain the same \u00a360,000 profit at the same sales volume from part (b)?"
+  },
+  {
+    "task_id": "t87",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A portfolio consists of three assets: Asset A worth \u00a350,000 with an annual return of 8%, Asset B worth \u00a330,000 with an annual return of 5%, and Asset C worth \u00a320,000 with an annual return of -3%. (a) What is the weighted average return of the portfolio? (b) After one year, if all returns are reinvested, what is the total portfolio value? (c) What proportion of the portfolio's value does Asset A represent after one year?"
+  },
+  {
+    "task_id": "t88",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A survey of 500 people found that 60% drink coffee, 45% drink tea, and 25% drink both. (a) Using a Venn diagram approach, how many people drink neither coffee nor tea? (b) Given that a randomly selected person drinks coffee, what is the probability they also drink tea? (c) Are coffee-drinking and tea-drinking independent events in this dataset? Show your working."
+  },
+  {
+    "task_id": "t89",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A projectile is launched horizontally from the top of a 80 m cliff at 25 m/s. Ignoring air resistance and using g = 9.8 m/s\u00b2: (a) How long does it take to hit the ground? (b) How far horizontally from the base of the cliff does it land? (c) What is the magnitude and direction of the velocity at the moment of impact? Give the angle to the nearest degree."
+  },
+  {
+    "task_id": "t90",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A data centre operator must choose between two server configurations for a 5-year contract. Option A costs \u00a3120,000 upfront with \u00a38,000 annual maintenance. Option B costs \u00a360,000 upfront with \u00a322,000 annual maintenance but requires a \u00a315,000 replacement at the end of year 3. Using a discount rate of 6% per annum, calculate the Net Present Value (NPV) of costs for each option and determine which is cheaper in present-value terms. (Hint: PV = C / (1+r)^t)"
+  },
+  {
+    "task_id": "t106",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "I have \u00a310,000. What should I do with it? I'm thinking about the future."
+  },
+  {
+    "task_id": "t107",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "Is 15% of 200 more than 25% of 100? Also which is the better deal?"
+  },
+  {
+    "task_id": "t108",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "Work out the numbers for a small business selling handmade candles. I make about 50 a week."
+  },
+  {
+    "task_id": "t109",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "My salary is \u00a335,000. After tax and everything, what do I actually take home? I'm in the UK."
+  },
+  {
+    "task_id": "t110",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "How long would it take to pay off a \u00a3200,000 mortgage? I don't know the interest rate yet."
+  }
+]

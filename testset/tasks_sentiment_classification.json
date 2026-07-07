@@ -1,0 +1,182 @@
+[
+  {
+    "task_id": "t41",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The hotel room was spotless and the staff couldn't have been more welcoming. Easily the best stay I've had in years.\""
+  },
+  {
+    "task_id": "t42",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Delivery took three weeks longer than promised and the item arrived damaged. I'll never order from this company again.\""
+  },
+  {
+    "task_id": "t43",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The software does what it says on the tin. Installation was straightforward and I haven't had any issues.\""
+  },
+  {
+    "task_id": "t44",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following tweet as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Just tried the new menu at @BistroNova. The pasta was overcooked and the wait was over an hour. Disappointing for the price.\""
+  },
+  {
+    "task_id": "t45",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following customer comment as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"I guess the product is fine. It works as expected but nothing about it really stands out.\""
+  },
+  {
+    "task_id": "t46",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following movie review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"An absolute masterpiece. The cinematography was breathtaking and the performances were the most moving I've seen in a decade.\""
+  },
+  {
+    "task_id": "t47",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following employee feedback as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Management is consistently unavailable, deadlines keep shifting without explanation, and morale on the team is at an all-time low.\""
+  },
+  {
+    "task_id": "t48",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following product review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The headphones have great sound quality but the ear cushions started peeling after two months. Mixed feelings overall.\""
+  },
+  {
+    "task_id": "t49",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following news headline as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Central bank holds interest rates steady amid economic uncertainty.\""
+  },
+  {
+    "task_id": "t50",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following app store review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"This app has transformed how I manage my finances. Intuitive interface, helpful insights, and no annoying ads. Five stars!\""
+  },
+  {
+    "task_id": "t51",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following comment as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The conference was held in a convenient venue and the schedule was published on time.\""
+  },
+  {
+    "task_id": "t52",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following book review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"I struggled to get past the first fifty pages. The plot is predictable, the dialogue stilted, and the characters are utterly forgettable.\""
+  },
+  {
+    "task_id": "t53",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following social media post as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Can't believe my flight got cancelled again. Second time this month with the same airline. Absolutely done.\""
+  },
+  {
+    "task_id": "t54",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following product description as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The blender comes in three colours and has a 1200W motor.\""
+  },
+  {
+    "task_id": "t55",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following gym review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The equipment is modern and the classes are well-run, but the changing rooms are almost always overcrowded and poorly maintained.\""
+  },
+  {
+    "task_id": "t56",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following support ticket excerpt as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Your support agent resolved my issue in under five minutes and followed up the next day to make sure everything was still working. Exceptional service.\""
+  },
+  {
+    "task_id": "t57",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following restaurant review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The food was cold, the portion sizes were tiny, and our waiter seemed annoyed at having to take our order.\""
+  },
+  {
+    "task_id": "t58",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following earnings call quote as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Q3 revenue came in at $4.2 billion, broadly in line with analyst expectations.\""
+  },
+  {
+    "task_id": "t59",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following email excerpt as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"After waiting six weeks for a response, I still have no clarity on my refund and your customer service team has been completely unresponsive.\""
+  },
+  {
+    "task_id": "t60",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following travel blog excerpt as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Kyoto in autumn is simply magical \u2014 the temples glowing copper and crimson, the crisp air, the serenity. I left a little piece of my heart there.\""
+  },
+  {
+    "task_id": "t91",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "Classify the predominant sentiment of the following review as Positive, Negative, or Neutral, identify any secondary conflicting sentiment, and explain how sarcasm or irony influences your classification: \"Oh, absolutely brilliant \u2014 the app crashed four times before I could even finish signing up, and when I finally got in, the 'premium' features were hidden behind another paywall. Truly a masterclass in user experience design. Can't wait to recommend it to all my enemies.\""
+  },
+  {
+    "task_id": "t92",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "The following passage contains sentiment expressed toward two distinct subjects. Identify each subject, classify the sentiment toward each separately as Positive, Negative, or Neutral, and justify each classification in one sentence: \"The venue itself was spectacular \u2014 a beautifully restored Victorian theatre with impeccable acoustics and an atmosphere that felt genuinely historic. The performance, however, was a joyless slog: the lead actor seemed to be reading from a script, the pacing was funereal, and the director's choices were baffling at best.\""
+  },
+  {
+    "task_id": "t93",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "Classify the overall sentiment of the following earnings call excerpt as Positive, Negative, or Neutral. Then identify any forward-looking language and explain whether it shifts the sentiment in a more optimistic or pessimistic direction: \"Q2 revenue came in at $3.1 billion, down 8% year-on-year, and we missed consensus EBITDA estimates by approximately 12%. Supply chain disruptions and a weaker-than-anticipated consumer environment were the primary headwinds. That said, our order backlog has grown 34% since January, and early indicators from our new product line suggest meaningful margin recovery in H2. We remain cautiously optimistic about returning to growth by Q1 next year.\""
+  },
+  {
+    "task_id": "t94",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "The following three statements are about the same product. Classify the sentiment of each individually, then provide an overall aggregated sentiment label with a confidence level (High, Medium, or Low) and explain what drives the uncertainty: (1) \"The build quality is exceptional \u2014 feels premium in the hand.\" (2) \"Battery life is mediocre; I need to charge it twice a day.\" (3) \"It does what it claims, nothing more.\""
+  },
+  {
+    "task_id": "t95",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "Classify the sentiment of the following social media thread as Positive, Negative, or Neutral at the thread level. Then identify the single most emotionally intense statement within it and explain what linguistic features (word choice, punctuation, structure) make it the most intense: \"[Post] Just got my results \u2014 I passed the bar exam on my first attempt!! [Reply 1] That's incredible, congratulations! You worked so hard for this. [Reply 2] Amazing! Does this mean you're moving to London? [Reply 3] I can't believe it, I'm so proud of you. [Reply 4] Wait, did you actually?? I'm literally shaking reading this.\""
+  },
+  {
+    "task_id": "t111",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "This film was interesting. What do you think?"
+  },
+  {
+    "task_id": "t112",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "My colleague always arrives late, forgets to reply to emails, and then gets praised in all-hands meetings. How does that make you feel?"
+  },
+  {
+    "task_id": "t113",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "Read this: 'The service was fine.' Good review or bad review?"
+  },
+  {
+    "task_id": "t114",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "My friend said the new restaurant downtown is 'not bad at all.' Should I go?"
+  },
+  {
+    "task_id": "t115",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "Here's a customer comment: 'I've used better.' What does that tell us?"
+  }
+]
