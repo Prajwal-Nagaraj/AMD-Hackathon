@@ -1,0 +1,6 @@
+[
+  {"id": "code_debug-1", "prompt": "This function has a bug:\n```python\ndef add(a, b):\n    return a - b\n```\nFix it.", "gold": "The bug is using subtraction instead of addition; corrected code returns a + b."},
+  {"id": "code_debug-2", "prompt": "Find and fix the bug:\n```python\ndef is_even(n):\n    return n % 2 == 1\n```", "gold": "The condition is inverted (checks odd, not even); should be n % 2 == 0."},
+  {"id": "code_debug-3", "prompt": "This code throws an IndexError, fix it:\n```python\ndef last_element(lst):\n    return lst[len(lst)]\n```", "gold": "Off-by-one: should be lst[len(lst) - 1] or lst[-1]."},
+  {"id": "code_debug-4", "prompt": "Debug this function:\n```python\ndef factorial(n):\n    if n == 0:\n        return 0\n    return n * factorial(n - 1)\n```", "gold": "Base case should return 1, not 0, otherwise factorial always evaluates to 0."}
+]

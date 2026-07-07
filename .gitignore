@@ -1,0 +1,6 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+track1-agent/eval/sweep_results.json

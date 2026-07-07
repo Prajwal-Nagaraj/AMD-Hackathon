@@ -1,0 +1,8 @@
+[
+  {"id": "factual-1", "prompt": "What is the capital of France?", "gold": "Paris."},
+  {"id": "factual-2", "prompt": "What does CPU stand for?", "gold": "Central Processing Unit."},
+  {"id": "factual-3", "prompt": "Why is the sky blue?", "gold": "Rayleigh scattering: shorter (blue) wavelengths of sunlight scatter more than longer wavelengths in the atmosphere."},
+  {"id": "factual-4", "prompt": "What is photosynthesis?", "gold": "The process by which plants use sunlight, water, and CO2 to produce glucose and oxygen."},
+  {"id": "factual-5", "prompt": "Who wrote 'Romeo and Juliet'?", "gold": "William Shakespeare."},
+  {"id": "factual-6", "prompt": "What is the boiling point of water at sea level in Celsius?", "gold": "100 degrees Celsius."}
+]

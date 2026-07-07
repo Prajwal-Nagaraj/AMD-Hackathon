@@ -1,0 +1,6 @@
+[
+  {"id": "ner-1", "prompt": "Extract all named entities (person, org, location, date) from: John Smith met with Google in Paris on July 4th.", "gold": "person: John Smith; org: Google; location: Paris; date: July 4th"},
+  {"id": "ner-2", "prompt": "Extract named entities from: Apple announced its new headquarters in Austin, Texas will open in March 2027.", "gold": "org: Apple; location: Austin, Texas; date: March 2027"},
+  {"id": "ner-3", "prompt": "List the named entities (person, org, location, date) in: Marie Curie won the Nobel Prize in 1903 while working at the University of Paris.", "gold": "person: Marie Curie; org: Nobel Prize (award, borderline org), University of Paris; date: 1903"},
+  {"id": "ner-4", "prompt": "Extract entities from: On September 3rd, Elon Musk visited the SpaceX facility in Texas alongside NASA officials.", "gold": "person: Elon Musk; org: SpaceX, NASA; location: Texas; date: September 3rd"}
+]

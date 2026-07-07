@@ -1,0 +1,6 @@
+[
+  {"id": "summarization-1", "prompt": "Summarize the following text in one sentence: The quick brown fox jumps over the lazy dog repeatedly during the afternoon, delighting a group of children who watch from the porch.", "gold": "A fox repeatedly jumps over a dog in the afternoon while children watch."},
+  {"id": "summarization-2", "prompt": "Summarize the following text in exactly one sentence: The city council voted 5-2 on Tuesday to approve a new budget that increases funding for public schools by 12% while cutting road maintenance spending by 8%.", "gold": "The city council approved a budget raising school funding 12% and cutting road maintenance 8%."},
+  {"id": "summarization-3", "prompt": "Summarize this in under 15 words: Scientists have discovered a new exoplanet orbiting a distant star that may have conditions suitable for liquid water, raising hopes it could support life.", "gold": "Scientists found an exoplanet that may have liquid water, raising hopes for life."},
+  {"id": "summarization-4", "prompt": "Summarize the following in one sentence: After months of negotiation, the two companies finalized a merger deal worth $2.3 billion, which analysts say will reshape the industry.", "gold": "Two companies finalized a $2.3 billion merger expected to reshape the industry."}
+]

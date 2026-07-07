@@ -1,0 +1,6 @@
+[
+  {"id": "code_gen-1", "prompt": "Write a Python function that returns the nth Fibonacci number.", "gold": "A function fib(n) that correctly computes the nth Fibonacci number, e.g. via iteration or memoized recursion."},
+  {"id": "code_gen-2", "prompt": "Write a Python function that checks if a string is a palindrome.", "gold": "A function that returns True if the string reads the same forwards and backwards, False otherwise."},
+  {"id": "code_gen-3", "prompt": "Write a Python function that returns the maximum value in a list of integers without using the built-in max().", "gold": "A function that iterates the list tracking the largest value seen so far and returns it."},
+  {"id": "code_gen-4", "prompt": "Write a Python function that counts the number of vowels in a given string.", "gold": "A function that counts occurrences of a, e, i, o, u (case-insensitive) in the input string."}
+]

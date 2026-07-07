@@ -1,0 +1,8 @@
+[
+  {"id": "math-1", "prompt": "If a shirt costs $40 and is discounted 25%, what is the final price?", "gold": "$30"},
+  {"id": "math-2", "prompt": "A train travels 60 miles in 1.5 hours. What is its average speed in mph?", "gold": "40 mph"},
+  {"id": "math-3", "prompt": "What is 17% of 250?", "gold": "42.5"},
+  {"id": "math-4", "prompt": "A company had 1200 employees and grew by 15% this year. How many employees does it have now?", "gold": "1380"},
+  {"id": "math-5", "prompt": "If x + 7 = 22, what is x?", "gold": "15"},
+  {"id": "math-6", "prompt": "A rectangle has a length of 12 and a width of 5. What is its area?", "gold": "60"}
+]

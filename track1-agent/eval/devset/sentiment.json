@@ -1,0 +1,8 @@
+[
+  {"id": "sentiment-1", "prompt": "What is the sentiment of this review: 'The food was amazing!'", "gold": "positive, because the reviewer praised the food"},
+  {"id": "sentiment-2", "prompt": "What is the sentiment of this review: 'Terrible service, I will never come back.'", "gold": "negative, because the reviewer complains about service and refuses to return"},
+  {"id": "sentiment-3", "prompt": "What is the sentiment of this review: 'The package arrived on Tuesday.'", "gold": "neutral, purely factual statement with no emotional charge"},
+  {"id": "sentiment-4", "prompt": "What is the sentiment of this tweet: 'Not the best movie I've seen, but not the worst either.'", "gold": "neutral or mixed, the reviewer is ambivalent"},
+  {"id": "sentiment-5", "prompt": "What is the sentiment of this review: 'Absolutely loved the concert, best night ever!'", "gold": "positive, strong enthusiasm expressed"},
+  {"id": "sentiment-6", "prompt": "What is the sentiment of this review: 'The product broke after one day of use.'", "gold": "negative, product failure is a complaint"}
+]

@@ -1,0 +1,6 @@
+[
+  {"id": "logic-1", "prompt": "Three friends Alice, Bob, and Carol each own exactly one pet: a cat, a dog, and a fish. Alice does not own the dog. Bob owns the cat. Who owns the dog?", "gold": "Carol owns the dog (Bob has the cat, Alice doesn't have the dog, so Alice must have the fish and Carol the dog)."},
+  {"id": "logic-2", "prompt": "Five people are in a line. Alice is directly in front of Bob. Carol is at the front. Dave is directly behind Bob. Eve is last. What is the order from front to back?", "gold": "Carol, Alice, Bob, Dave, Eve."},
+  {"id": "logic-3", "prompt": "If all bloops are razzies and all razzies are lazzies, are all bloops definitely lazzies?", "gold": "Yes, by transitivity."},
+  {"id": "logic-4", "prompt": "A box contains only red and blue balls. There are twice as many red balls as blue balls. If there are 9 balls total, how many are blue?", "gold": "3 blue balls (and 6 red)."}
+]
