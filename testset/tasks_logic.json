@@ -1,0 +1,106 @@
+[
+  {
+    "task_id": "lg_01",
+    "category": "logic",
+    "complexity": "simple",
+    "prompt": "Tom is taller than Sara. Sara is taller than Ben. Who is the shortest?",
+    "expected": {
+      "answer": "Ben",
+      "solution": { "order_tallest_to_shortest": ["Tom", "Sara", "Ben"] }
+    }
+  },
+  {
+    "task_id": "lg_02",
+    "category": "logic",
+    "complexity": "simple",
+    "prompt": "All roses are flowers. All flowers need water. Based only on these statements, does a rose need water? Answer Yes or No.",
+    "expected": {
+      "answer": "Yes",
+      "solution": { "reasoning": "Roses are a subset of flowers, and all flowers need water, so every rose needs water." }
+    }
+  },
+  {
+    "task_id": "lg_03",
+    "category": "logic",
+    "complexity": "moderate",
+    "prompt": "In a race with four runners and no ties, Alice finished ahead of Bob, Carol finished behind Bob, and David finished ahead of Alice. Who won the race?",
+    "expected": {
+      "answer": "David",
+      "solution": { "order_first_to_last": ["David", "Alice", "Bob", "Carol"] }
+    }
+  },
+  {
+    "task_id": "lg_04",
+    "category": "logic",
+    "complexity": "moderate",
+    "prompt": "On an island, knights always tell the truth and knaves always lie. You meet two inhabitants, A and B. A says, \"B is a knave.\" B says, \"A and I are the same type.\" Determine what each one is.",
+    "expected": {
+      "answer": "A is a knight and B is a knave.",
+      "solution": { "A": "knight", "B": "knave" }
+    }
+  },
+  {
+    "task_id": "lg_05",
+    "category": "logic",
+    "complexity": "moderate",
+    "prompt": "Three friends—Anna, Bella, and Cara—each ordered a different drink: coffee, tea, or juice. Anna ordered neither coffee nor juice. Bella did not order juice. Who ordered the juice?",
+    "expected": {
+      "answer": "Cara",
+      "solution": { "Anna": "tea", "Bella": "coffee", "Cara": "juice" }
+    }
+  },
+  {
+    "task_id": "lg_06",
+    "category": "logic",
+    "complexity": "hard",
+    "prompt": "Four runners—P, Q, R, and S—finished a race in some order with no ties. Q finished immediately before R. S finished last. P did not finish first. List the finishing order from first to last.",
+    "expected": {
+      "answer": "Q, R, P, S",
+      "solution": { "order_first_to_last": ["Q", "R", "P", "S"] }
+    }
+  },
+  {
+    "task_id": "lg_07",
+    "category": "logic",
+    "complexity": "hard",
+    "prompt": "Three people—Xavier, Yolanda, and Zoe—each own a different pet (cat, dog, or fish) and live in a different city (Austin, Boston, or Chicago). Xavier lives in Austin. The dog's owner lives in Boston. The cat's owner lives in Austin. Zoe does not live in Boston. Determine each person's pet and city.",
+    "expected": {
+      "answer": "Xavier owns the cat and lives in Austin; Yolanda owns the dog and lives in Boston; Zoe owns the fish and lives in Chicago.",
+      "solution": {
+        "Xavier": { "pet": "cat", "city": "Austin" },
+        "Yolanda": { "pet": "dog", "city": "Boston" },
+        "Zoe": { "pet": "fish", "city": "Chicago" }
+      }
+    }
+  },
+  {
+    "task_id": "lg_08",
+    "category": "logic",
+    "complexity": "hard",
+    "prompt": "Four children—Mia, Noah, Owen, and Pia—are aged 6, 7, 8, and 9, each a different age. Mia is older than Noah. Owen is the youngest. Pia is not 8. Noah is not 7. State each child's age.",
+    "expected": {
+      "answer": "Owen is 6, Pia is 7, Noah is 8, and Mia is 9.",
+      "solution": { "Mia": 9, "Noah": 8, "Owen": 6, "Pia": 7 }
+    }
+  },
+  {
+    "task_id": "lg_09",
+    "category": "logic",
+    "complexity": "complex",
+    "prompt": "Knights always tell the truth and knaves always lie. Three inhabitants A, B, and C are each either a knight or a knave. A says, \"All three of us are knaves.\" B says, \"Exactly one of us is a knight.\" C says nothing. Determine what each one is.",
+    "expected": {
+      "answer": "A is a knave, B is a knight, and C is a knave.",
+      "solution": { "A": "knave", "B": "knight", "C": "knave" }
+    }
+  },
+  {
+    "task_id": "lg_10",
+    "category": "logic",
+    "complexity": "complex",
+    "prompt": "Five people—Uma, Victor, Wendy, Xena, and Yuri—stand in a line, from position 1 (front) to position 5 (back). Victor stands directly in front of Wendy. Uma stands somewhere in front of Victor. Xena is at position 5. Yuri is not at position 1. Yuri stands directly behind Uma. Determine the order from front to back.",
+    "expected": {
+      "answer": "Uma, Yuri, Victor, Wendy, Xena",
+      "solution": { "order_front_to_back": ["Uma", "Yuri", "Victor", "Wendy", "Xena"] }
+    }
+  }
+]

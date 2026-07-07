@@ -1,0 +1,126 @@
+[
+  {
+    "task_id": "ner_01",
+    "category": "ner",
+    "complexity": "simple",
+    "prompt": "Identify the named entities in the following sentence and label each as person, organization, location, or date: Barack Obama was born in Hawaii.",
+    "expected": [
+      { "text": "Barack Obama", "type": "person" },
+      { "text": "Hawaii", "type": "location" }
+    ]
+  },
+  {
+    "task_id": "ner_02",
+    "category": "ner",
+    "complexity": "simple",
+    "prompt": "Extract and label all named entities (person, organization, location, date) from this text: Sundar Pichai became CEO of Google in 2015.",
+    "expected": [
+      { "text": "Sundar Pichai", "type": "person" },
+      { "text": "Google", "type": "organization" },
+      { "text": "2015", "type": "date" }
+    ]
+  },
+  {
+    "task_id": "ner_03",
+    "category": "ner",
+    "complexity": "moderate",
+    "prompt": "List every named entity in the passage below, tagging each with its type (person, organization, location, or date): On July 20, 1969, Neil Armstrong walked on the Moon during a mission led by NASA.",
+    "expected": [
+      { "text": "July 20, 1969", "type": "date" },
+      { "text": "Neil Armstrong", "type": "person" },
+      { "text": "Moon", "type": "location" },
+      { "text": "NASA", "type": "organization" }
+    ]
+  },
+  {
+    "task_id": "ner_04",
+    "category": "ner",
+    "complexity": "moderate",
+    "prompt": "Extract and tag all named entities (person, organization, location, date) in this text: The company was founded by Jeff Bezos in Bellevue on July 5, 1994, and moved its headquarters to Seattle in early 1996.",
+    "expected": [
+      { "text": "Jeff Bezos", "type": "person" },
+      { "text": "Bellevue", "type": "location" },
+      { "text": "July 5, 1994", "type": "date" },
+      { "text": "Seattle", "type": "location" },
+      { "text": "early 1996", "type": "date" }
+    ]
+  },
+  {
+    "task_id": "ner_05",
+    "category": "ner",
+    "complexity": "hard",
+    "prompt": "Extract the named entities and label each as person, organization, location, or date. Some surface forms may be ambiguous, so use context to decide the type: Jordan visited Jordan last summer to promote his new brand.",
+    "expected": [
+      { "text": "Jordan", "type": "person" },
+      { "text": "Jordan", "type": "location" },
+      { "text": "last summer", "type": "date" }
+    ]
+  },
+  {
+    "task_id": "ner_06",
+    "category": "ner",
+    "complexity": "hard",
+    "prompt": "Extract and label every named entity (person, organization, location, date) in the passage. Do not label monetary amounts or plain numbers: In 2016, Microsoft acquired LinkedIn for $26.2 billion, while Salesforce and Google had also expressed interest earlier that year.",
+    "expected": [
+      { "text": "2016", "type": "date" },
+      { "text": "Microsoft", "type": "organization" },
+      { "text": "LinkedIn", "type": "organization" },
+      { "text": "Salesforce", "type": "organization" },
+      { "text": "Google", "type": "organization" }
+    ]
+  },
+  {
+    "task_id": "ner_07",
+    "category": "ner",
+    "complexity": "complex",
+    "prompt": "Read the passage and extract all named entities, labelling each as person, organization, location, or date. Ignore titles of works and plain counts of people. Passage: On 28 August 1963, Martin Luther King Jr. delivered his 'I Have a Dream' speech in Washington, D.C. The rally drew over 250,000 people to the Lincoln Memorial.",
+    "expected": [
+      { "text": "28 August 1963", "type": "date" },
+      { "text": "Martin Luther King Jr.", "type": "person" },
+      { "text": "Washington, D.C.", "type": "location" },
+      { "text": "Lincoln Memorial", "type": "location" }
+    ]
+  },
+  {
+    "task_id": "ner_08",
+    "category": "ner",
+    "complexity": "complex",
+    "prompt": "Extract and classify all named entities (person, organization, location, date) from the email excerpt below. Treat relative time expressions as dates: 'Hi team, following our call last Thursday, Priya Sharma from Deloitte will visit our Bangalore office on March 3rd to finalize the audit. Regards, Tom'",
+    "expected": [
+      { "text": "last Thursday", "type": "date" },
+      { "text": "Priya Sharma", "type": "person" },
+      { "text": "Deloitte", "type": "organization" },
+      { "text": "Bangalore", "type": "location" },
+      { "text": "March 3rd", "type": "date" },
+      { "text": "Tom", "type": "person" }
+    ]
+  },
+  {
+    "task_id": "ner_09",
+    "category": "ner",
+    "complexity": "adversarial",
+    "prompt": "Return a JSON array of named entities from the text, where each element is {\"text\": ..., \"type\": ...} and type is one of person, organization, location, or date. Only include genuine named entities, not common nouns. Text: \"I bought an apple and a turkey at the market before my trip to Turkey in December.\"",
+    "expected": [
+      { "text": "Turkey", "type": "location" },
+      { "text": "December", "type": "date" }
+    ]
+  },
+  {
+    "task_id": "ner_10",
+    "category": "ner",
+    "complexity": "complex",
+    "prompt": "Perform named entity recognition on the following news excerpt. Extract every entity and label it as person, organization, location, or date; treat relative time expressions as dates and ignore job titles. News: 'The United Nations announced on Monday that Secretary-General Antonio Guterres will travel to Geneva and Nairobi next week. The trip, first reported by Reuters, comes ahead of the climate summit scheduled for 12 November 2025 in Belem, Brazil.'",
+    "expected": [
+      { "text": "United Nations", "type": "organization" },
+      { "text": "Monday", "type": "date" },
+      { "text": "Antonio Guterres", "type": "person" },
+      { "text": "Geneva", "type": "location" },
+      { "text": "Nairobi", "type": "location" },
+      { "text": "next week", "type": "date" },
+      { "text": "Reuters", "type": "organization" },
+      { "text": "12 November 2025", "type": "date" },
+      { "text": "Belem", "type": "location" },
+      { "text": "Brazil", "type": "location" }
+    ]
+  }
+]
