@@ -398,5 +398,245 @@
     "task_id": "t80",
     "category": "text_summarisation",
     "prompt": "Summarise the following multi-paragraph essay introduction in one sentence that captures the central argument: \"For centuries, cities have been designed primarily around the movement of cars. Roads widen, parking lots multiply, and pedestrians are forced to navigate spaces that treat them as afterthoughts. This approach, dominant from roughly the 1950s onwards, has produced urban environments that are efficient for motor vehicles but hostile to human beings — loud, polluted, fragmented, and difficult to traverse on foot or by bicycle. A growing body of urban planning research, however, suggests that car-centric design is neither economically nor socially optimal. Cities that invest in walkable neighbourhoods, cycling infrastructure, and high-quality public transport consistently outperform their car-dependent counterparts on measures of public health, economic productivity, environmental sustainability, and resident wellbeing. The central argument of this essay is that reversing decades of car-centric planning is not merely desirable — it is essential for building cities that can thrive in the twenty-first century.\""
+  },
+  {
+    "task_id": "t81",
+    "category": "factual_knowledge",
+    "complexity": "complex",
+    "prompt": "Explain how mRNA vaccines work at a molecular level — from lipid nanoparticle delivery to antigen presentation on MHC class I and II molecules — and why this mechanism does not alter the recipient's DNA."
+  },
+  {
+    "task_id": "t82",
+    "category": "factual_knowledge",
+    "complexity": "complex",
+    "prompt": "Compare and contrast how a transformer-based large language model and the human brain process and generate language. Where do the architectural analogies hold, and where do they fundamentally break down?"
+  },
+  {
+    "task_id": "t83",
+    "category": "factual_knowledge",
+    "complexity": "complex",
+    "prompt": "Explain the concept of entropy in the context of both thermodynamics and information theory. How did Shannon's definition borrow from Boltzmann's, and what is the conceptual relationship between disorder in physical systems and uncertainty in information systems?"
+  },
+  {
+    "task_id": "t84",
+    "category": "factual_knowledge",
+    "complexity": "complex",
+    "prompt": "A country is experiencing stagflation — simultaneous high inflation and high unemployment. Explain why this situation is particularly difficult for central banks to address, and describe the trade-offs inherent in the policy tools available to them."
+  },
+  {
+    "task_id": "t85",
+    "category": "factual_knowledge",
+    "complexity": "complex",
+    "prompt": "Explain the CAP theorem in distributed systems. Given a network partition, why must a system choose between consistency and availability? Provide a concrete example of a real-world system that prioritises each, and justify the design choice."
+  },
+  {
+    "task_id": "t86",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A company has fixed costs of £180,000 per month and a variable cost of £12 per unit. It sells each unit for £20. (a) What is the break-even quantity? (b) If the company wants to achieve a profit of £60,000 per month, how many units must it sell? (c) If a competitor forces the selling price down to £17, by how much must the variable cost per unit be reduced to maintain the same £60,000 profit at the same sales volume from part (b)?"
+  },
+  {
+    "task_id": "t87",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A portfolio consists of three assets: Asset A worth £50,000 with an annual return of 8%, Asset B worth £30,000 with an annual return of 5%, and Asset C worth £20,000 with an annual return of -3%. (a) What is the weighted average return of the portfolio? (b) After one year, if all returns are reinvested, what is the total portfolio value? (c) What proportion of the portfolio's value does Asset A represent after one year?"
+  },
+  {
+    "task_id": "t88",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A survey of 500 people found that 60% drink coffee, 45% drink tea, and 25% drink both. (a) Using a Venn diagram approach, how many people drink neither coffee nor tea? (b) Given that a randomly selected person drinks coffee, what is the probability they also drink tea? (c) Are coffee-drinking and tea-drinking independent events in this dataset? Show your working."
+  },
+  {
+    "task_id": "t89",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A projectile is launched horizontally from the top of a 80 m cliff at 25 m/s. Ignoring air resistance and using g = 9.8 m/s²: (a) How long does it take to hit the ground? (b) How far horizontally from the base of the cliff does it land? (c) What is the magnitude and direction of the velocity at the moment of impact? Give the angle to the nearest degree."
+  },
+  {
+    "task_id": "t90",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A data centre operator must choose between two server configurations for a 5-year contract. Option A costs £120,000 upfront with £8,000 annual maintenance. Option B costs £60,000 upfront with £22,000 annual maintenance but requires a £15,000 replacement at the end of year 3. Using a discount rate of 6% per annum, calculate the Net Present Value (NPV) of costs for each option and determine which is cheaper in present-value terms. (Hint: PV = C / (1+r)^t)"
+  },
+  {
+    "task_id": "t91",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "Classify the predominant sentiment of the following review as Positive, Negative, or Neutral, identify any secondary conflicting sentiment, and explain how sarcasm or irony influences your classification: \"Oh, absolutely brilliant — the app crashed four times before I could even finish signing up, and when I finally got in, the 'premium' features were hidden behind another paywall. Truly a masterclass in user experience design. Can't wait to recommend it to all my enemies.\""
+  },
+  {
+    "task_id": "t92",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "The following passage contains sentiment expressed toward two distinct subjects. Identify each subject, classify the sentiment toward each separately as Positive, Negative, or Neutral, and justify each classification in one sentence: \"The venue itself was spectacular — a beautifully restored Victorian theatre with impeccable acoustics and an atmosphere that felt genuinely historic. The performance, however, was a joyless slog: the lead actor seemed to be reading from a script, the pacing was funereal, and the director's choices were baffling at best.\""
+  },
+  {
+    "task_id": "t93",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "Classify the overall sentiment of the following earnings call excerpt as Positive, Negative, or Neutral. Then identify any forward-looking language and explain whether it shifts the sentiment in a more optimistic or pessimistic direction: \"Q2 revenue came in at $3.1 billion, down 8% year-on-year, and we missed consensus EBITDA estimates by approximately 12%. Supply chain disruptions and a weaker-than-anticipated consumer environment were the primary headwinds. That said, our order backlog has grown 34% since January, and early indicators from our new product line suggest meaningful margin recovery in H2. We remain cautiously optimistic about returning to growth by Q1 next year.\""
+  },
+  {
+    "task_id": "t94",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "The following three statements are about the same product. Classify the sentiment of each individually, then provide an overall aggregated sentiment label with a confidence level (High, Medium, or Low) and explain what drives the uncertainty: (1) \"The build quality is exceptional — feels premium in the hand.\" (2) \"Battery life is mediocre; I need to charge it twice a day.\" (3) \"It does what it claims, nothing more.\""
+  },
+  {
+    "task_id": "t95",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "Classify the sentiment of the following social media thread as Positive, Negative, or Neutral at the thread level. Then identify the single most emotionally intense statement within it and explain what linguistic features (word choice, punctuation, structure) make it the most intense: \"[Post] Just got my results — I passed the bar exam on my first attempt!! [Reply 1] That's incredible, congratulations! You worked so hard for this. [Reply 2] Amazing! Does this mean you're moving to London? [Reply 3] I can't believe it, I'm so proud of you. [Reply 4] Wait, did you actually?? I'm literally shaking reading this.\""
+  },
+  {
+    "task_id": "t96",
+    "category": "text_summarisation",
+    "complexity": "complex",
+    "prompt": "You are given two conflicting expert opinions on the same topic. Summarise both positions in a single balanced paragraph of no more than 100 words that: (a) accurately represents each view without editorialising, (b) identifies the crux of the disagreement, and (c) does not take a side. Opinion A (Prof. Chen): \"Universal basic income would permanently reduce the labour supply by enabling people to opt out of low-wage work, causing inflation and reducing overall productivity.\" Opinion B (Dr. Osei): \"Universal basic income would actually increase productive labour by funding entrepreneurship, reducing the desperation that traps people in low-value jobs, and improving health outcomes that raise long-run productivity.\""
+  },
+  {
+    "task_id": "t97",
+    "category": "text_summarisation",
+    "complexity": "complex",
+    "prompt": "Summarise the following three-paragraph research study into a structured abstract with exactly four labelled sections — Background, Method, Results, Conclusion — each no longer than 25 words: \"Background: Sleep deprivation is increasingly common in modern society, yet its cognitive effects are often underestimated by those affected. Method: Forty-two healthy adults were randomly assigned to either 8 hours or 5 hours of sleep per night for two weeks. Cognitive performance was assessed daily using validated tests of working memory, reaction time, and executive function. Participants were blinded to the study hypothesis. Results: The restricted-sleep group showed a 31% decline in working memory scores, a 24% increase in reaction time, and significantly impaired executive function by day 7, with deficits compounding over time. Critically, participants in the restricted group consistently underestimated their own impairment. Conclusion: Five hours of sleep significantly degrades cognitive performance in a cumulative manner, and self-reported alertness is an unreliable proxy for actual cognitive capacity.\""
+  },
+  {
+    "task_id": "t98",
+    "category": "text_summarisation",
+    "complexity": "complex",
+    "prompt": "Rewrite the following dense academic passage as (a) a one-paragraph summary for a policy maker with no scientific background, (b) a single tweet of under 280 characters for a general audience, and (c) one bullet point suitable for inclusion in a government briefing document: \"Recent meta-analytic evidence (k=47 studies, N=190,000) indicates a robust inverse association between ambient particulate matter (PM2.5) exposure and cognitive function across the adult lifespan (pooled β = -0.42 SD per 10 μg/m³ increase, 95% CI [-0.51, -0.33]). Effects were more pronounced in older adults and those with pre-existing cardiovascular comorbidities. Longitudinal analyses further suggest that sustained exposure accelerates neurodegeneration trajectories consistent with Alzheimer's-type pathology, independent of socioeconomic confounders.\""
+  },
+  {
+    "task_id": "t99",
+    "category": "text_summarisation",
+    "complexity": "complex",
+    "prompt": "The following five customer reviews for the same product contain contradictory claims. Synthesise them into a single, balanced 80-word summary that captures the dominant themes of both praise and criticism without attributing any claim to a specific reviewer: (1) \"Incredible battery — lasted 3 days on one charge.\" (2) \"My battery died within 18 hours. Very disappointed.\" (3) \"Best camera I've ever used on a phone — colours are stunning.\" (4) \"The camera is fine but nothing special compared to competitors.\" (5) \"Build quality is superb and the software is clean and fast. Worth every penny.\""
+  },
+  {
+    "task_id": "t100",
+    "category": "text_summarisation",
+    "complexity": "complex",
+    "prompt": "Read the following contract clause and produce three outputs: (a) a one-sentence plain-English summary of what the clause requires, (b) the single greatest risk this clause poses to the signing party, and (c) a suggested alternative phrasing that better protects the signing party's interests, in no more than 40 words: \"The Client shall indemnify, defend, and hold harmless the Service Provider and its officers, directors, employees, and agents from and against any and all claims, liabilities, damages, losses, and expenses, including reasonable legal fees, arising out of or in connection with the Client's use of the Service or breach of any representation or warranty contained herein.\""
+  },
+  {
+    "task_id": "t101",
+    "category": "factual_knowledge",
+    "complexity": "unclear",
+    "prompt": "Tell me about black holes."
+  },
+  {
+    "task_id": "t102",
+    "category": "factual_knowledge",
+    "complexity": "unclear",
+    "prompt": "What do you think about climate change? Is it real?"
+  },
+  {
+    "task_id": "t103",
+    "category": "factual_knowledge",
+    "complexity": "unclear",
+    "prompt": "How does the brain work? My nephew asked me and I didn't know what to say."
+  },
+  {
+    "task_id": "t104",
+    "category": "factual_knowledge",
+    "complexity": "unclear",
+    "prompt": "Can you explain quantum physics? Like, the basics but also the hard stuff."
+  },
+  {
+    "task_id": "t105",
+    "category": "factual_knowledge",
+    "complexity": "unclear",
+    "prompt": "What is the best programming language and why? I want to learn more."
+  },
+  {
+    "task_id": "t106",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "I have £10,000. What should I do with it? I'm thinking about the future."
+  },
+  {
+    "task_id": "t107",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "Is 15% of 200 more than 25% of 100? Also which is the better deal?"
+  },
+  {
+    "task_id": "t108",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "Work out the numbers for a small business selling handmade candles. I make about 50 a week."
+  },
+  {
+    "task_id": "t109",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "My salary is £35,000. After tax and everything, what do I actually take home? I'm in the UK."
+  },
+  {
+    "task_id": "t110",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "How long would it take to pay off a £200,000 mortgage? I don't know the interest rate yet."
+  },
+  {
+    "task_id": "t111",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "This film was interesting. What do you think?"
+  },
+  {
+    "task_id": "t112",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "My colleague always arrives late, forgets to reply to emails, and then gets praised in all-hands meetings. How does that make you feel?"
+  },
+  {
+    "task_id": "t113",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "Read this: 'The service was fine.' Good review or bad review?"
+  },
+  {
+    "task_id": "t114",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "My friend said the new restaurant downtown is 'not bad at all.' Should I go?"
+  },
+  {
+    "task_id": "t115",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "Here's a customer comment: 'I've used better.' What does that tell us?"
+  },
+  {
+    "task_id": "t116",
+    "category": "text_summarisation",
+    "complexity": "unclear",
+    "prompt": "Can you shorten this? 'The quarterly results exceeded analyst expectations driven by strong performance in the cloud division and improved operational efficiency across all business units, though headwinds in the consumer segment remain a concern going into Q4.'"
+  },
+  {
+    "task_id": "t117",
+    "category": "text_summarisation",
+    "complexity": "unclear",
+    "prompt": "Make this easier to understand and also shorter but keep all the details."
+  },
+  {
+    "task_id": "t118",
+    "category": "text_summarisation",
+    "complexity": "unclear",
+    "prompt": "Give me a summary. Here's the article: [ARTICLE TEXT NOT PROVIDED]"
+  },
+  {
+    "task_id": "t119",
+    "category": "text_summarisation",
+    "complexity": "unclear",
+    "prompt": "Write a short version of what happened in the meeting I just told you about."
+  },
+  {
+    "task_id": "t120",
+    "category": "text_summarisation",
+    "complexity": "unclear",
+    "prompt": "Summarise the following in the right format for my boss: 'We conducted user research across three cohorts over six weeks. Findings suggest that onboarding drop-off correlates strongly with the second step of the sign-up flow, where users are asked for payment details before experiencing the product's core value. Recommendations include introducing a 7-day free trial before payment capture and redesigning the progress indicator to set clearer expectations.'"
   }
 ]
