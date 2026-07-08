@@ -3,180 +3,210 @@
     "task_id": "t1",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "What is photosynthesis and how does it enable plants to produce energy?"
+    "prompt": "What is photosynthesis and how does it enable plants to produce energy?",
+    "answer": "Photosynthesis is the biological process by which plants, algae, and some bacteria convert light energy (usually from the sun) into chemical energy stored as glucose. It occurs primarily in the chloroplasts, using the green pigment chlorophyll to absorb light. The overall reaction combines carbon dioxide (from the air) and water (from the soil) in the presence of light to produce glucose and oxygen: 6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂. The glucose produced serves as the plant's primary energy source, fuelling growth, reproduction, and cellular respiration."
   },
   {
     "task_id": "t2",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "Explain the difference between RAM and ROM in a computer system."
+    "prompt": "Explain the difference between RAM and ROM in a computer system.",
+    "answer": "RAM (Random Access Memory) is volatile, read-write memory used to temporarily store data and programs that the CPU is actively using; its contents are lost when power is removed. ROM (Read-Only Memory) is non-volatile memory whose contents are permanently written during manufacture and retained without power; it typically stores firmware such as a PC's BIOS/UEFI. In summary: RAM is fast, temporary, and rewritable, while ROM is persistent, read-only (or very slowly writable in modern variants like Flash), and used for essential boot-time instructions."
   },
   {
     "task_id": "t3",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "What causes a solar eclipse, and why does it not happen every month?"
+    "prompt": "What causes a solar eclipse, and why does it not happen every month?",
+    "answer": "A solar eclipse occurs when the Moon passes directly between the Earth and the Sun, casting its shadow on Earth and blocking sunlight for observers in the shadow's path. It does not happen every new moon because the Moon's orbital plane is tilted about 5° relative to Earth's orbital plane around the Sun. This means the Moon usually passes slightly above or below the Sun in the sky at new moon. A solar eclipse only occurs when a new moon coincides with the Moon being near one of the two intersection points (nodes) of its orbit with the ecliptic."
   },
   {
     "task_id": "t4",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "How does the immune system recognise and fight off a bacterial infection?"
+    "prompt": "How does the immune system recognise and fight off a bacterial infection?",
+    "answer": "When bacteria enter the body, the innate immune system responds first: phagocytes (neutrophils and macrophages) recognise pathogen-associated molecular patterns (PAMPs) on bacterial surfaces via pattern-recognition receptors (e.g., Toll-like receptors), engulf and destroy the bacteria, and release cytokines that trigger inflammation. If the infection persists, the adaptive immune system activates: antigen-presenting cells display bacterial fragments to T-cells, which coordinate the response—helper T-cells stimulate B-cells to produce antibodies that neutralise or tag bacteria for destruction, while cytotoxic T-cells kill infected cells. Memory cells are retained for faster future responses."
   },
   {
     "task_id": "t5",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "What is the role of the mitochondria in a eukaryotic cell?"
+    "prompt": "What is the role of the mitochondria in a eukaryotic cell?",
+    "answer": "Mitochondria are the primary sites of aerobic cellular respiration, the process by which cells generate most of their ATP (adenosine triphosphate)—the main energy currency of the cell. They convert glucose and oxygen into ATP via glycolysis (in the cytoplasm), the Krebs cycle, and oxidative phosphorylation (in the inner mitochondrial membrane). Beyond energy production, mitochondria regulate calcium signalling, control apoptosis (programmed cell death), generate heat, and contain their own DNA (reflecting their ancient endosymbiotic bacterial origin). This is why they are often called the 'powerhouse of the cell'."
   },
   {
     "task_id": "t6",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "Explain what machine learning is and how it differs from traditional programming."
+    "prompt": "Explain what machine learning is and how it differs from traditional programming.",
+    "answer": "Machine learning (ML) is a branch of artificial intelligence in which systems learn patterns from data and improve their performance on tasks without being explicitly programmed with rules. In traditional programming, a developer writes explicit rules (if-then logic) that map inputs to outputs. In ML, the developer provides labelled data and an algorithm, and the system automatically infers the rules by optimising a model's parameters. For example, rather than hand-coding rules to detect spam, an ML model learns what spam looks like from thousands of examples. ML is especially powerful for tasks where rules are too complex, numerous, or unknown to write manually."
   },
   {
     "task_id": "t7",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "What is the greenhouse effect and how does it relate to climate change?"
+    "prompt": "What is the greenhouse effect and how does it relate to climate change?",
+    "answer": "The greenhouse effect is a natural process in which certain atmospheric gases (greenhouse gases—GHGs—including water vapour, CO₂, methane, and nitrous oxide) absorb infrared radiation emitted by Earth's surface and re-radiate it in all directions, warming the surface. Without this effect, Earth's average temperature would be about −18°C instead of +15°C. Human activities—primarily burning fossil fuels, deforestation, and agriculture—have increased atmospheric CO₂ and other GHG concentrations significantly since the Industrial Revolution, enhancing the greenhouse effect beyond natural levels. This anthropogenic intensification is the principal driver of observed global warming and associated climate change."
   },
   {
     "task_id": "t8",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "How does GPS determine your location, and what satellites are involved?"
+    "prompt": "How does GPS determine your location, and what satellites are involved?",
+    "answer": "GPS (Global Positioning System) uses a constellation of at least 24 operational satellites (operated by the US Department of Defense, though typically 30+ are active) orbiting Earth at roughly 20,200 km altitude. Each satellite continuously broadcasts a radio signal containing its precise location and the exact time the signal was sent. A GPS receiver picks up signals from at least four satellites and calculates the distance to each by measuring signal travel time (multiplied by the speed of light). Using a process called trilateration, it then pinpoints the receiver's latitude, longitude, and altitude. The fourth satellite is needed to correct for the receiver's clock error."
   },
   {
     "task_id": "t9",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "What is the difference between a virus and a bacterium?"
+    "prompt": "What is the difference between a virus and a bacterium?",
+    "answer": "Bacteria are single-celled living organisms with their own cellular machinery (ribosomes, cytoplasm, a cell membrane, and usually a cell wall), DNA, and the ability to reproduce independently through binary fission. They can be treated with antibiotics. Viruses are not cells—they are much smaller packages of genetic material (DNA or RNA) enclosed in a protein coat (capsid), sometimes with a lipid envelope. Viruses cannot reproduce on their own; they must hijack a host cell's machinery to replicate. They are not affected by antibiotics but can be targeted by antiviral drugs or prevented by vaccines."
   },
   {
     "task_id": "t10",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "Explain how the internet works, from typing a URL to a webpage loading."
+    "prompt": "Explain how the internet works, from typing a URL to a webpage loading.",
+    "answer": "1. You type a URL (e.g., www.example.com) into a browser. 2. The browser asks a DNS (Domain Name System) server to translate the human-readable domain into an IP address. 3. Your browser establishes a TCP connection to the web server at that IP address (using a TLS handshake for HTTPS). 4. It sends an HTTP/HTTPS GET request for the page. 5. The server processes the request and returns the HTML, CSS, JavaScript, and media files. 6. Your browser parses the HTML, fetches linked resources (images, scripts), renders the DOM, and displays the page. Data travels as packets routed across networks of interconnected routers."
   },
   {
     "task_id": "t11",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "What is quantum entanglement and why is it considered unusual in physics?"
+    "prompt": "What is quantum entanglement and why is it considered unusual in physics?",
+    "answer": "Quantum entanglement is a phenomenon in which two or more particles become correlated in such a way that the quantum state of each particle cannot be described independently of the others, regardless of the distance separating them. When a measurement is made on one entangled particle, the state of its partner is instantaneously determined—even if they are light-years apart. This is considered unusual because it appears to violate classical intuitions about locality and realism. However, it cannot be used to transmit information faster than light (no-communication theorem). Einstein famously called it 'spooky action at a distance', and Bell test experiments have conclusively confirmed its reality."
   },
   {
     "task_id": "t12",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "How do vaccines work to protect against infectious diseases?"
+    "prompt": "How do vaccines work to protect against infectious diseases?",
+    "answer": "Vaccines work by training the immune system to recognise and fight a specific pathogen without causing the disease itself. They introduce an antigen—which may be a weakened or inactivated pathogen, a piece of it (protein subunit), or instructions to make such a piece (as in mRNA vaccines)—into the body. The immune system mounts a response, producing antibodies and activating memory T and B cells. If the vaccinated person later encounters the real pathogen, this immunological memory enables a rapid, robust response that neutralises the infection before it can cause serious illness. This process is called acquired (adaptive) immunity."
   },
   {
     "task_id": "t13",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "What is the water cycle and what processes drive it?"
+    "prompt": "What is the water cycle and what processes drive it?",
+    "answer": "The water cycle (hydrological cycle) describes the continuous movement of water through Earth's systems. Key processes: (1) Evaporation—solar energy heats surface water in oceans, lakes, and rivers, converting it to water vapour. (2) Transpiration—plants release water vapour through their leaves. (3) Condensation—as water vapour rises and cools, it condenses around particles to form clouds. (4) Precipitation—water falls as rain, snow, sleet, or hail. (5) Surface runoff and infiltration—water flows over land into rivers/lakes or soaks into the ground to replenish aquifers. (6) Collection—water accumulates in oceans, lakes, and groundwater, restarting the cycle. Solar energy and gravity are the primary drivers."
   },
   {
     "task_id": "t14",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "Explain the concept of supply and demand in economics."
+    "prompt": "Explain the concept of supply and demand in economics.",
+    "answer": "Supply and demand is the foundational model of how prices and quantities are determined in a market. Demand refers to the quantity of a good consumers are willing and able to buy at various prices—generally, as price rises, demand falls (the law of demand). Supply refers to the quantity producers are willing to offer at various prices—generally, as price rises, supply increases (the law of supply). The market reaches equilibrium at the price where quantity supplied equals quantity demanded. Shifts in either curve (due to changes in income, preferences, production costs, technology, etc.) cause prices and quantities to adjust until a new equilibrium is reached."
   },
   {
     "task_id": "t15",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "What is CRISPR-Cas9 and how is it used in genetic editing?"
+    "prompt": "What is CRISPR-Cas9 and how is it used in genetic editing?",
+    "answer": "CRISPR-Cas9 is a molecular tool adapted from a natural bacterial immune defence system. It consists of two components: a guide RNA (gRNA) designed to match a specific DNA sequence in the genome, and the Cas9 protein, an enzyme that acts as 'molecular scissors'. The gRNA directs Cas9 to the precise target location in the genome, where Cas9 cuts both strands of the DNA double helix. The cell's own repair machinery then either disables the gene (via error-prone repair) or, if a repair template is provided, inserts or corrects a DNA sequence. This enables scientists to delete, modify, or add genes with unprecedented precision, speed, and low cost."
   },
   {
     "task_id": "t16",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "How does a lithium-ion battery store and release electrical energy?"
+    "prompt": "How does a lithium-ion battery store and release electrical energy?",
+    "answer": "A lithium-ion battery stores energy through the movement of lithium ions between two electrodes—a graphite anode and a lithium metal oxide cathode—separated by an electrolyte. During charging, an external voltage drives lithium ions from the cathode through the electrolyte to intercalate (embed) into the anode, while electrons travel through the external circuit. During discharging (powering a device), lithium ions spontaneously migrate back from the anode to the cathode through the electrolyte, and electrons flow through the external circuit, producing an electric current. The energy is stored in the chemical potential difference between the two electrode materials."
   },
   {
     "task_id": "t17",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "What is the difference between a democracy and a republic?"
+    "prompt": "What is the difference between a democracy and a republic?",
+    "answer": "A democracy (in its pure, direct form) is a system where citizens directly vote on laws and policies. A republic is a system where citizens elect representatives who govern on their behalf, and government power is limited by a constitution or rule of law. In practice, most modern democracies are representative republics—sometimes called democratic republics—combining both principles. The key distinctions are: (1) direct vs. representative decision-making, and (2) republics explicitly protect minority rights and constrain majority rule through constitutional limits, whereas a pure direct democracy can risk 'tyranny of the majority'. The USA, for example, is formally a constitutional republic with democratic elections."
   },
   {
     "task_id": "t18",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "Explain how neural networks are structured and how they learn from data."
+    "prompt": "Explain how neural networks are structured and how they learn from data.",
+    "answer": "Artificial neural networks are inspired by the brain and consist of layers of interconnected nodes (neurons): an input layer (receives data), one or more hidden layers (extract features), and an output layer (produces predictions). Each connection has a weight that scales the signal passing through it, and each neuron applies an activation function to introduce non-linearity. Learning occurs through a process called backpropagation combined with gradient descent: the network makes a prediction, the error (loss) is calculated, and the error is propagated backwards through the network to compute how much each weight contributed to the mistake. Weights are then adjusted slightly in the direction that reduces the loss, and this is repeated over many training examples."
   },
   {
     "task_id": "t19",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "What is the Big Bang theory and what evidence supports it?"
+    "prompt": "What is the Big Bang theory and what evidence supports it?",
+    "answer": "The Big Bang theory holds that the universe originated approximately 13.8 billion years ago from an extremely hot, dense singularity and has been expanding ever since. Key evidence includes: (1) Hubble's observation (1929) that galaxies are receding from us—the more distant, the faster—implying universal expansion. (2) The Cosmic Microwave Background (CMB) radiation—a faint, nearly uniform glow of microwave radiation detected in all directions, matching predictions for the afterglow of an early hot universe. (3) Big Bang nucleosynthesis—the observed abundance of light elements (hydrogen, helium, deuterium, lithium) matches theoretical predictions for nuclear reactions in the first few minutes after the Big Bang."
   },
   {
     "task_id": "t20",
     "category": "factual_knowledge",
     "complexity": "standard",
-    "prompt": "How does encryption protect data sent over the internet?"
+    "prompt": "How does encryption protect data sent over the internet?",
+    "answer": "Encryption converts readable data (plaintext) into an unreadable scrambled form (ciphertext) using a mathematical algorithm and a key, so that only someone with the correct key can decrypt it back. On the internet, TLS (Transport Layer Security) protects data in transit: when you connect to an HTTPS website, your browser and the server perform a handshake—using asymmetric (public-key) cryptography to securely exchange a shared symmetric session key. All subsequent data in that session is encrypted with the fast symmetric key. Even if an attacker intercepts the data packets, they cannot read the content without the session key. Digital certificates (issued by Certificate Authorities) verify the server's identity to prevent impersonation."
   },
   {
     "task_id": "t81",
     "category": "factual_knowledge",
     "complexity": "complex",
-    "prompt": "Explain how mRNA vaccines work at a molecular level \u2014 from lipid nanoparticle delivery to antigen presentation on MHC class I and II molecules \u2014 and why this mechanism does not alter the recipient's DNA."
+    "prompt": "Explain how mRNA vaccines work at a molecular level — from lipid nanoparticle delivery to antigen presentation on MHC class I and II molecules — and why this mechanism does not alter the recipient's DNA.",
+    "answer": "mRNA vaccines deliver a strand of synthetic messenger RNA encoding a viral antigen (e.g., the SARS-CoV-2 spike protein) encapsulated in lipid nanoparticles (LNPs). The LNPs fuse with cell membranes or are taken up by endocytosis, releasing mRNA into the cytoplasm. Ribosomes translate the mRNA into antigen protein. Fragments of this protein are processed by the proteasome and loaded onto MHC class I molecules, which present them to CD8+ cytotoxic T-cells. Simultaneously, antigen released extracellularly or produced in professional antigen-presenting cells (APCs) like dendritic cells is degraded in endolysosomes and displayed on MHC class II molecules for CD4+ helper T-cells, which then support B-cell activation and antibody production. The vaccine does not alter DNA because mRNA never enters the nucleus (where DNA is housed) and is rapidly degraded by cytoplasmic RNases within days. It has no reverse transcriptase mechanism to integrate into genomic DNA."
   },
   {
     "task_id": "t82",
     "category": "factual_knowledge",
     "complexity": "complex",
-    "prompt": "Compare and contrast how a transformer-based large language model and the human brain process and generate language. Where do the architectural analogies hold, and where do they fundamentally break down?"
+    "prompt": "Compare and contrast how a transformer-based large language model and the human brain process and generate language. Where do the architectural analogies hold, and where do they fundamentally break down?",
+    "answer": "Analogies that hold: Both process language as sequences and use context-dependent representations—transformers via attention mechanisms, the brain via recurrent and hierarchical cortical circuits. Both exhibit something like distributed representations, where meaning is encoded across many units rather than single dedicated nodes. Both improve with more 'training data' (experience). Where they break down: (1) Transformers process fixed-length context windows in parallel; the brain processes language incrementally, in real time, with dynamic working memory. (2) Transformers have no embodiment, sensorimotor grounding, or emotional modulation—language in the brain is deeply tied to perception and affect. (3) The brain performs continual learning with remarkable efficiency (~20W, very few examples); LLMs require massive data and energy. (4) Transformers are purely feedforward during inference; the brain uses massive recurrent, top-down prediction loops. (5) Transformers have no explicit syntax parser or semantic knowledge base—they implicitly encode these statistically; the brain may have dedicated modules (e.g., Broca's area, Wernicke's area). (6) LLMs lack genuine understanding, intentionality, or consciousness in any philosophically meaningful sense."
   },
   {
     "task_id": "t83",
     "category": "factual_knowledge",
     "complexity": "complex",
-    "prompt": "Explain the concept of entropy in the context of both thermodynamics and information theory. How did Shannon's definition borrow from Boltzmann's, and what is the conceptual relationship between disorder in physical systems and uncertainty in information systems?"
+    "prompt": "Explain the concept of entropy in the context of both thermodynamics and information theory. How did Shannon's definition borrow from Boltzmann's, and what is the conceptual relationship between disorder in physical systems and uncertainty in information systems?",
+    "answer": "In thermodynamics, Boltzmann defined entropy (S = k_B ln W) as a measure of the number of microscopic configurations (microstates W) corresponding to a given macroscopic state—higher entropy means more possible arrangements, i.e., greater 'disorder' or dispersal of energy. The Second Law states that entropy in a closed system tends to increase. In information theory, Shannon defined entropy (H = -Σ p_i log₂ p_i) as the average minimum number of bits needed to encode messages from a source, or equivalently, the average uncertainty about which message will be received. Shannon explicitly borrowed the term from thermodynamics (with physicist John von Neumann's suggestion), and the mathematical form is structurally identical to the Gibbs entropy in statistical mechanics. The conceptual link: a thermodynamic system with many equally probable microstates is 'maximally disordered' just as an information source with equally probable symbols carries maximum uncertainty—both correspond to maximum entropy. Physical entropy and informational entropy are not merely analogous but formally related: Landauer's principle shows that erasing one bit of information generates at least k_B T ln 2 of heat, establishing a thermodynamic cost to information processing."
   },
   {
     "task_id": "t84",
     "category": "factual_knowledge",
     "complexity": "complex",
-    "prompt": "A country is experiencing stagflation \u2014 simultaneous high inflation and high unemployment. Explain why this situation is particularly difficult for central banks to address, and describe the trade-offs inherent in the policy tools available to them."
+    "prompt": "A country is experiencing stagflation — simultaneous high inflation and high unemployment. Explain why this situation is particularly difficult for central banks to address, and describe the trade-offs inherent in the policy tools available to them.",
+    "answer": "Stagflation is particularly problematic because the standard policy tools for fighting inflation and unemployment work in opposite directions, making simultaneous treatment contradictory. To fight inflation, central banks raise interest rates—this reduces borrowing, cools demand, and slows price rises, but also suppresses business investment and consumer spending, worsening unemployment. To fight unemployment, central banks lower interest rates or engage in quantitative easing—stimulating growth and job creation, but potentially fuelling further inflation. In stagflation, any move in either direction deepens one of the two problems. Additional complications: (1) Supply-side causes (e.g., oil shocks, supply chain disruptions) mean demand-side monetary policy is poorly targeted—raising rates chokes demand but does nothing to fix the supply constraint driving prices up. (2) Fiscal policy (government spending) faces the same dilemma. Historical resolution strategies have included supply-side reforms (reducing production costs), incomes policies (wage and price controls—largely unsuccessful long-term), and accepting a painful period of high rates to break inflationary expectations (as Volcker did in the early 1980s US), at significant short-term unemployment cost."
   },
   {
     "task_id": "t85",
     "category": "factual_knowledge",
     "complexity": "complex",
-    "prompt": "Explain the CAP theorem in distributed systems. Given a network partition, why must a system choose between consistency and availability? Provide a concrete example of a real-world system that prioritises each, and justify the design choice."
+    "prompt": "Explain the CAP theorem in distributed systems. Given a network partition, why must a system choose between consistency and availability? Provide a concrete example of a real-world system that prioritises each, and justify the design choice.",
+    "answer": "The CAP theorem (Brewer, 2000) states that a distributed data store can guarantee at most two of three properties simultaneously: Consistency (every read receives the most recent write or an error), Availability (every request receives a non-error response, though it may be stale), and Partition Tolerance (the system continues operating despite network partitions—messages dropped or delayed between nodes). During a network partition, some nodes cannot communicate. If the system must remain available, nodes that are isolated must still respond to requests, which may return stale data—sacrificing consistency. If the system must remain consistent, isolated nodes must refuse to respond (returning errors) until they can confirm data is up to date—sacrificing availability. Partition tolerance is non-negotiable in real distributed systems (network failures always occur eventually), so the real trade-off is between C and A during partitions. CP example: HBase or Zookeeper—they refuse reads/writes to partitioned nodes, ensuring no stale data is ever returned. This is appropriate for financial ledgers or coordination services where correctness is critical. AP example: Amazon DynamoDB (in default mode) or Cassandra—they always respond, but may return slightly stale data. This is justified for shopping carts or social media feeds where a brief inconsistency is tolerable but downtime is not."
   },
   {
     "task_id": "t101",
     "category": "factual_knowledge",
     "complexity": "unclear",
-    "prompt": "Tell me about black holes."
+    "prompt": "Tell me about black holes.",
+    "answer": "Black holes are regions of spacetime where gravity is so extreme that nothing—not even light—can escape once it crosses the event horizon. They form primarily when massive stars (roughly 20+ solar masses) exhaust their nuclear fuel and collapse under their own gravity in a supernova explosion. Key properties: (1) Singularity—a point (or ring, in rotating black holes) of theoretically infinite density at the centre. (2) Event horizon—the boundary of no return; its radius is the Schwarzschild radius. (3) Types include stellar-mass, supermassive (millions to billions of solar masses, found at galactic centres—e.g., Sagittarius A* in our Milky Way), and primordial (hypothetical). Stephen Hawking theorised that black holes slowly emit thermal radiation (Hawking radiation) and eventually evaporate. The first image of a black hole shadow was captured by the Event Horizon Telescope in 2019 (M87*)."
   },
   {
     "task_id": "t102",
     "category": "factual_knowledge",
     "complexity": "unclear",
-    "prompt": "What do you think about climate change? Is it real?"
+    "prompt": "What do you think about climate change? Is it real?",
+    "answer": "Yes, human-caused climate change is real and is the overwhelming scientific consensus, supported by multiple independent lines of evidence. Global average surface temperatures have risen approximately 1.1–1.2°C above pre-industrial levels, driven primarily by increased atmospheric concentrations of CO₂ and other greenhouse gases from burning fossil fuels, deforestation, and agriculture. Evidence includes: rising sea levels, shrinking ice sheets and glaciers, increasing frequency of extreme weather events, shifts in species ranges, and ocean acidification. The Intergovernmental Panel on Climate Change (IPCC), comprising thousands of scientists, has repeatedly confirmed this in comprehensive assessment reports. The scientific debate concerns not whether it is happening, but the precise magnitude and regional impacts of future warming under different emissions scenarios."
   },
   {
     "task_id": "t103",
     "category": "factual_knowledge",
     "complexity": "unclear",
-    "prompt": "How does the brain work? My nephew asked me and I didn't know what to say."
+    "prompt": "How does the brain work? My nephew asked me and I didn't know what to say.",
+    "answer": "Here's a simple way to explain it to your nephew: The brain is like the body's control centre and computer combined. It's made of about 86 billion tiny cells called neurons. Neurons talk to each other by sending tiny electrical signals across gaps called synapses. Different parts of the brain handle different jobs—for example, the back of the brain (cerebellum) helps with balance and movement, the sides (temporal lobes) handle hearing and memory, and the front (prefrontal cortex) is for thinking, planning, and decisions. When you learn something new, neurons form new connections, which is how memory works. The brain runs on about 20 watts of power—roughly the same as a dim light bulb—yet manages everything from breathing to imagination."
   },
   {
     "task_id": "t104",
     "category": "factual_knowledge",
     "complexity": "unclear",
-    "prompt": "Can you explain quantum physics? Like, the basics but also the hard stuff."
+    "prompt": "Can you explain quantum physics? Like, the basics but also the hard stuff.",
+    "answer": "Basics: Quantum physics describes how matter and energy behave at the smallest scales—atoms, electrons, photons. At this scale, the rules of everyday physics break down. Key ideas: (1) Quantisation—energy comes in discrete packets (quanta), not continuous amounts; a photon is a quantum of light. (2) Wave-particle duality—quantum objects behave as both waves and particles depending on how they are measured (double-slit experiment). (3) The uncertainty principle (Heisenberg)—you cannot simultaneously know a particle's exact position and momentum; the more precisely you know one, the less precisely you know the other. (4) Superposition—a quantum system can exist in multiple states at once until measured (Schrödinger's cat). Harder stuff: (5) Quantum entanglement—particles can be correlated so that measuring one instantly determines the state of the other, regardless of distance. (6) Wave function collapse—measurement forces a quantum system into a definite state, but what constitutes a 'measurement' is philosophically contested (the measurement problem). (7) Quantum field theory (QFT)—the most complete framework, treating particles as excitations of underlying fields; it underpins the Standard Model of particle physics. Quantum mechanics is the most precisely tested theory in science, with predictions confirmed to 12 decimal places."
   },
   {
     "task_id": "t105",
     "category": "factual_knowledge",
     "complexity": "unclear",
-    "prompt": "What is the best programming language and why? I want to learn more."
+    "prompt": "What is the best programming language and why? I want to learn more.",
+    "answer": "There is no single 'best' programming language—the right choice depends on your goals. Here's a practical guide: For beginners / general purpose: Python is widely recommended—it has clear, readable syntax, a massive ecosystem, and is used in web development, data science, AI/ML, and scripting. For web front-end (browser): JavaScript is essential—it's the only language that runs natively in browsers. For web back-end: Python (Django/Flask), JavaScript (Node.js), Go, Java, or Ruby are all popular. For data science / AI: Python dominates, with libraries like NumPy, Pandas, TensorFlow, and PyTorch. For systems / performance-critical work: C, C++, or Rust. For mobile apps: Swift (iOS) or Kotlin (Android). For enterprise: Java or C#. If you want to learn more broadly: start with Python for its versatility, then branch into JavaScript for web development. Both have enormous communities, abundant free resources, and strong job markets."
   }
 ]
