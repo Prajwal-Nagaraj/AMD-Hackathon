@@ -83,9 +83,11 @@ Rules
 
 \- Maximum runtime: **10 minutes** 
 
-\- Only models in ALLOWED\_MODELS are permitted, calls to other models invalidate the submission 
+\- Only models in ALLOWED\_MODELS are permitted **for Fireworks calls**; calling any other model *through Fireworks* invalidates the submission (a `MODEL_VIOLATION`). This restricts the **Fireworks** path only — **local open-weight models bundled in your image are exempt** (see "Local models are a valid scoring strategy" below). 
 
-\- /output/results.json must be valid JSON, malformed output scores zero \- **Local models and tokens used locally count as zero** for the final score; all inference must go through Fireworks AI via FIREWORKS\_BASE\_URL 
+\- /output/results.json must be valid JSON, malformed output scores zero 
+
+\- **Local models are a valid scoring strategy (official clarification).** Your container may answer tasks with a **bundled local model**, and those answers **count fully toward accuracy**. **Only tokens routed through `FIREWORKS_BASE_URL` count toward your token score** — a task a local model answers correctly uses **zero Fireworks tokens, the best possible outcome for ranking.** You are *not* required to route inference through Fireworks; do so only where it helps you clear the accuracy gate. Any call you *do* make to Fireworks must still use an `ALLOWED_MODELS` model via `FIREWORKS_BASE_URL` (bypassing it isn't recorded; an out-of-list model is a `MODEL_VIOLATION`). 
 
 \- Do not hardcode or cache answers; evaluation uses unseen prompt variants \- Image compressed size must not exceed 10GB — larger images are rejected before pulling 
 
@@ -93,7 +95,51 @@ Rules
 
 Scoring 
 
-1\. **Accuracy gate**: LLM-Judge evaluates each answer against the expected intent. Submissions below the accuracy threshold are excluded from the leaderboard. 2\. **Token efficiency**: submissions that pass the accuracy gate are ranked ascending by total tokens recorded by the judging proxy. Fewer tokens \= higher rank. 
+1\. **Accuracy gate**: LLM-Judge evaluates each answer against the expected intent. Submissions below the accuracy threshold are excluded from the leaderboard. 2\. **Token efficiency**: submissions that pass the accuracy gate are ranked ascending by total tokens recorded by the judging proxy — **and only Fireworks-routed tokens are recorded**, so locally-answered tasks contribute zero. Fewer tokens \= higher rank. 
+
+**Scoring — clarified (organizers):**
+
+- **The accuracy gate is 80%.** Below that you won't appear on top of the leaderboard regardless of token count.
+- There are exactly **19 fixed tasks**, so every score is **n/19**. That's why teams share identical percentages (84.2 % = 16/19, 78.9 % = 15/19, 73.7 % = 14/19 …). **16/19 = 84.2 % is the lowest passing score** — miss a 4th task and you fall to 15/19 = 78.9 %, below the gate. Practical error budget: **at most 3 wrong answers.**
+- The **LLM judge is not perfectly deterministic** run-to-run: identical code can score slightly differently. Known tradeoff, not rigging. **Keep margin above 80 %; don't sit on the boundary.**
+- **Ops tip:** your registry's download counter (GitHub Packages / Docker Hub) shows whether the graders have pulled your image yet.
+
+**Using a local model (Track 1) — practical limits**
+
+The grading environment your container runs in:
+
+| Constraint | Value |
+| :---- | :---- |
+| RAM | **4 GB** |
+| CPU | **2 vCPU** (no GPU) |
+| Fits comfortably | **2B–3B, 4-bit quantized** model |
+| 7B 4-bit | Fills the entire RAM budget — no room left for your agent code |
+| Model runtime | **None pre-installed** (no Ollama). Bundle the **weights *and* a CPU runtime** (e.g. llama.cpp / llama-cpp-python) directly in your Docker image |
+| Image size | **≤ 10 GB compressed** (unchanged) |
+
+Local open-weight models are **not** restricted to `ALLOWED_MODELS` — that list only governs calls made *through Fireworks*. Locally you may bundle any open-weight model. You still must not hardcode or cache answers to specific inputs.
+
+**Troubleshooting: why did my submission fail? (Track 1)**
+
+The Track 1 pipeline is live and scoring normally. A failed submission returns a specific status:
+
+| Status | Meaning | How to fix |
+| :---- | :---- | :---- |
+| `PULL_ERROR` | The image couldn't be pulled | Push to a **public** registry; include a **linux/amd64** manifest; verify the tag is correct and public |
+| `RUNTIME_ERROR` | Container crashed / exited non-zero / threw | Exit **0** on success; wrap each task in try/except; always write a valid results file, even on partial failure |
+| `TIMEOUT` | Exceeded the **10-minute** runtime | Deadline guard; parallelize Fireworks calls; don't let slow CPU-only local inference overrun — fall back to Fireworks under time pressure |
+| `INVALID_RESULTS_SCHEMA` | `/output/results.json` malformed or wrong shape | Emit exactly `[{"task_id","answer"}]`; validate the JSON/schema before writing |
+| `MODEL_VIOLATION` | Called a model **not** in `ALLOWED_MODELS`, or made a Fireworks call bypassing `FIREWORKS_BASE_URL` | Read model IDs from `ALLOWED_MODELS`; route every Fireworks call through `FIREWORKS_BASE_URL`. **Local open-weight models are allowed and are not a violation.** |
+| `IMAGE_TOO_LARGE` | Compressed image > 10 GB | Slim base image; 4-bit quantized local model; prune build caches/artifacts |
+| `ACCURACY_GATE_FAILED` | Below the 80 % gate | Improve answers; escalate more tasks to Fireworks / a stronger model; leave margin for judge nondeterminism |
+
+**Practice tasks (Track 1)**
+
+The organizers publish **illustrative example tasks** (found in the participant guide after *What to submit*) — **not** the real 19-task grading set — so you can validate your container's input/output handling locally before spending a real submission slot. Use them to confirm the I/O contract, schema, env-var reading, and Docker start — not to hardcode answers.
+
+**Gemma is allowed, but on-demand**
+
+Gemma is permitted, but the Gemma Fireworks models are **on-demand**: **deploy them at <https://app.fireworks.ai/models> first.** A **404 means "not deployed," not "banned."** If your routing is Gemma-first, deploy the Gemma endpoints at kickoff or those routes will 404.
 
 **Track 2: Video Captioning Agent** 
 

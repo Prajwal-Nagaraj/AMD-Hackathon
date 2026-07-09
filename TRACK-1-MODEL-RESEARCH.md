@@ -4,6 +4,25 @@
 >
 > **Confidence key:** ✅ well-corroborated across ≥2 independent sources · ⚠️ single-source / marketing / disputed · ❓ must confirm at kickoff.
 
+> **⚡ SCOPE UPDATE (Jul 9 2026 — official clarification).** A **bundled local model may now author answers, counted toward accuracy at zero Fireworks-token cost** (see the implementation plan's local-first doctrine). So **this document now governs the *Fireworks fallback path* — the minority of tasks a small local model can't clear.** Everything below (Gemma-first, the reasoning-token trap, tokenizer arbitrage, terse-output tactics) is how to make those *escalated* calls as cheap as possible. **The biggest token win is upstream of all of it: a task answered locally never spends a Fireworks token.** Two additions triggered by the clarification: **§0.5 (choosing the local model)** and the **Gemma-is-on-demand caveat** (deploy it before Gemma-first means anything).
+
+---
+
+## 0.5 Choosing the LOCAL model (the zero-token answerer)
+
+The local model is bundled in our image and run on CPU; **it is NOT restricted to `ALLOWED_MODELS`** (that list only governs Fireworks calls). Pick the strongest **2–3B, 4-bit** instruct model — the grading env is **4 GB RAM / 2 vCPU / no GPU**, so **≤ 3B** (a 7B 4-bit fills RAM with no room for agent code), served via **llama.cpp / `llama-cpp-python`** (no runtime is pre-installed).
+
+| Candidate (2–3B, Q4) | Why consider | Watch-outs |
+|---|---|---|
+| **Qwen2.5-3B-Instruct** | Strong all-rounder for its size — good instruction-following, math, and code; solid default | Confirm RAM headroom at Q4_K_M + short KV cache |
+| **Llama-3.2-3B-Instruct** | Good general/factual + summarisation; broad tooling support | Weaker at math/code than Qwen for size |
+| **Gemma-2-2B-it** | Smallest/fastest ⇒ most tasks fit the 10-min wall-clock; terse | 2B ceiling — escalate more reasoning/code |
+| **Phi-3.5-mini (3.8B)** | Punchy reasoning/code for size | **~3.8B — borderline on 4 GB RAM**; test carefully, may not fit |
+
+**Selection method (not by vibes):** run the eval harness's **local calibration** (`eval/calibrate.py`) — per category, record **(proxy-judge pass-rate, latency on 2 vCPU)** for each candidate. Choose the model that maximizes the number of categories we can answer locally while keeping the aggregate comfortably ≥ 90 % (margin over the 80 % / 16-of-19 gate) **and** finishing 19 tasks within 10 min. Q4_K_M is the usual quality/size sweet spot; the weights are ~1.5–2 GB (3B) — well under the 10 GB image cap even with the runtime bundled.
+
+> **Division of labour:** the *local* model wants breadth + speed + instruction-following (it handles sentiment, NER, summarisation, easy factual, simple code). The *Fireworks* models below are the escalation targets for what it can't clear (hard math/logic, complex debugging, obscure factual). Optimize each independently.
+
 ---
 
 ## 0. TL;DR — the three findings that change the plan
@@ -29,6 +48,8 @@ The `ALLOWED_MODELS` strings are **not hackathon-only aliases**; they resolve to
 | `gemma-4-31b-it-nvfp4` | 4-bit **NVFP4 quant** of 31B | Dense, quantized | 256K | Same as 31B; faster, ~equal quality |
 
 > ⚠️ **Nuance flagged by adversarial verification:** the blanket claim "Gemma 4 31B is a non-reasoning model" was *contested* — Gemma 4 ships a `<|think|>` reasoning mode. The reconciled truth: **Gemma 4 *can* reason but does not by default in the `-it` path**, so it behaves as the terse option *unless you trigger thinking*. **Verify at kickoff that the served `-it` endpoint does not silently emit a reasoning trace** — if it does, that changes the routing math. ❓
+
+> 🚩 **Gemma is on-demand — deploy it before Gemma-first means anything (official clarification).** The Gemma Fireworks models are **not** auto-deployed: **deploy them at <https://app.fireworks.ai/models> first.** A **404 is "not deployed," not "banned."** Our entire escalated-path doctrine is Gemma-first, so **deploy all three Gemma endpoints at kickoff** — otherwise every Gemma route 404s and we're forced onto the pricier reasoning models (`minimax-m3` / `kimi-k2p7-code`) by default. Add "deploy Gemma" to the Day-0 checklist.
 
 ---
 
@@ -186,6 +207,8 @@ Output only the function. No prose, no examples, no markdown fences.
 3. **Can `minimax-m3` thinking actually be toggled off via the Fireworks/OpenAI-compatible API** (param name)? Confirm and default it off.
 4. **Tokenizer sanity check on the real proxy:** send one fixed answer string through all 5 models; record counted tokens → validates the 262k/200k/160k vocab arbitrage on the actual scorer.
 5. Prompt-prefix caching discount on the proxy? (If none, short prompts still win — robust either way. And it kills any lingering case for caveman.)
+6. **Deploy the Gemma endpoints** (app.fireworks.ai/models) and confirm all three respond (a 404 = not deployed). Gemma-first collapses to the pricier reasoning models without this. **Highest-priority ops step.**
+7. **Local model reality-check on a 4 GB / 2 vCPU box:** which 2–3B Q4 candidate (§0.5) gives the best per-category pass-rate, and does it finish 19 tasks within 10 min on CPU? This decides how many categories we answer for free vs. escalate.
 
 ---
 
