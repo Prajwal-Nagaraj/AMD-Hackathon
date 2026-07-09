@@ -1,0 +1,212 @@
+[
+  {
+    "task_id": "t41",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The hotel room was spotless and the staff couldn't have been more welcoming. Easily the best stay I've had in years.\"",
+    "answer": "Sentiment: Positive. The review uses unambiguously enthusiastic language ('spotless', 'couldn't have been more welcoming', 'best stay I've had in years'), indicating high satisfaction with both the room and service."
+  },
+  {
+    "task_id": "t42",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Delivery took three weeks longer than promised and the item arrived damaged. I'll never order from this company again.\"",
+    "answer": "Sentiment: Negative. The review describes two concrete failures—delayed delivery and damaged goods—and the declarative statement 'I'll never order from this company again' signals strong, lasting dissatisfaction."
+  },
+  {
+    "task_id": "t43",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The software does what it says on the tin. Installation was straightforward and I haven't had any issues.\"",
+    "answer": "Sentiment: Positive (mildly). The review confirms the product meets expectations and has been reliable, with no issues reported—while understated, this constitutes a satisfied, endorsing tone."
+  },
+  {
+    "task_id": "t44",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following tweet as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Just tried the new menu at @BistroNova. The pasta was overcooked and the wait was over an hour. Disappointing for the price.\"",
+    "answer": "Sentiment: Negative. The tweet identifies two specific complaints—overcooked food and an excessively long wait—and the closing phrase 'Disappointing for the price' makes the negative evaluation explicit."
+  },
+  {
+    "task_id": "t45",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following customer comment as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"I guess the product is fine. It works as expected but nothing about it really stands out.\"",
+    "answer": "Sentiment: Neutral. The comment confirms basic functionality but the hedging language ('I guess', 'fine', 'nothing really stands out') signals neither satisfaction nor dissatisfaction—just mild indifference."
+  },
+  {
+    "task_id": "t46",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following movie review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"An absolute masterpiece. The cinematography was breathtaking and the performances were the most moving I've seen in a decade.\"",
+    "answer": "Sentiment: Positive. Superlative praise—'absolute masterpiece', 'breathtaking', 'most moving I've seen in a decade'—leaves no ambiguity; this is an enthusiastic, unqualified endorsement."
+  },
+  {
+    "task_id": "t47",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following employee feedback as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Management is consistently unavailable, deadlines keep shifting without explanation, and morale on the team is at an all-time low.\"",
+    "answer": "Sentiment: Negative. All three claims—management unavailability, unexplained deadline changes, and record-low morale—are concrete organisational failures described without any mitigating positive observation."
+  },
+  {
+    "task_id": "t48",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following product review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The headphones have great sound quality but the ear cushions started peeling after two months. Mixed feelings overall.\"",
+    "answer": "Sentiment: Mixed / Neutral overall. The reviewer explicitly states 'mixed feelings', reflecting genuine tension between a strong positive (sound quality) and a notable negative (premature material degradation); the net sentiment is ambivalent."
+  },
+  {
+    "task_id": "t49",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following news headline as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Central bank holds interest rates steady amid economic uncertainty.\"",
+    "answer": "Sentiment: Neutral. The headline reports a factual policy decision without evaluative language; 'amid economic uncertainty' adds context but does not frame the decision as good or bad."
+  },
+  {
+    "task_id": "t50",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following app store review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"This app has transformed how I manage my finances. Intuitive interface, helpful insights, and no annoying ads. Five stars!\"",
+    "answer": "Sentiment: Positive. The review uses transformative language ('transformed'), lists specific benefits without any complaints, and closes with a five-star rating—a clear and enthusiastic endorsement."
+  },
+  {
+    "task_id": "t51",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following comment as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The conference was held in a convenient venue and the schedule was published on time.\"",
+    "answer": "Sentiment: Neutral (mildly positive). The comment notes two logistical positives ('convenient venue', 'on time') but the tone is factual and matter-of-fact, lacking the emotional engagement that would indicate strong positivity."
+  },
+  {
+    "task_id": "t52",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following book review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"I struggled to get past the first fifty pages. The plot is predictable, the dialogue stilted, and the characters are utterly forgettable.\"",
+    "answer": "Sentiment: Negative. The reviewer reports failing to engage with the book and delivers three specific, unequivocal criticisms ('predictable', 'stilted', 'utterly forgettable') with no redeeming observations."
+  },
+  {
+    "task_id": "t53",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following social media post as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Can't believe my flight got cancelled again. Second time this month with the same airline. Absolutely done.\"",
+    "answer": "Sentiment: Negative. Repeated service failure ('again', 'second time this month') and the emphatic finality of 'Absolutely done' signal strong frustration and a loss of trust in the airline."
+  },
+  {
+    "task_id": "t54",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following product description as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The blender comes in three colours and has a 1200W motor.\"",
+    "answer": "Sentiment: Neutral. This is a purely factual product specification with no evaluative language, opinion, or emotional content—it describes attributes without appraising them."
+  },
+  {
+    "task_id": "t55",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following gym review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The equipment is modern and the classes are well-run, but the changing rooms are almost always overcrowded and poorly maintained.\"",
+    "answer": "Sentiment: Mixed / Neutral overall. Two clear positives (modern equipment, well-run classes) are directly offset by two clear negatives (overcrowding and poor maintenance of changing rooms), yielding an ambivalent net sentiment."
+  },
+  {
+    "task_id": "t56",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following support ticket excerpt as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Your support agent resolved my issue in under five minutes and followed up the next day to make sure everything was still working. Exceptional service.\"",
+    "answer": "Sentiment: Positive. The comment highlights speed of resolution and proactive follow-up—both exceeding typical expectations—and the closing label 'Exceptional service' makes the strongly positive evaluation explicit."
+  },
+  {
+    "task_id": "t57",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following restaurant review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The food was cold, the portion sizes were tiny, and our waiter seemed annoyed at having to take our order.\"",
+    "answer": "Sentiment: Negative. All three dimensions of the dining experience mentioned—food temperature, portion size, and staff attitude—are criticised without any positive counterpoint."
+  },
+  {
+    "task_id": "t58",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following earnings call quote as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Q3 revenue came in at $4.2 billion, broadly in line with analyst expectations.\"",
+    "answer": "Sentiment: Neutral. The statement reports a financial result that met (but did not exceed) forecasts; 'broadly in line' is a neutral, non-evaluative phrase in financial reporting context indicating neither outperformance nor underperformance."
+  },
+  {
+    "task_id": "t59",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following email excerpt as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"After waiting six weeks for a response, I still have no clarity on my refund and your customer service team has been completely unresponsive.\"",
+    "answer": "Sentiment: Negative. The extended wait time (six weeks), unresolved issue, and the strong adverb 'completely unresponsive' paint a picture of deep frustration and failed customer service."
+  },
+  {
+    "task_id": "t60",
+    "category": "sentiment_classification",
+    "complexity": "standard",
+    "prompt": "Classify the sentiment of the following travel blog excerpt as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Kyoto in autumn is simply magical — the temples glowing copper and crimson, the crisp air, the serenity. I left a little piece of my heart there.\"",
+    "answer": "Sentiment: Positive. Evocative, sensory language ('magical', 'glowing copper and crimson', 'serenity') combined with the emotionally resonant closing metaphor ('left a little piece of my heart') conveys deep, genuine admiration."
+  },
+  {
+    "task_id": "t91",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "Classify the predominant sentiment of the following review as Positive, Negative, or Neutral, identify any secondary conflicting sentiment, and explain how sarcasm or irony influences your classification: \"Oh, absolutely brilliant — the app crashed four times before I could even finish signing up, and when I finally got in, the 'premium' features were hidden behind another paywall. Truly a masterclass in user experience design. Can't wait to recommend it to all my enemies.\"",
+    "answer": "Predominant sentiment: Negative. Secondary conflicting sentiment: None genuine—the surface-level positive language is entirely sarcastic. Sarcasm analysis: The review is heavily ironic throughout. 'Oh, absolutely brilliant', 'Truly a masterclass in user experience design', and 'Can't wait to recommend it to all my enemies' are all inverted compliments—each positive phrase is deployed to mock, not praise. The sarcasm is signalled by the immediate juxtaposition with concrete negative experiences (four crashes before signup, paywalled premium features) and the absurdist punchline ('recommend to all my enemies'). Correctly classifying this review as negative requires detecting that the evaluative language is performatively reversed, which distinguishes it from genuine praise. The sentiment polarity of the underlying content—frustration, disappointment, and mockery—is unambiguously negative."
+  },
+  {
+    "task_id": "t92",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "The following passage contains sentiment expressed toward two distinct subjects. Identify each subject, classify the sentiment toward each separately as Positive, Negative, or Neutral, and justify each classification in one sentence: \"The venue itself was spectacular — a beautifully restored Victorian theatre with impeccable acoustics and an atmosphere that felt genuinely historic. The performance, however, was a joyless slog: the lead actor seemed to be reading from a script, the pacing was funereal, and the director's choices were baffling at best.\"",
+    "answer": "Subject 1 — The venue: Sentiment: Positive. The language is unambiguously laudatory ('spectacular', 'beautifully restored', 'impeccable acoustics', 'genuinely historic'), with no qualification or criticism. Subject 2 — The performance: Sentiment: Negative. Every evaluative term is pejorative ('joyless slog', 'seemed to be reading from a script', 'funereal', 'baffling'), and the absence of any redeeming observation confirms a wholly negative assessment."
+  },
+  {
+    "task_id": "t93",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "Classify the overall sentiment of the following earnings call excerpt as Positive, Negative, or Neutral. Then identify any forward-looking language and explain whether it shifts the sentiment in a more optimistic or pessimistic direction: \"Q2 revenue came in at $3.1 billion, down 8% year-on-year, and we missed consensus EBITDA estimates by approximately 12%. Supply chain disruptions and a weaker-than-anticipated consumer environment were the primary headwinds. That said, our order backlog has grown 34% since January, and early indicators from our new product line suggest meaningful margin recovery in H2. We remain cautiously optimistic about returning to growth by Q1 next year.\"",
+    "answer": "Overall sentiment: Mixed, leaning slightly Negative in the present tense but shifting toward cautious optimism. Current-period data is clearly negative: revenue down 8% YoY, EBITDA missed by 12%, with identifiable headwinds. Forward-looking language: 'order backlog has grown 34%', 'early indicators suggest meaningful margin recovery in H2', and 'cautiously optimistic about returning to growth by Q1 next year' all project an improving trajectory. These forward-looking statements shift the overall sentiment meaningfully toward optimism—the word 'cautiously' acknowledges residual uncertainty, preventing outright positive classification. In financial communication analysis, such a structure (weak present / improving outlook) is a common rhetorical pattern designed to temper negative results while sustaining investor confidence; the dominant emotional tone at the close of the excerpt is guarded optimism."
+  },
+  {
+    "task_id": "t94",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "The following three statements are about the same product. Classify the sentiment of each individually, then provide an overall aggregated sentiment label with a confidence level (High, Medium, or Low) and explain what drives the uncertainty: (1) \"The build quality is exceptional — feels premium in the hand.\" (2) \"Battery life is mediocre; I need to charge it twice a day.\" (3) \"It does what it claims, nothing more.\"",
+    "answer": "Statement (1): Positive. 'Exceptional' and 'premium in the hand' are unambiguous praise for build quality. Statement (2): Negative. 'Mediocre' and needing to charge twice daily indicate performance well below expectation for battery life. Statement (3): Neutral. The statement confirms adequacy without enthusiasm or dissatisfaction—a classic neither-positive-nor-negative assessment. Aggregated sentiment: Neutral — Confidence: Medium. The three statements split cleanly as Positive / Negative / Neutral, with each dimension carrying roughly equal weight in the absence of context about which attributes matter most to the reviewer. The primary driver of uncertainty is the lack of weighting information: if battery life is the reviewer's top priority, the aggregate skews Negative; if build quality and reliability matter more, it skews Positive. At face value, no single sentiment dominates, yielding a medium-confidence Neutral overall."
+  },
+  {
+    "task_id": "t95",
+    "category": "sentiment_classification",
+    "complexity": "complex",
+    "prompt": "Classify the sentiment of the following social media thread as Positive, Negative, or Neutral at the thread level. Then identify the single most emotionally intense statement within it and explain what linguistic features (word choice, punctuation, structure) make it the most intense: \"[Post] Just got my results — I passed the bar exam on my first attempt!! [Reply 1] That's incredible, congratulations! You worked so hard for this. [Reply 2] Amazing! Does this mean you're moving to London? [Reply 3] I can't believe it, I'm so proud of you. [Reply 4] Wait, did you actually?? I'm literally shaking reading this.\"",
+    "answer": "Thread-level sentiment: Positive. All five messages—the original post and all four replies—express joy, pride, and celebration; there is no negative or conflicting sentiment present. Most emotionally intense statement: Reply 4 — 'Wait, did you actually?? I'm literally shaking reading this.' Linguistic features driving its intensity: (1) Rhetorical question ('Wait, did you actually??') — the fragmented, incredulous structure signals shock and disbelief, amplifying emotional response. (2) Double question mark ('??') — non-standard punctuation emphasises astonishment beyond what a single '?' would convey. (3) Physical embodiment ('I'm literally shaking') — reporting a visceral bodily reaction elevates the emotional register above cognitive responses like 'incredible' or 'congratulations'; it implies the news is so impactful it has caused a physical response. (4) The word 'literally' — used for genuine emphasis here, reinforcing the claim of a physical reaction rather than metaphorical excitement. Together, these features make this reply the most emotionally charged expression of surprise and joy in the thread."
+  },
+  {
+    "task_id": "t111",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "This film was interesting. What do you think?",
+    "answer": "The sentiment of 'This film was interesting' is ambiguous / Neutral. 'Interesting' is a notoriously non-committal adjective that can mean genuinely engaging, thought-provoking, or merely unusual—and is often used as a polite hedge when the speaker does not want to express a stronger opinion. Without more context (tone, body language, what came before or after), it cannot be reliably classified as Positive or Negative. Regarding 'What do you think?'—as an AI, I don't watch films, but if you share more about the film or what specifically interested you, I can help classify the sentiment of a fuller review or discuss the film further."
+  },
+  {
+    "task_id": "t112",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "My colleague always arrives late, forgets to reply to emails, and then gets praised in all-hands meetings. How does that make you feel?",
+    "answer": "The sentiment expressed in your description of your colleague is Negative—specifically, the language ('always', 'forgets', combined with the contrast of receiving public praise) reflects frustration and a perceived injustice. The three behaviours described are framed as consistent failures, and the juxtaposition with being praised suggests resentment at the perceived disconnect between performance and recognition. Regarding 'How does that make you feel?'—I am an AI and do not experience feelings. However, most people in your situation would likely feel frustrated, demotivated, or unfairly treated. If you'd like, I can help you think through how to address the situation constructively."
+  },
+  {
+    "task_id": "t113",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "Read this: 'The service was fine.' Good review or bad review?",
+    "answer": "Classification: Weakly Negative to Neutral, leaning toward a poor review in context. 'Fine' is a low-bar word that signals bare adequacy rather than satisfaction. In customer review contexts, research into sentiment analysis consistently shows that 'fine' and similar faint-praise words ('okay', 'decent', 'acceptable') correlate with 2–3 star ratings rather than 4–5 stars. It is not an actively bad review, but it is not a good one either—it signals that the service met the minimum threshold but left no positive impression. For a business, this is a warning sign: a customer who only found the service 'fine' is unlikely to return or recommend the business."
+  },
+  {
+    "task_id": "t114",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "My friend said the new restaurant downtown is 'not bad at all.' Should I go?",
+    "answer": "Sentiment of 'not bad at all': Mildly Positive. The double negative ('not bad') combined with 'at all' is actually a genuine positive in colloquial English—it typically means the speaker was pleasantly surprised or found it noticeably good, not merely adequate. It's roughly equivalent to 'pretty good' or 'actually quite good', and is often used with a slight note of surprise. Should you go? Based on this alone, it sounds like a reasonably positive recommendation—your friend wouldn't typically say 'not bad at all' about somewhere they didn't enjoy. That said, 'not bad at all' is not the same as enthusiastic praise, so it may be worth asking your friend what specifically they liked (food, atmosphere, service) to see if it matches your preferences."
+  },
+  {
+    "task_id": "t115",
+    "category": "sentiment_classification",
+    "complexity": "unclear",
+    "prompt": "Here's a customer comment: 'I've used better.' What does that tell us?",
+    "answer": "Sentiment: Negative (comparative dissatisfaction). 'I've used better' is an implicit negative—it does not criticise the product directly but places it below a reference standard the customer has previously experienced. It tells us: (1) The customer was not impressed and has higher expectations based on prior experience with competing products. (2) The product likely met basic functional requirements (they were able to use it), but failed to meet the customer's quality or performance bar. (3) The comment is short and lacks enthusiasm—customers who are satisfied typically volunteer specific praise; the terseness here signals indifference or mild disappointment. For a business, this is a signal of churn risk: the customer is unlikely to reorder and may switch to whichever alternative they consider 'better'."
+  }
+]

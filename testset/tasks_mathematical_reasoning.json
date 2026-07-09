@@ -1,0 +1,212 @@
+[
+  {
+    "task_id": "t21",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A train travels 240 km at 80 km/h, then 150 km at 50 km/h. What is the total journey time in hours and minutes?",
+    "answer": "Leg 1: 240 ÷ 80 = 3 hours. Leg 2: 150 ÷ 50 = 3 hours. Total = 6 hours 0 minutes."
+  },
+  {
+    "task_id": "t22",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A shop sells a jacket for £120 after applying a 25% discount. What was the original price before the discount?",
+    "answer": "£120 = 75% of original price. Original = 120 ÷ 0.75 = £160."
+  },
+  {
+    "task_id": "t23",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "If you invest £5,000 at an annual compound interest rate of 6%, how much will you have after 10 years? Round to the nearest pound.",
+    "answer": "A = 5000 × (1.06)^10 = 5000 × 1.79084770 ≈ £8,954."
+  },
+  {
+    "task_id": "t24",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A recipe for 4 people requires 320 g of flour, 2 eggs, and 200 ml of milk. How much of each ingredient is needed to make the recipe for 7 people?",
+    "answer": "Scale factor = 7 ÷ 4 = 1.75. Flour: 320 × 1.75 = 560 g. Eggs: 2 × 1.75 = 3.5 eggs. Milk: 200 × 1.75 = 350 ml."
+  },
+  {
+    "task_id": "t25",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "Three workers can paint a house in 12 days. How many days would it take 9 workers to paint the same house, assuming constant work rate?",
+    "answer": "Total work = 3 × 12 = 36 worker-days. With 9 workers: 36 ÷ 9 = 4 days."
+  },
+  {
+    "task_id": "t26",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A car's fuel efficiency is 14 km per litre. Petrol costs £1.65 per litre. How much does it cost in fuel to drive 490 km?",
+    "answer": "Litres needed: 490 ÷ 14 = 35 litres. Cost: 35 × £1.65 = £57.75."
+  },
+  {
+    "task_id": "t27",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "In a class of 32 students, 75% passed their exam. Of those who passed, 40% scored above 85%. How many students scored above 85%?",
+    "answer": "Students who passed: 32 × 0.75 = 24. Students above 85%: 24 × 0.40 = 9.6 ≈ 9 or 10 students (9 if fractional students are rounded down; contextually 9.6 implies approximately 10 if rounded to nearest whole number—the most natural answer is 9 or 10, but strictly 9.6 which rounds to 10)."
+  },
+  {
+    "task_id": "t28",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A company's revenue grew from £2.4 million to £3.18 million over two years. What was the percentage increase over the two-year period?",
+    "answer": "Increase = £3.18m − £2.4m = £0.78m. Percentage increase = (0.78 ÷ 2.4) × 100 = 32.5%."
+  },
+  {
+    "task_id": "t29",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A cylindrical water tank has a radius of 3 m and a height of 5 m. How many litres of water can it hold? (1 m³ = 1,000 litres, use π ≈ 3.14159)",
+    "answer": "Volume = π × r² × h = 3.14159 × 9 × 5 = 141.372 m³. Litres = 141.372 × 1,000 = 141,372 litres."
+  },
+  {
+    "task_id": "t30",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "Alice is three times as old as Bob. In 8 years, Alice will be twice as old as Bob. How old are they now?",
+    "answer": "Let Bob = b, Alice = 3b. In 8 years: 3b + 8 = 2(b + 8) → 3b + 8 = 2b + 16 → b = 8. Bob is 8, Alice is 24."
+  },
+  {
+    "task_id": "t31",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A laptop is listed at $950. There is a 12% sales tax and a $45 delivery fee. What is the total cost?",
+    "answer": "Tax: $950 × 0.12 = $114. Total: $950 + $114 + $45 = $1,109."
+  },
+  {
+    "task_id": "t32",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A population of bacteria doubles every 3 hours. Starting with 500 bacteria, how many will there be after 24 hours?",
+    "answer": "Number of doublings in 24 hours: 24 ÷ 3 = 8. Population = 500 × 2⁸ = 500 × 256 = 128,000 bacteria."
+  },
+  {
+    "task_id": "t33",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "An investor buys 200 shares at $45 each and later sells them at $63 each. After paying a flat brokerage fee of $50, what is the net profit?",
+    "answer": "Buy cost: 200 × $45 = $9,000. Sell revenue: 200 × $63 = $12,600. Gross profit: $12,600 − $9,000 = $3,600. Net profit: $3,600 − $50 = $3,550."
+  },
+  {
+    "task_id": "t34",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A rectangular garden measures 18 m by 12 m. A 1.5 m wide path runs around the outside of it. What is the total area including the path?",
+    "answer": "Outer dimensions: (18 + 2×1.5) × (12 + 2×1.5) = 21 × 15 = 315 m²."
+  },
+  {
+    "task_id": "t35",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "If 5 apples and 3 oranges cost £4.45, and 2 apples and 6 oranges cost £4.30, what is the price of one apple and one orange?",
+    "answer": "Equations: 5a + 3o = 4.45 … (1); 2a + 6o = 4.30 … (2). Multiply (1) by 2: 10a + 6o = 8.90; subtract (2): 8a = 4.60 → a = £0.575. Sub into (1): 5(0.575) + 3o = 4.45 → 3o = 4.45 − 2.875 = 1.575 → o = £0.525. Apple = £0.575 (≈ 58p), Orange = £0.525 (≈ 53p)."
+  },
+  {
+    "task_id": "t36",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A salesperson earns a base salary of £2,200 per month plus 4% commission on sales. In a month where they made £38,500 in sales, what was their total earnings?",
+    "answer": "Commission: £38,500 × 0.04 = £1,540. Total: £2,200 + £1,540 = £3,740."
+  },
+  {
+    "task_id": "t37",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A flight departs at 21:45 local time and lands 14 hours 35 minutes later. The destination is 5.5 hours ahead. What is the local arrival time at the destination?",
+    "answer": "Departure + flight time: 21:45 + 14h35m = 36h20m from midnight = next day 12:20 (origin time). Destination is 5.5 hours ahead: 12:20 + 5h30m = 17:50 local destination time."
+  },
+  {
+    "task_id": "t38",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A data centre uses 850 kWh of electricity per day. Electricity costs £0.28 per kWh. What is the annual electricity cost?",
+    "answer": "Daily cost: 850 × £0.28 = £238. Annual cost: £238 × 365 = £86,870."
+  },
+  {
+    "task_id": "t39",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "A mixture is made by combining 3 parts water to 1 part cordial. If you want to make 2.4 litres of the mixture, how many millilitres of cordial do you need?",
+    "answer": "Total parts = 4. Cordial = 1/4 of 2.4 litres = 0.6 litres = 600 ml."
+  },
+  {
+    "task_id": "t40",
+    "category": "mathematical_reasoning",
+    "complexity": "standard",
+    "prompt": "On a map, the scale is 1:250,000. Two cities are 8.4 cm apart on the map. What is the actual distance between them in kilometres?",
+    "answer": "Actual distance = 8.4 × 250,000 = 2,100,000 cm = 21,000 m = 21 km."
+  },
+  {
+    "task_id": "t86",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A company has fixed costs of £180,000 per month and a variable cost of £12 per unit. It sells each unit for £20. (a) What is the break-even quantity? (b) If the company wants to achieve a profit of £60,000 per month, how many units must it sell? (c) If a competitor forces the selling price down to £17, by how much must the variable cost per unit be reduced to maintain the same £60,000 profit at the same sales volume from part (b)?",
+    "answer": "(a) Contribution margin = £20 − £12 = £8/unit. Break-even = £180,000 ÷ £8 = 22,500 units. (b) Required units = (£180,000 + £60,000) ÷ £8 = £240,000 ÷ £8 = 30,000 units. (c) At 30,000 units and new price £17: Revenue = £510,000. Required profit = £60,000. Total costs allowed = £510,000 − £60,000 = £450,000. Fixed costs = £180,000. Variable costs allowed = £450,000 − £180,000 = £270,000. New variable cost per unit = £270,000 ÷ 30,000 = £9/unit. Reduction = £12 − £9 = £3 per unit."
+  },
+  {
+    "task_id": "t87",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A portfolio consists of three assets: Asset A worth £50,000 with an annual return of 8%, Asset B worth £30,000 with an annual return of 5%, and Asset C worth £20,000 with an annual return of -3%. (a) What is the weighted average return of the portfolio? (b) After one year, if all returns are reinvested, what is the total portfolio value? (c) What proportion of the portfolio's value does Asset A represent after one year?",
+    "answer": "(a) Total = £100,000. Weighted return = (50,000×0.08 + 30,000×0.05 + 20,000×(−0.03)) ÷ 100,000 = (4,000 + 1,500 − 600) ÷ 100,000 = 4,900 ÷ 100,000 = 4.9%. (b) Asset A after 1 year: £50,000 × 1.08 = £54,000. Asset B: £30,000 × 1.05 = £31,500. Asset C: £20,000 × 0.97 = £19,400. Total = £54,000 + £31,500 + £19,400 = £104,900. (c) Asset A proportion = £54,000 ÷ £104,900 ≈ 51.48%."
+  },
+  {
+    "task_id": "t88",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A survey of 500 people found that 60% drink coffee, 45% drink tea, and 25% drink both. (a) Using a Venn diagram approach, how many people drink neither coffee nor tea? (b) Given that a randomly selected person drinks coffee, what is the probability they also drink tea? (c) Are coffee-drinking and tea-drinking independent events in this dataset? Show your working.",
+    "answer": "(a) Coffee only: 60%−25% = 35% → 175 people. Tea only: 45%−25% = 20% → 100 people. Both: 25% → 125 people. At least one = 175+100+125 = 400. Neither = 500−400 = 100 people. (b) P(tea | coffee) = P(both) ÷ P(coffee) = 0.25 ÷ 0.60 = 5/12 ≈ 0.4167 (41.67%). (c) For independence: P(coffee ∩ tea) must equal P(coffee) × P(tea) = 0.60 × 0.45 = 0.27. Actual P(both) = 0.25 ≠ 0.27. Therefore, coffee-drinking and tea-drinking are NOT independent events in this dataset. The probability of drinking both is slightly lower than if they were independent, suggesting a mild negative association."
+  },
+  {
+    "task_id": "t89",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A projectile is launched horizontally from the top of a 80 m cliff at 25 m/s. Ignoring air resistance and using g = 9.8 m/s²: (a) How long does it take to hit the ground? (b) How far horizontally from the base of the cliff does it land? (c) What is the magnitude and direction of the velocity at the moment of impact? Give the angle to the nearest degree.",
+    "answer": "(a) Vertical: h = ½gt² → 80 = ½ × 9.8 × t² → t² = 80/4.9 ≈ 16.327 → t ≈ 4.04 s. (b) Horizontal distance = 25 × 4.04 ≈ 101 m. (c) Horizontal velocity component: vₓ = 25 m/s (constant). Vertical velocity component at impact: vᵧ = g × t = 9.8 × 4.04 ≈ 39.6 m/s (downward). Magnitude: v = √(25² + 39.6²) = √(625 + 1568.2) = √2193.2 ≈ 46.8 m/s. Angle below horizontal: θ = arctan(39.6/25) = arctan(1.584) ≈ 58° below horizontal."
+  },
+  {
+    "task_id": "t90",
+    "category": "mathematical_reasoning",
+    "complexity": "complex",
+    "prompt": "A data centre operator must choose between two server configurations for a 5-year contract. Option A costs £120,000 upfront with £8,000 annual maintenance. Option B costs £60,000 upfront with £22,000 annual maintenance but requires a £15,000 replacement at the end of year 3. Using a discount rate of 6% per annum, calculate the Net Present Value (NPV) of costs for each option and determine which is cheaper in present-value terms. (Hint: PV = C / (1+r)^t)",
+    "answer": "Discount factors at 6%: Y1=0.9434, Y2=0.8900, Y3=0.8396, Y4=0.7921, Y5=0.7473. Option A — Upfront: £120,000 (t=0). Maintenance PV: 8,000×(0.9434+0.8900+0.8396+0.7921+0.7473) = 8,000×4.2124 = £33,699. Total NPV(A) = £120,000 + £33,699 = £153,699. Option B — Upfront: £60,000 (t=0). Maintenance PV: 22,000×4.2124 = £92,673. Replacement at Y3: 15,000×0.8396 = £12,594. Total NPV(B) = £60,000 + £92,673 + £12,594 = £165,267. Conclusion: Option A (NPV ≈ £153,699) is cheaper in present-value terms than Option B (NPV ≈ £165,267) by approximately £11,568."
+  },
+  {
+    "task_id": "t106",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "I have £10,000. What should I do with it? I'm thinking about the future.",
+    "answer": "This is a financial planning question rather than a pure mathematical one—no single 'correct' calculation applies without knowing your goals, timeline, and risk tolerance. That said, here's a mathematical framing of the key options: (1) Emergency fund (no return, full liquidity): If you don't already have 3–6 months of expenses saved, this should come first. (2) High-interest savings account (e.g., 5% AER): After 5 years: £10,000 × (1.05)^5 ≈ £12,763. (3) Stocks & Shares ISA (historical average ~7% annually): After 10 years: £10,000 × (1.07)^10 ≈ £19,672; after 20 years ≈ £38,697. (4) Paying down high-interest debt (e.g., 20% APR credit card): The guaranteed 'return' of eliminating that debt is equivalent to a 20% risk-free annual return. Key principle: the longer your time horizon and the higher the interest/return rate, compound growth makes a dramatic difference. What are your goals and timeline? That will determine the most mathematically appropriate choice."
+  },
+  {
+    "task_id": "t107",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "Is 15% of 200 more than 25% of 100? Also which is the better deal?",
+    "answer": "15% of 200 = 0.15 × 200 = 30. 25% of 100 = 0.25 × 100 = 25. Yes, 15% of 200 (= 30) is more than 25% of 100 (= 25). As for 'which is the better deal'—that depends on what is being discounted or offered. If these are discounts on the respective prices: a £30 saving on a £200 item = 15% off £200; a £25 saving on a £100 item = 25% off £100. The £100 item has a higher percentage discount (25% vs 15%), but the absolute saving is larger on the £200 item (£30 vs £25). 'Better deal' depends on your frame: higher percentage saved → the £100 item; higher absolute saving → the £200 item."
+  },
+  {
+    "task_id": "t108",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "Work out the numbers for a small business selling handmade candles. I make about 50 a week.",
+    "answer": "To work out the full numbers I'd need costs and pricing, but here's a framework with illustrative assumptions—adjust the figures to match your actuals: Production (per candle, example): Wax: £1.20, Wick: £0.10, Fragrance/dye: £0.40, Jar/container: £0.80, Label/packaging: £0.30 → Total materials per candle ≈ £2.80. Weekly materials cost: 50 × £2.80 = £140. Selling price example (£9.99 per candle): Weekly revenue: 50 × £9.99 = £499.50. Gross profit: £499.50 − £140 = £359.50 per week. Annual gross profit: ≈ £18,694. You'd then subtract fixed overheads (tools, website, market stall fees, insurance, etc.) to get net profit. What are your actual material costs and selling price? I can run the precise numbers for you."
+  },
+  {
+    "task_id": "t109",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "My salary is £35,000. After tax and everything, what do I actually take home? I'm in the UK.",
+    "answer": "Estimated UK take-home pay for a £35,000 salary (2024/25 tax year, standard personal allowance £12,570, no other deductions): Income tax: (£35,000 − £12,570) = £22,430 taxable. Basic rate (20%) on all £22,430 = £4,486. National Insurance (Class 1): 8% on earnings between £12,570 and £35,000 = 8% × £22,430 = £1,794. Gross deductions: £4,486 + £1,794 = £6,280. Annual take-home: £35,000 − £6,280 ≈ £28,720. Monthly take-home: ≈ £2,393. Note: This excludes pension contributions (e.g., auto-enrolment at 5% employee = −£1,750/year) and assumes no student loan, benefits, or other deductions. With a 5% pension contribution, monthly take-home ≈ £2,247."
+  },
+  {
+    "task_id": "t110",
+    "category": "mathematical_reasoning",
+    "complexity": "unclear",
+    "prompt": "How long would it take to pay off a £200,000 mortgage? I don't know the interest rate yet.",
+    "answer": "The payoff time depends critically on the interest rate and monthly payment, so here's a table of indicative repayment terms using the standard mortgage formula (monthly payment M = P·r(1+r)ⁿ / ((1+r)ⁿ−1)) for a £200,000 repayment mortgage at different rates and terms: At 3% over 25 years: monthly payment ≈ £948. At 4.5% over 25 years: monthly payment ≈ £1,112. At 6% over 25 years: monthly payment ≈ £1,289. At 6% over 30 years: monthly payment ≈ £1,199. Total interest paid grows significantly with rate and term: at 4.5% over 25 years you'd pay ≈ £133,600 in interest on top of the £200,000 capital. Once you know your rate, I can calculate the exact monthly payment and total cost for any term you're considering."
+  }
+]
