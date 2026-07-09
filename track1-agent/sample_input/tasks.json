@@ -1,0 +1,66 @@
+[
+  {
+    "task_id": "t1",
+    "prompt": "The following Python function should return the area of a rectangle, but it returns the wrong value. Identify the bug and provide the corrected code.\n\n```python\ndef rectangle_area(width, height):\n    return width + height\n```"
+  },
+  {
+    "task_id": "t2",
+    "prompt": "This Python function should return the sum of all integers from 1 to n inclusive, but it returns an incorrect result. Find and fix the bug.\n\n```python\ndef sum_to_n(n):\n    total = 0\n    for i in range(n):\n        total += i\n    return total\n```"
+  },
+  {
+    "task_id": "t3",
+    "prompt": "Write a Python function named `add(a, b)` that returns the sum of its two numeric arguments. Return only the function."
+  },
+  {
+    "task_id": "t4",
+    "prompt": "Write a Python function named `is_even(n)` that returns True if the integer n is even and False otherwise. Return only the function."
+  },
+  {
+    "task_id": "t5",
+    "prompt": "What is photosynthesis and how does it enable plants to produce energy?"
+  },
+  {
+    "task_id": "t6",
+    "prompt": "Explain the difference between RAM and ROM in a computer system."
+  },
+  {
+    "task_id": "t7",
+    "prompt": "Tom is taller than Sara. Sara is taller than Ben. Who is the shortest?"
+  },
+  {
+    "task_id": "t8",
+    "prompt": "All roses are flowers. All flowers need water. Based only on these statements, does a rose need water? Answer Yes or No."
+  },
+  {
+    "task_id": "t9",
+    "prompt": "A train travels 240 km at 80 km/h, then 150 km at 50 km/h. What is the total journey time in hours and minutes?"
+  },
+  {
+    "task_id": "t10",
+    "prompt": "A shop sells a jacket for £120 after applying a 25% discount. What was the original price before the discount?"
+  },
+  {
+    "task_id": "t11",
+    "prompt": "Identify the named entities in the following sentence and label each as person, organization, location, or date: Barack Obama was born in Hawaii."
+  },
+  {
+    "task_id": "t12",
+    "prompt": "Extract and label all named entities (person, organization, location, date) from this text: Sundar Pichai became CEO of Google in 2015."
+  },
+  {
+    "task_id": "t13",
+    "prompt": "Classify the sentiment of the following review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"The hotel room was spotless and the staff couldn't have been more welcoming. Easily the best stay I've had in years.\""
+  },
+  {
+    "task_id": "t14",
+    "prompt": "Classify the sentiment of the following review as Positive, Negative, or Neutral, and justify your reasoning in one sentence: \"Delivery took three weeks longer than promised and the item arrived damaged. I'll never order from this company again.\""
+  },
+  {
+    "task_id": "t15",
+    "prompt": "Summarise the following passage in exactly one sentence: \"The Amazon rainforest, often referred to as the 'lungs of the Earth', spans over 5.5 million square kilometres across nine countries in South America. It is home to an estimated 10% of all species on Earth, including more than 40,000 plant species, 1,300 bird species, and 3,000 types of fish. The forest plays a critical role in regulating the global climate by absorbing vast quantities of carbon dioxide and releasing oxygen. However, deforestation driven by agriculture, logging, and infrastructure development has destroyed roughly 17% of the forest over the past five decades, raising urgent concerns among scientists about tipping points beyond which the forest could transition to savannah.\""
+  },
+  {
+    "task_id": "t16",
+    "prompt": "Condense the following paragraph into a single bullet-point list of no more than four key facts: \"Blockchain is a distributed ledger technology in which data is stored in linked blocks, each cryptographically secured and time-stamped. Once a block is added to the chain it cannot be altered without changing all subsequent blocks, making the record tamper-resistant. The technology underpins cryptocurrencies like Bitcoin and Ethereum but is also being explored for use in supply-chain management, healthcare records, and voting systems. Its decentralised nature means no single entity controls the ledger, which can improve transparency but also raises regulatory challenges.\""
+  }
+]

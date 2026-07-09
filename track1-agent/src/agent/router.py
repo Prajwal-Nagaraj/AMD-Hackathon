@@ -27,7 +27,11 @@ _BUG_WORDS_RE = re.compile(
     r"\b(bug|fix|error|exception|traceback|doesn'?t work|incorrect output|debug|not working)\b", re.I
 )
 _GEN_WORDS_RE = re.compile(r"\b(write|implement|create a function|generate a function)\b", re.I)
-_SUMMARY_WORDS_RE = re.compile(r"\bsummar(i[sz]e|y)\b", re.I)
+_SUMMARY_WORDS_RE = re.compile(
+    r"(summari[sz]e|summary|condense|shorten|abridge|tl;?dr|in a nutshell"
+    r"|key (points|facts|takeaways))",
+    re.I,
+)
 _SENTIMENT_WORDS_RE = re.compile(r"\b(sentiment|tone|positive or negative|how does .* feel)\b", re.I)
 _NER_WORDS_RE = re.compile(
     r"(entities|named entit|extract (people|persons|organi[sz]ations|locations|dates)"
@@ -36,10 +40,15 @@ _NER_WORDS_RE = re.compile(
 )
 _LOGIC_WORDS_RE = re.compile(
     r"\b(if .* then|exactly one|at least one|no two|must be (true|false)|puzzle|constraint"
-    r"|who (is|owns|lives)|order them)\b",
+    r"|who (is|owns|lives)|order them|based only on|yes or no|all \w+ are \w+)\b",
     re.I,
 )
-_MATH_RE = re.compile(r"(\d\s*[-+*/%^]\s*\d|percent|%|how (much|many)|average|\bmean\b|sum of|calculate)", re.I)
+_MATH_RE = re.compile(
+    r"(\d\s*[-+*/%^]\s*\d|percent|%|how (much|many)|average|\bmean\b|sum of|calculate"
+    r"|km/h|km/hr|\bmph\b|per (hour|second|minute|day|week|month|year)"
+    r"|total (journey )?(time|cost|distance|price|amount|weight)|what is the total)",
+    re.I,
+)
 
 
 def classify(prompt: str) -> Category:

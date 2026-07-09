@@ -49,3 +49,28 @@ def test_logic():
         "If Alice does not own the dog and Bob owns the cat, who owns the dog?"
     )
     assert classify(prompt) == Category.LOGIC
+
+
+# Regression cases: real testset prompts that previously fell through to FACTUAL.
+def test_logic_syllogism_not_factual():
+    prompt = (
+        "All roses are flowers. All flowers need water. Based only on these "
+        "statements, does a rose need water? Answer Yes or No."
+    )
+    assert classify(prompt) == Category.LOGIC
+
+
+def test_math_rate_word_problem_not_factual():
+    prompt = (
+        "A train travels 240 km at 80 km/h, then 150 km at 50 km/h. "
+        "What is the total journey time in hours and minutes?"
+    )
+    assert classify(prompt) == Category.MATH
+
+
+def test_summarization_condense_not_factual():
+    prompt = (
+        "Condense the following paragraph into a single bullet-point list of "
+        "no more than four key facts: Blockchain is a distributed ledger ..."
+    )
+    assert classify(prompt) == Category.SUMMARIZATION

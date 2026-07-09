@@ -1,0 +1,6 @@
+# Local CPU inference layer (Gemma-3-4b-it primary / Qwen3 fallback) + downloads.
+# Needed for eval/calibrate.py now, and for the submission image once the local
+# answering path is wired into main.py. Kept separate from requirements.txt so
+# the pure-Fireworks baseline image stays minimal until we commit the local path.
+llama-cpp-python>=0.3.0
+huggingface-hub>=0.24.0

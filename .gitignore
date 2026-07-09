@@ -4,3 +4,8 @@ __pycache__/
 *.pyc
 .pytest_cache/
 track1-agent/eval/sweep_results.json
+track1-agent/eval/calibrate_results.json
+
+# Local model weights -- multi-GB, never commit; fetch via scripts/download_model.py
+track1-agent/models/
+*.gguf
