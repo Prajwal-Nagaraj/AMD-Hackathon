@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Evaluation Harness</title>
+<link rel="stylesheet" href="../assets/chrome.css">
+</head>
+<body>
+<div class="slide-container" data-screen-label="12 Eval Harness" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-0);">
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:80px; width:1680px; height:1px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="tag" style="position:absolute; left:120px; top:95px; width:900px; z-index:10;">
+    <span class="dot"></span>SECTION 10 · EVALUATION HARNESS
+  </div>
+  <div data-object="true" data-object-type="textbox" class="page-num" style="position:absolute; left:1620px; top:95px; width:180px; text-align:right; z-index:10;">
+    12 / 18
+  </div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:165px; width:600px; z-index:10;">
+    <span class="chip accent">COMPETITIVE EDGE</span>
+  </div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:210px; width:1400px; z-index:10; font-family:var(--font-sans); font-weight:700; font-size:80px; line-height:1.02; color:var(--ink-0); letter-spacing:-0.02em;">
+    Most teams guess.<br><span style="color:var(--accent);">We measure.</span>
+  </div>
+
+  <!-- 6 measured mechanisms in 2 rows of 3 -->
+  <!-- Row 1 -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:445px; width:540px; height:230px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:465px; width:60px; z-index:10; font-family:var(--font-mono); font-size:38px; color:var(--accent); font-weight:700;">01</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:520px; width:480px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:24px; color:var(--ink-0); line-height:1.15;">Synthetic dev set</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:555px; width:480px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.45;">~30–50 tasks/category + gold answers. Shaped like the real 19-task mix; includes adversarial variants.</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:690px; top:445px; width:540px; height:230px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:465px; width:60px; z-index:10; font-family:var(--font-mono); font-size:38px; color:var(--accent); font-weight:700;">02</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:520px; width:480px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:24px; color:var(--ink-0); line-height:1.15;">Proxy LLM-judge</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:555px; width:480px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.45;">Strong model scoring intent-match — proxy for the hidden accuracy gate.</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1260px; top:445px; width:540px; height:230px; background:var(--bg-2); border:1px solid var(--accent); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:465px; width:60px; z-index:10; font-family:var(--font-mono); font-size:38px; color:var(--accent); font-weight:700;">03</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1360px; top:475px; width:200px; z-index:10;">
+    <span class="chip accent">NEW</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:520px; width:480px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:24px; color:var(--ink-0); line-height:1.15;">Local calibration sweep</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:555px; width:480px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.45;">Answer locally only if judge pass-rate ≥ ~90%. Produces the policy table <span style="color:var(--ink-0);">empirically</span>, not by guess.</div>
+
+  <!-- Row 2 -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:700px; width:540px; height:230px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:720px; width:60px; z-index:10; font-family:var(--font-mono); font-size:38px; color:var(--accent); font-weight:700;">04</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:775px; width:480px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:24px; color:var(--ink-0); line-height:1.15;">Strategy sweep · escalated</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:810px; width:480px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.45;">For each escalated category × Fireworks model × policy × max_tokens: pick <span style="color:var(--ink-0);">token-minimal</span> config that clears gate with margin.</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:690px; top:700px; width:540px; height:230px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:720px; width:60px; z-index:10; font-family:var(--font-mono); font-size:38px; color:var(--accent); font-weight:700;">05</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:775px; width:480px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:24px; color:var(--ink-0); line-height:1.15;">Wall-clock model</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:810px; width:480px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.45;">Measure real tokens/sec on 2 vCPU; project if N local inferences fit in 10 min; tune local↔Fireworks tradeoff.</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1260px; top:700px; width:540px; height:230px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:720px; width:60px; z-index:10; font-family:var(--font-mono); font-size:38px; color:var(--accent); font-weight:700;">06</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:775px; width:480px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:24px; color:var(--ink-0); line-height:1.15;">Two operating modes</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:810px; width:480px; z-index:10; font-family:var(--font-mono); font-size:16px; color:var(--ink-1); line-height:1.6;">
+    <span style="color:var(--info);">safe →</span> more Fireworks, guaranteed<br>
+    <span style="color:var(--ok);">lean →</span> max local, tokens → 0
+  </div>
+
+  <!-- Bottom pull -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:960px; width:1680px; z-index:10; font-family:var(--font-mono); font-size:15px; color:var(--ink-3); letter-spacing:0.14em; text-transform:uppercase;">
+    ▲ each mechanism converts a guess into a number
+  </div>
+
+  <!-- Bottom chrome -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:1020px; width:1680px; height:1px; background:var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="brand" style="position:absolute; left:120px; top:1035px; width:800px; z-index:10; font-size:12px;">
+    <span class="accent">AMD</span> HACKATHON · TRACK 01
+  </div>
+
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

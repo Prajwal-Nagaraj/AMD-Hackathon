@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Concurrency &amp; Deadline Guard</title>
+<link rel="stylesheet" href="../assets/chrome.css">
+</head>
+<body>
+<div class="slide-container" data-screen-label="10 Deadline" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-0);">
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:80px; width:1680px; height:1px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="tag" style="position:absolute; left:120px; top:95px; width:900px; z-index:10;">
+    <span class="dot"></span>SECTION 08 · CONCURRENCY + DEADLINE
+  </div>
+  <div data-object="true" data-object-type="textbox" class="page-num" style="position:absolute; left:1620px; top:95px; width:180px; text-align:right; z-index:10;">
+    10 / 18
+  </div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:165px; width:1400px; z-index:10; font-family:var(--font-sans); font-weight:700; font-size:72px; line-height:1.02; color:var(--ink-0); letter-spacing:-0.02em;">
+    The clock<br>is the boss.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:325px; width:1400px; z-index:10; font-family:var(--font-sans); font-size:22px; color:var(--ink-1); line-height:1.4;">
+    Timeout &nbsp;=&nbsp; no output &nbsp;=&nbsp; worse than any token bill. We <span style="color:var(--ink-0);">spend tokens to buy time</span>.
+  </div>
+
+  <!-- Timeline visual: 10 minute bar -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:490px; width:1680px; height:80px; background:var(--bg-1); border:1px solid var(--line-2); z-index:5;"></div>
+
+  <!-- Startup segment (60s = 10%) -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:490px; width:168px; height:80px; background:var(--bg-2); border-right:1px solid var(--line-2); z-index:6;"></div>
+  <!-- Work segment (up to 9m30s = 95%) -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:288px; top:490px; width:1428px; height:80px; background:transparent; z-index:6;"></div>
+  <!-- Reserve (last 30s = 5%) -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1716px; top:490px; width:84px; height:80px; background:var(--accent); opacity:0.15; z-index:6;"></div>
+  <!-- 9m30s marker line -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1716px; top:480px; width:2px; height:100px; background:var(--accent); z-index:7;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:452px; width:200px; z-index:10; font-family:var(--font-mono); font-size:12px; color:var(--ink-2); letter-spacing:0.14em;">
+    T = 0s
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1620px; top:452px; width:180px; text-align:right; z-index:10; font-family:var(--font-mono); font-size:12px; color:var(--accent); letter-spacing:0.14em;">
+    T = 600s · HARD
+  </div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:135px; top:510px; width:150px; z-index:10; font-family:var(--font-mono); font-size:13px; color:var(--ink-1); letter-spacing:0.06em;">
+    STARTUP<br><span style="color:var(--ink-3);">&lt; 60s</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:750px; top:518px; width:400px; text-align:center; z-index:10; font-family:var(--font-mono); font-size:14px; color:var(--ink-1); letter-spacing:0.06em;">
+    WORK WINDOW · ~9m30s
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1620px; top:585px; width:180px; text-align:right; z-index:10; font-family:var(--font-mono); font-size:12px; color:var(--accent); letter-spacing:0.06em;">
+    30s reserve →
+  </div>
+
+  <!-- Two panels: local vs fires concurrency -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:640px; width:820px; height:180px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:660px; width:250px; z-index:10;">
+    <span class="chip ok">LOCAL · SERIAL</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:705px; width:770px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:26px; color:var(--ink-0); line-height:1.2;">
+    2 vCPU saturated by one llama.cpp call.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:770px; width:770px; z-index:10; font-family:var(--font-sans); font-size:17px; color:var(--ink-1); line-height:1.4;">
+    Effectively one inference at a time. Bounded per-task cap: <span style="font-family:var(--font-mono); color:var(--ink-0);">&lt; 30s</span>.
+  </div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:980px; top:640px; width:820px; height:180px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:660px; width:250px; z-index:10;">
+    <span class="chip" style="color:var(--accent-2); border-color:var(--accent-2);">FIRES · PARALLEL</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:705px; width:770px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:26px; color:var(--ink-0); line-height:1.2;">
+    Network-bound async pool, bounded.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:770px; width:770px; z-index:10; font-family:var(--font-sans); font-size:17px; color:var(--ink-1); line-height:1.4;">
+    Escalations run concurrently — parallelism amortizes latency spikes.
+  </div>
+
+  <!-- Deadline policy callout -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:850px; width:1680px; height:130px; background:var(--bg-2); border-left:3px solid var(--accent); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:870px; width:400px; z-index:10;">
+    <div class="tag" style="font-size:12px; color:var(--accent);">TIME-VS-TOKENS POLICY</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:905px; width:1620px; z-index:10; font-family:var(--font-sans); font-size:23px; color:var(--ink-0); line-height:1.35;">
+    If falling behind: <span style="color:var(--warn);">stop starting local inferences</span> → push remaining tasks to fast Fireworks calls. Always write valid JSON + exit 0 by the hard deadline.
+  </div>
+
+  <!-- Bottom chrome -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:1020px; width:1680px; height:1px; background:var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="brand" style="position:absolute; left:120px; top:1035px; width:800px; z-index:10; font-size:12px;">
+    <span class="accent">AMD</span> HACKATHON · TRACK 01
+  </div>
+
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

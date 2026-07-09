@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Success Metrics</title>
+<link rel="stylesheet" href="../assets/chrome.css">
+</head>
+<body>
+<div class="slide-container" data-screen-label="17 Metrics" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-0);">
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:80px; width:1680px; height:1px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="tag" style="position:absolute; left:120px; top:95px; width:900px; z-index:10;">
+    <span class="dot"></span>SECTION 15 · SUCCESS METRICS
+  </div>
+  <div data-object="true" data-object-type="textbox" class="page-num" style="position:absolute; left:1620px; top:95px; width:180px; text-align:right; z-index:10;">
+    17 / 18
+  </div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:165px; width:1400px; z-index:10; font-family:var(--font-sans); font-weight:700; font-size:64px; line-height:1.02; color:var(--ink-0); letter-spacing:-0.02em;">
+    Definition of done.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:250px; width:1400px; z-index:10; font-family:var(--font-sans); font-size:20px; color:var(--ink-1); line-height:1.4;">
+    Every number is monitored throughout the loop — miss any and we ship the pinned safe config instead.
+  </div>
+
+  <!-- Metrics table -->
+  <table data-object="true" data-object-type="table" style="position:absolute; left:120px; top:325px; width:1680px; border-collapse:collapse; font-family:var(--font-sans); font-size:18px; z-index:10;">
+    <thead>
+      <tr style="background:var(--bg-2); border-bottom:2px solid var(--accent);">
+        <th style="padding:18px 24px; text-align:left; font-family:var(--font-mono); font-size:12px; color:var(--ink-2); letter-spacing:0.14em; text-transform:uppercase; width:26%;">Metric</th>
+        <th style="padding:18px 24px; text-align:left; font-family:var(--font-mono); font-size:12px; color:var(--ink-2); letter-spacing:0.14em; text-transform:uppercase; width:26%;">Target</th>
+        <th style="padding:18px 24px; text-align:left; font-family:var(--font-mono); font-size:12px; color:var(--ink-2); letter-spacing:0.14em; text-transform:uppercase; width:48%;">Why it matters</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid var(--line);">
+        <td style="padding:18px 24px; color:var(--ink-0); font-weight:600;">Accuracy</td>
+        <td style="padding:18px 24px; color:var(--ok); font-family:var(--font-mono); font-size:20px;">≥ 90% · 17–18 / 19</td>
+        <td style="padding:18px 24px; color:var(--ink-1);">Clear 80% gate with margin; judge is nondeterministic</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line); background:var(--bg-1);">
+        <td style="padding:18px 24px; color:var(--ink-0); font-weight:600;">Fireworks tokens</td>
+        <td style="padding:18px 24px; color:var(--accent); font-family:var(--font-mono); font-size:20px;">→ 0</td>
+        <td style="padding:18px 24px; color:var(--ink-1);">Leaderboard ranking is entirely determined by token spend</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line);">
+        <td style="padding:18px 24px; color:var(--ink-0); font-weight:600;">Wall-clock</td>
+        <td style="padding:18px 24px; color:var(--ok); font-family:var(--font-mono); font-size:20px;">&lt; 10 min total</td>
+        <td style="padding:18px 24px; color:var(--ink-1);">Hard deadline — 60s startup + ~9m30s work</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line); background:var(--bg-1);">
+        <td style="padding:18px 24px; color:var(--ink-0); font-weight:600;">Image size</td>
+        <td style="padding:18px 24px; color:var(--ok); font-family:var(--font-mono); font-size:20px;">&lt; 10 GB compressed</td>
+        <td style="padding:18px 24px; color:var(--ink-1);">Avoid IMAGE_TOO_LARGE failure</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line);">
+        <td style="padding:18px 24px; color:var(--ink-0); font-weight:600;">Startup time</td>
+        <td style="padding:18px 24px; color:var(--ok); font-family:var(--font-mono); font-size:20px;">&lt; 60 s</td>
+        <td style="padding:18px 24px; color:var(--ink-1);">Includes model load — leaves time for actual work</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line); background:var(--bg-1);">
+        <td style="padding:18px 24px; color:var(--ink-0); font-weight:600;">Per-task latency</td>
+        <td style="padding:18px 24px; color:var(--ok); font-family:var(--font-mono); font-size:20px;">&lt; 30 s</td>
+        <td style="padding:18px 24px; color:var(--ink-1);">Per-request rule; prevents timeout on any single task</td>
+      </tr>
+      <tr>
+        <td style="padding:18px 24px; color:var(--ink-0); font-weight:600;">Code quality</td>
+        <td style="padding:18px 24px; color:var(--ok); font-family:var(--font-mono); font-size:20px;">exit 0 + valid JSON</td>
+        <td style="padding:18px 24px; color:var(--ink-1);">Always write output. Never crash. No exceptions.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Bottom chrome -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:1020px; width:1680px; height:1px; background:var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="brand" style="position:absolute; left:120px; top:1035px; width:800px; z-index:10; font-size:12px;">
+    <span class="accent">AMD</span> HACKATHON · TRACK 01
+  </div>
+
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

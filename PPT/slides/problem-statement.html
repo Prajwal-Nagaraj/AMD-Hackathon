@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Problem Statement</title>
+<link rel="stylesheet" href="../assets/chrome.css">
+</head>
+<body>
+<div class="slide-container" data-screen-label="02 Problem" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-0);">
+
+  <!-- Top rail -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:80px; width:1680px; height:1px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="tag" style="position:absolute; left:120px; top:95px; width:900px; z-index:10;">
+    <span class="dot"></span>SECTION 01 · PROBLEM STATEMENT
+  </div>
+  <div data-object="true" data-object-type="textbox" class="page-num" style="position:absolute; left:1620px; top:95px; width:180px; text-align:right; z-index:10;">
+    02 / 18
+  </div>
+
+  <!-- Title -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:170px; width:1680px; z-index:10; font-family:var(--font-sans); font-weight:700; font-size:88px; line-height:1.02; color:var(--ink-0); letter-spacing:-0.02em;">
+    The rules of the game.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:300px; width:1400px; z-index:10; font-family:var(--font-sans); font-weight:400; font-size:28px; line-height:1.4; color:var(--ink-1);">
+    A general-purpose agent must answer <span style="color:var(--ink-0);">19 fixed tasks across 8 capability categories</span> — under a two-stage gate and a strict token-cost leaderboard.
+  </div>
+
+  <!-- Two stage gate visual -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:440px; width:820px; height:280px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:465px; width:400px; z-index:10;">
+    <span class="chip accent">STAGE 01</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:510px; width:760px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:36px; color:var(--ink-0); line-height:1.15;">
+    Accuracy Gate
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:565px; width:760px; z-index:10; font-family:var(--font-sans); font-size:22px; color:var(--ink-1); line-height:1.4;">
+    Must clear <span style="color:var(--ink-0); font-weight:600;">80% (16 / 19)</span> — or be excluded from the leaderboard entirely.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:660px; width:760px; z-index:10; font-family:var(--font-mono); font-size:16px; color:var(--ink-2); letter-spacing:0.06em;">
+    ERROR BUDGET → 3 wrong answers
+  </div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:980px; top:440px; width:820px; height:280px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:465px; width:400px; z-index:10;">
+    <span class="chip info">STAGE 02</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:510px; width:760px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:36px; color:var(--ink-0); line-height:1.15;">
+    Leaderboard Rank
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:565px; width:760px; z-index:10; font-family:var(--font-sans); font-size:22px; color:var(--ink-1); line-height:1.4;">
+    Ranked by <span style="color:var(--ink-0); font-weight:600;">Fireworks tokens spent</span> — lower is better.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:660px; width:760px; z-index:10; font-family:var(--font-mono); font-size:16px; color:var(--ink-2); letter-spacing:0.06em;">
+    TARGET → as close to zero as possible
+  </div>
+
+  <!-- Constraint band -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:760px; width:1680px; height:100px; background:var(--bg-2); border-left:3px solid var(--accent-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:780px; width:280px; z-index:10;">
+    <div class="tag" style="font-size:12px;">HARD CONSTRAINT</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:810px; width:1620px; z-index:10; font-family:var(--font-mono); font-size:22px; color:var(--ink-0); line-height:1.3;">
+    10-minute execution window · 4 GB RAM · 2 vCPU · no GPU · no pre-installed runtime
+  </div>
+
+  <!-- Winning strategy pull -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:900px; width:200px; z-index:10;">
+    <div class="tag" style="font-size:12px; color:var(--accent);">WINNING PLAY</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:340px; top:895px; width:1460px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:32px; line-height:1.25; color:var(--ink-0);">
+    Clear the gate <span style="color:var(--accent);">with margin</span>, then spend as <span style="color:var(--accent);">few tokens</span> as possible.
+  </div>
+
+  <!-- Bottom chrome -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:1020px; width:1680px; height:1px; background:var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="brand" style="position:absolute; left:120px; top:1035px; width:800px; z-index:10; font-size:12px;">
+    <span class="accent">AMD</span> HACKATHON · TRACK 01
+  </div>
+
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Token Minimization Tactics</title>
+<link rel="stylesheet" href="../assets/chrome.css">
+</head>
+<body>
+<div class="slide-container" data-screen-label="09 Token Tactics" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-0);">
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:80px; width:1680px; height:1px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="tag" style="position:absolute; left:120px; top:95px; width:900px; z-index:10;">
+    <span class="dot"></span>SECTION 07 · TOKEN TACTICS
+  </div>
+  <div data-object="true" data-object-type="textbox" class="page-num" style="position:absolute; left:1620px; top:95px; width:180px; text-align:right; z-index:10;">
+    09 / 18
+  </div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:165px; width:1400px; z-index:10; font-family:var(--font-sans); font-weight:700; font-size:72px; line-height:1.02; color:var(--ink-0); letter-spacing:-0.02em;">
+    Eight ways to <span style="color:var(--accent);">bleed less</span>.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:285px; width:1400px; z-index:10; font-family:var(--font-sans); font-size:22px; color:var(--ink-1); line-height:1.4;">
+    Only escalated tasks cost tokens. For those, we compress every axis simultaneously.
+  </div>
+
+  <!-- 8 tactics in 2 columns x 4 rows -->
+  <!-- Column 1 -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:390px; width:820px; height:130px; background:var(--bg-1); border:1px solid var(--line); border-left:3px solid var(--accent); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:410px; width:40px; z-index:10;"><span class="kbd">01</span></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:210px; top:410px; width:710px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">Answer locally whenever the gate allows.</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:210px; top:445px; width:710px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.4;">The single biggest token win. Everything else is second-order.</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:535px; width:820px; height:130px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:555px; width:40px; z-index:10;"><span class="kbd">02</span></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:210px; top:555px; width:710px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">Gemma-first on escalation.</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:210px; top:590px; width:710px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.4;">Non-reasoning · terse · 262k vocab &nbsp;=&nbsp; fewest tokens per answer.</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:680px; width:820px; height:130px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:700px; width:40px; z-index:10;"><span class="kbd">03</span></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:210px; top:700px; width:710px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">Terse or absent system prompt.</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:210px; top:735px; width:710px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.4;">Fold instructions into a compact per-category template.</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:825px; width:820px; height:130px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:845px; width:40px; z-index:10;"><span class="kbd">04</span></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:210px; top:845px; width:710px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">Zero-shot by default.</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:210px; top:880px; width:710px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.4;">Add examples only where the eval harness proves they help.</div>
+
+  <!-- Column 2 -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:980px; top:390px; width:820px; height:130px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:410px; width:40px; z-index:10;"><span class="kbd">05</span></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1070px; top:410px; width:710px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">Stop sequences + tight max_tokens.</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1070px; top:445px; width:710px; z-index:10; font-family:var(--font-mono); font-size:16px; color:var(--ink-1); line-height:1.4;">\n\n · code-fence · first period.</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:980px; top:535px; width:820px; height:130px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:555px; width:40px; z-index:10;"><span class="kbd">06</span></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1070px; top:555px; width:710px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">Local output coercion, not re-asking.</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1070px; top:590px; width:710px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.4;">Strip preambles · extract answer · enforce length — <span style="color:var(--ok);">all free.</span></div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:980px; top:680px; width:820px; height:130px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:700px; width:40px; z-index:10;"><span class="kbd">07</span></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1070px; top:700px; width:710px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">Suppress reasoning / CoT traces.</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1070px; top:735px; width:710px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.4;">Where accuracy allows — CoT is a <span style="color:var(--accent);">3–5×</span> token tax.</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:980px; top:825px; width:820px; height:130px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:845px; width:40px; z-index:10;"><span class="kbd">08</span></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1070px; top:845px; width:710px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">Tokenizer arbitrage.</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1070px; top:880px; width:710px; z-index:10; font-family:var(--font-sans); font-size:16px; color:var(--ink-1); line-height:1.4;">All Gemmas share one tokenizer — identical token count across sizes.</div>
+
+  <!-- Bottom chrome -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:1020px; width:1680px; height:1px; background:var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="brand" style="position:absolute; left:120px; top:1035px; width:800px; z-index:10; font-size:12px;">
+    <span class="accent">AMD</span> HACKATHON · TRACK 01
+  </div>
+
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

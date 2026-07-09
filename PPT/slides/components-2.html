@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Key Components (2/2)</title>
+<link rel="stylesheet" href="../assets/chrome.css">
+</head>
+<body>
+<div class="slide-container" data-screen-label="07 Components 2" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-0);">
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:80px; width:1680px; height:1px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="tag" style="position:absolute; left:120px; top:95px; width:900px; z-index:10;">
+    <span class="dot"></span>SECTION 05 · KEY COMPONENTS · 2 / 2
+  </div>
+  <div data-object="true" data-object-type="textbox" class="page-num" style="position:absolute; left:1620px; top:95px; width:180px; text-align:right; z-index:10;">
+    07 / 18
+  </div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:165px; width:1400px; z-index:10; font-family:var(--font-sans); font-weight:700; font-size:72px; line-height:1.02; color:var(--ink-0); letter-spacing:-0.02em;">
+    Strategies, <span style="color:var(--accent-2);">Fireworks</span>, coercion.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:290px; width:1400px; z-index:10; font-family:var(--font-sans); font-size:24px; color:var(--ink-1); line-height:1.4;">
+    The paid escalation path, the shape of every prompt, and the free post-processing that keeps us from re-asking.
+  </div>
+
+  <!-- Three cards: C, D, E — 540 wide each with 30px gutter, starting at x=120 -->
+  <!-- Card C: Strategies -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:400px; width:540px; height:560px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:425px; width:200px; z-index:10;">
+    <div class="tag" style="font-size:12px;">C</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:460px; width:480px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:36px; color:var(--ink-0); line-height:1.1;">
+    Per-category<br>strategies.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:575px; width:480px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1); line-height:1.5;">
+    Templates defining prompt, model choice, <span style="font-family:var(--font-mono); color:var(--ink-0);">max_tokens</span>, stop sequences — for <span style="color:var(--ink-0);">both</span> paths.
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:150px; top:720px; width:480px; height:1px; background:var(--line); z-index:6;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:740px; width:480px; z-index:10; font-family:var(--font-mono); font-size:14px; color:var(--ink-1); line-height:1.8;">
+    <span style="color:var(--ok);">local  →</span> simple · fast · bundled<br>
+    <span style="color:var(--accent-2);">fires  →</span> terse · zero-shot · minimal
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:870px; width:480px; z-index:10; font-family:var(--font-mono); font-size:14px; color:var(--ink-3); letter-spacing:0.06em; text-transform:uppercase; line-height:1.5;">
+    e.g. sentiment = local &nbsp;·&nbsp; math = fires-first
+  </div>
+
+  <!-- Card D: Fireworks Client -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:690px; top:400px; width:540px; height:560px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:690px; top:400px; width:540px; height:6px; background:var(--accent-2); z-index:6;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:425px; width:200px; z-index:10;">
+    <div class="tag" style="font-size:12px; color:var(--accent-2);">D</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:460px; width:480px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:36px; color:var(--ink-0); line-height:1.1;">
+    Fireworks<br>client.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:575px; width:480px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1); line-height:1.5;">
+    OpenAI-compatible wrapper. Retries with exponential backoff. Own token telemetry for tuning.
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:720px; top:720px; width:480px; height:1px; background:var(--line); z-index:6;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:740px; width:480px; z-index:10; font-family:var(--font-mono); font-size:12px; color:var(--ink-2); letter-spacing:0.1em; text-transform:uppercase;">ALLOWED_MODELS</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:720px; top:765px; width:480px; z-index:10; font-family:var(--font-mono); font-size:13px; color:var(--ink-1); line-height:1.7;">
+    · minimax-m3<br>
+    · kimi-k2p7-code<br>
+    · gemma-4-31b-it<br>
+    · gemma-4-26b-a4b-it<br>
+    · gemma-4-31b-it-nvfp4
+  </div>
+
+  <!-- Card E: Validate + Coerce -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1260px; top:400px; width:540px; height:560px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:425px; width:200px; z-index:10;">
+    <div class="tag" style="font-size:12px;">E</div>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:460px; width:480px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:36px; color:var(--ink-0); line-height:1.1;">
+    Validate<br>+ coerce.
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:575px; width:480px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1); line-height:1.5;">
+    <span style="color:var(--ok);">Free, local.</span> The reason we don't re-ask — we fix output ourselves.
+  </div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1290px; top:720px; width:480px; height:1px; background:var(--line); z-index:6;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:740px; width:480px; z-index:10; font-family:var(--font-mono); font-size:12px; color:var(--ink-2); letter-spacing:0.1em; text-transform:uppercase;">CHECKS</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1290px; top:765px; width:480px; z-index:10; font-family:var(--font-mono); font-size:13px; color:var(--ink-1); line-height:1.7;">
+    · JSON parses?<br>
+    · Code ast.parses?<br>
+    · Within length limit?<br>
+    <span style="color:var(--accent-2);">✕ fail → escalate to Fireworks</span>
+  </div>
+
+  <!-- Bottom chrome -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:1020px; width:1680px; height:1px; background:var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="brand" style="position:absolute; left:120px; top:1035px; width:800px; z-index:10; font-size:12px;">
+    <span class="accent">AMD</span> HACKATHON · TRACK 01
+  </div>
+
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

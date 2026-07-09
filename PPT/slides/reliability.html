@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reliability &amp; Constraints</title>
+<link rel="stylesheet" href="../assets/chrome.css">
+</head>
+<body>
+<div class="slide-container" data-screen-label="11 Reliability" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-0);">
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:80px; width:1680px; height:1px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="tag" style="position:absolute; left:120px; top:95px; width:900px; z-index:10;">
+    <span class="dot"></span>SECTION 09 · RELIABILITY
+  </div>
+  <div data-object="true" data-object-type="textbox" class="page-num" style="position:absolute; left:1620px; top:95px; width:180px; text-align:right; z-index:10;">
+    11 / 18
+  </div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:165px; width:1400px; z-index:10; font-family:var(--font-sans); font-weight:700; font-size:72px; line-height:1.02; color:var(--ink-0); letter-spacing:-0.02em;">
+    Never crash. <span style="color:var(--ink-2);">Never timeout.</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:295px; width:1400px; z-index:10; font-family:var(--font-sans); font-size:22px; color:var(--ink-1); line-height:1.4;">
+    Every known failure mode has an owner and a mitigation baked into the pipeline.
+  </div>
+
+  <!-- Left: Envelope stats -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:400px; width:820px; height:560px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:425px; width:400px; z-index:10;">
+    <div class="tag" style="font-size:12px;">OPERATING ENVELOPE</div>
+  </div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:150px; top:475px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:495px; width:400px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1);">Startup</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:600px; top:490px; width:310px; text-align:right; z-index:10; font-family:var(--font-mono); font-size:26px; color:var(--ink-0); font-weight:700;">&lt; 60<span style="color:var(--ink-2); font-size:16px;"> s</span></div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:150px; top:545px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:565px; width:400px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1);">Per-task latency</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:600px; top:560px; width:310px; text-align:right; z-index:10; font-family:var(--font-mono); font-size:26px; color:var(--ink-0); font-weight:700;">&lt; 30<span style="color:var(--ink-2); font-size:16px;"> s</span></div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:150px; top:615px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:635px; width:400px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1);">Model size cap</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:600px; top:630px; width:310px; text-align:right; z-index:10; font-family:var(--font-mono); font-size:26px; color:var(--ink-0); font-weight:700;">≤ 3B<span style="color:var(--ink-2); font-size:16px;"> · 4-bit</span></div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:150px; top:685px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:705px; width:400px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1);">Image size</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:600px; top:700px; width:310px; text-align:right; z-index:10; font-family:var(--font-mono); font-size:26px; color:var(--ink-0); font-weight:700;">&lt; 10<span style="color:var(--ink-2); font-size:16px;"> GB</span></div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:150px; top:755px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:775px; width:400px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1);">Runtime host</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:600px; top:770px; width:310px; text-align:right; z-index:10; font-family:var(--font-mono); font-size:22px; color:var(--ink-0); font-weight:700;">4 GB · 2 vCPU · no GPU</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:150px; top:825px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:150px; top:845px; width:400px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1);">Exit code discipline</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:600px; top:840px; width:310px; text-align:right; z-index:10; font-family:var(--font-mono); font-size:22px; color:var(--ok); font-weight:700;">exit 0 = success</div>
+
+  <!-- Right: Failure modes → mitigations -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:980px; top:400px; width:820px; height:560px; background:var(--bg-1); border:1px solid var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:425px; width:400px; z-index:10;">
+    <div class="tag" style="font-size:12px; color:var(--accent-2);">FAILURE MODE · MITIGATION</div>
+  </div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1010px; top:475px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:495px; width:400px; z-index:10; font-family:var(--font-mono); font-size:15px; color:var(--warn); letter-spacing:0.06em;">TIMEOUT</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:518px; width:760px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1); line-height:1.35;">Deadline guard + time-vs-tokens policy</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1010px; top:568px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:588px; width:400px; z-index:10; font-family:var(--font-mono); font-size:15px; color:var(--warn); letter-spacing:0.06em;">INVALID_RESULTS_SCHEMA</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:611px; width:760px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1); line-height:1.35;">Validate output schema before write</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1010px; top:661px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:681px; width:400px; z-index:10; font-family:var(--font-mono); font-size:15px; color:var(--warn); letter-spacing:0.06em;">MODEL_VIOLATION</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:704px; width:760px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1); line-height:1.35;">ALLOWED_MODELS only, via FIREWORKS_BASE_URL</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1010px; top:754px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:774px; width:400px; z-index:10; font-family:var(--font-mono); font-size:15px; color:var(--warn); letter-spacing:0.06em;">IMAGE_TOO_LARGE</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:797px; width:760px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1); line-height:1.35;">Slim base + 4-bit weights · target &lt; 10 GB</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1010px; top:847px; width:760px; height:1px; background:var(--line); z-index:6;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:867px; width:400px; z-index:10; font-family:var(--font-mono); font-size:15px; color:var(--warn); letter-spacing:0.06em;">TASK CRASH</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1010px; top:890px; width:760px; z-index:10; font-family:var(--font-sans); font-size:18px; color:var(--ink-1); line-height:1.35;">Per-task try / except — one failure never crashes the run</div>
+
+  <!-- Bottom chrome -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:1020px; width:1680px; height:1px; background:var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="brand" style="position:absolute; left:120px; top:1035px; width:800px; z-index:10; font-size:12px;">
+    <span class="accent">AMD</span> HACKATHON · TRACK 01
+  </div>
+
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

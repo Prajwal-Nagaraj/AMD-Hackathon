@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0",
+  "format": "html",
+  "metadata": {
+    "title": "Track 1 Agent — AMD Developer Hackathon ACT II",
+    "description": "AI-Agent Token Efficiency Challenge — Implementation Brief",
+    "author": ""
+  },
+  "canvas": {"width": 1920, "height": 1080},
+  "playlist": [
+    "cover.html",
+    "problem-statement.html",
+    "core-innovation.html",
+    "task-categories.html",
+    "architecture.html",
+    "components-1.html",
+    "components-2.html",
+    "strategy-table.html",
+    "token-tactics.html",
+    "concurrency-deadline.html",
+    "reliability.html",
+    "eval-harness.html",
+    "submission-strategy.html",
+    "docker-deployment.html",
+    "timeline.html",
+    "why-this-wins.html",
+    "success-metrics.html",
+    "summary.html"
+  ]
+}

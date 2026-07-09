@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>System Architecture</title>
+<link rel="stylesheet" href="../assets/chrome.css">
+</head>
+<body>
+<div class="slide-container" data-screen-label="05 Architecture" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-0);">
+
+  <!-- Top rail -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:80px; width:1680px; height:1px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="tag" style="position:absolute; left:120px; top:95px; width:900px; z-index:10;">
+    <span class="dot"></span>SECTION 04 · SYSTEM ARCHITECTURE
+  </div>
+  <div data-object="true" data-object-type="textbox" class="page-num" style="position:absolute; left:1620px; top:95px; width:180px; text-align:right; z-index:10;">
+    05 / 18
+  </div>
+
+  <!-- Title -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:165px; width:1100px; z-index:10; font-family:var(--font-sans); font-weight:700; font-size:72px; line-height:1.02; color:var(--ink-0); letter-spacing:-0.02em;">
+    One pipeline. <span style="color:var(--ink-2);">Two paths.</span>
+  </div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:275px; width:1200px; z-index:10; font-family:var(--font-sans); font-size:22px; color:var(--ink-1); line-height:1.35;">
+    Every task enters the router, gets classified, then flows through the cheapest path that can answer it correctly.
+  </div>
+
+  <!-- Diagram area — canvas 1680x640, starts at x=120, y=360 -->
+  <!-- Column 1: INPUT -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:445px; width:180px; height:100px; background:var(--bg-2); border:1px solid var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:460px; width:180px; text-align:center; z-index:10; font-family:var(--font-mono); font-size:11px; color:var(--ink-2); letter-spacing:0.14em;">INPUT</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:483px; width:180px; text-align:center; z-index:10; font-family:var(--font-mono); font-size:16px; color:var(--ink-0);">tasks.json</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:508px; width:180px; text-align:center; z-index:10; font-family:var(--font-mono); font-size:12px; color:var(--ink-3);">19 tasks</div>
+
+  <!-- Arrow -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:305px; top:492px; width:70px; height:2px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:305px; top:479px; width:70px; text-align:right; z-index:10; font-family:var(--font-mono); font-size:16px; color:var(--line-2);">→</div>
+
+  <!-- Column 2: ROUTER -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:385px; top:395px; width:240px; height:200px; background:var(--bg-2); border:1px solid var(--accent); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:385px; top:410px; width:240px; text-align:center; z-index:10; font-family:var(--font-mono); font-size:11px; color:var(--accent); letter-spacing:0.14em;">◆ ROUTER · FREE</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:385px; top:440px; width:240px; text-align:center; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:24px; color:var(--ink-0);">Classify + Decide</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:400px; top:485px; width:210px; z-index:10; font-family:var(--font-mono); font-size:13px; color:var(--ink-1); line-height:1.55;">→ 8 categories<br>→ local vs. fireworks<br>→ heuristics + embedder</div>
+
+  <!-- Split arrows -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:625px; top:495px; width:75px; height:2px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:625px; top:495px; width:2px; height:180px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:625px; top:335px; width:2px; height:160px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:625px; top:335px; width:75px; height:2px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:625px; top:673px; width:75px; height:2px; background:var(--line-2); z-index:5;"></div>
+
+  <!-- Column 3a: LOCAL (top path) -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:710px; top:295px; width:280px; height:120px; background:var(--bg-1); border:1px solid var(--ok); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:725px; top:310px; width:250px; z-index:10; font-family:var(--font-mono); font-size:11px; color:var(--ok); letter-spacing:0.14em;">▲ LOCAL LLM · $0</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:725px; top:338px; width:250px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">2–3B Q4 · CPU</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:725px; top:370px; width:250px; z-index:10; font-family:var(--font-mono); font-size:13px; color:var(--ink-1);">llama.cpp · greedy · in-mem</div>
+
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:995px; top:353px; width:60px; height:2px; background:var(--line-2); z-index:5;"></div>
+
+  <!-- Column 4a: VALIDATE (local) -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1060px; top:295px; width:220px; height:120px; background:var(--bg-1); border:1px solid var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1075px; top:310px; width:190px; z-index:10; font-family:var(--font-mono); font-size:11px; color:var(--ink-2); letter-spacing:0.14em;">VALIDATE</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1075px; top:338px; width:190px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">Pass / Fail</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1075px; top:370px; width:190px; z-index:10; font-family:var(--font-mono); font-size:13px; color:var(--ink-1);">JSON · ast · length</div>
+
+  <!-- PASS arrow up-right to output -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1285px; top:353px; width:210px; height:2px; background:var(--ok); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1295px; top:325px; width:200px; z-index:10; font-family:var(--font-mono); font-size:12px; color:var(--ok); letter-spacing:0.1em;">PASS · 0 tokens</div>
+
+  <!-- FAIL arrow down (escalate) -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1170px; top:415px; width:2px; height:220px; background:var(--warn); z-index:5;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1058px; top:635px; width:114px; height:2px; background:var(--warn); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1180px; top:495px; width:200px; z-index:10; font-family:var(--font-mono); font-size:12px; color:var(--warn); letter-spacing:0.1em;">FAIL → ESCALATE</div>
+
+  <!-- Column 3b: FIREWORKS (bottom path) -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:710px; top:610px; width:340px; height:130px; background:var(--bg-1); border:1px solid var(--accent-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:725px; top:625px; width:310px; z-index:10; font-family:var(--font-mono); font-size:11px; color:var(--accent-2); letter-spacing:0.14em;">▲ FIREWORKS · $$</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:725px; top:653px; width:310px; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:22px; color:var(--ink-0);">OpenAI-compatible API</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:725px; top:686px; width:310px; z-index:10; font-family:var(--font-mono); font-size:13px; color:var(--ink-1); line-height:1.5;">FIREWORKS_BASE_URL<br>ALLOWED_MODELS · every token counted</div>
+
+  <!-- Merge line to final validate -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1495px; top:353px; width:2px; height:270px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1495px; top:622px; width:120px; height:2px; background:var(--line-2); z-index:5;"></div>
+
+  <!-- Final: VALIDATE + COERCE -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1610px; top:565px; width:190px; height:120px; background:var(--bg-2); border:1px solid var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1610px; top:580px; width:190px; text-align:center; z-index:10; font-family:var(--font-mono); font-size:11px; color:var(--ink-2); letter-spacing:0.14em;">COERCE · FREE</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1610px; top:610px; width:190px; text-align:center; z-index:10; font-family:var(--font-sans); font-weight:600; font-size:20px; color:var(--ink-0);">Strip · Extract<br>Enforce</div>
+
+  <!-- Output arrow down -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1704px; top:685px; width:2px; height:105px; background:var(--line-2); z-index:5;"></div>
+
+  <!-- OUTPUT -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1610px; top:790px; width:190px; height:100px; background:var(--bg-2); border:1px solid var(--accent); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1610px; top:805px; width:190px; text-align:center; z-index:10; font-family:var(--font-mono); font-size:11px; color:var(--accent); letter-spacing:0.14em;">OUTPUT</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1610px; top:830px; width:190px; text-align:center; z-index:10; font-family:var(--font-mono); font-size:16px; color:var(--ink-0);">results.json</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1610px; top:855px; width:190px; text-align:center; z-index:10; font-family:var(--font-mono); font-size:12px; color:var(--ok);">exit 0</div>
+
+  <!-- Legend -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:790px; width:640px; height:1px; background:var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:810px; width:640px; z-index:10; font-family:var(--font-mono); font-size:14px; color:var(--ink-1); line-height:1.8;">
+    <span style="color:var(--ok);">▬</span> free path &nbsp;·&nbsp;
+    <span style="color:var(--accent-2);">▬</span> paid escalation &nbsp;·&nbsp;
+    <span style="color:var(--warn);">▬</span> fallback trigger<br>
+    <span style="color:var(--ink-2);">Every token is counted only on the paid path.</span>
+  </div>
+
+  <!-- Bottom chrome -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:1020px; width:1680px; height:1px; background:var(--line); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="brand" style="position:absolute; left:120px; top:1035px; width:800px; z-index:10; font-size:12px;">
+    <span class="accent">AMD</span> HACKATHON · TRACK 01
+  </div>
+
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

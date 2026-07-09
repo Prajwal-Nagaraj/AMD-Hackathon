@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Summary</title>
+<link rel="stylesheet" href="../assets/chrome.css">
+</head>
+<body>
+<div class="slide-container" data-screen-label="18 Summary" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg-0);">
+
+  <!-- Diagonal red bar left -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:0; top:0; width:12px; height:1080px; background:var(--accent); z-index:2;"></div>
+
+  <!-- Background grid -->
+  <div data-object="true" data-object-type="shape" class="grid-bg" style="position:absolute; left:0; top:0; width:1920px; height:1080px; z-index:1;"></div>
+
+  <!-- Top rail -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:80px; width:1680px; height:1px; background:var(--line-2); z-index:5;"></div>
+  <div data-object="true" data-object-type="textbox" class="tag" style="position:absolute; left:120px; top:95px; width:900px; z-index:10;">
+    <span class="dot"></span>SECTION 16 · ONE-PARAGRAPH SUMMARY
+  </div>
+  <div data-object="true" data-object-type="textbox" class="page-num" style="position:absolute; left:1620px; top:95px; width:180px; text-align:right; z-index:10;">
+    18 / 18
+  </div>
+
+  <!-- Opening line: HERO -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:190px; width:1680px; z-index:10; font-family:var(--font-sans); font-weight:700; font-size:82px; line-height:1.02; color:var(--ink-0); letter-spacing:-0.02em;">
+    In one paragraph.
+  </div>
+
+  <!-- Rule -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:330px; width:160px; height:3px; background:var(--accent); z-index:5;"></div>
+
+  <!-- Body — reads as a single flowing paragraph -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:370px; width:1680px; z-index:10; font-family:var(--font-sans); font-weight:400; font-size:34px; line-height:1.45; color:var(--ink-0); letter-spacing:-0.01em;">
+    Build a containerized general-purpose agent that <span style="color:var(--accent);">routes every task locally (free)</span>, answers as many as it reliably can with a bundled 2–3B 4-bit local model at zero Fireworks-token cost, and escalates to a single, tightly-constrained <span style="color:var(--accent-2);">Gemma-first Fireworks call</span> only for tasks a small model can't clear — validating and coercing every output locally.
+  </div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:680px; width:1680px; z-index:10; font-family:var(--font-sans); font-weight:400; font-size:26px; line-height:1.5; color:var(--ink-1);">
+    A time-aware deadline guard guarantees valid output within 10 minutes and <span style="color:var(--ink-0);">spends tokens rather than timing out</span>. An eval harness with a proxy judge calibrates, per category, what we can answer locally while staying comfortably above the 80% gate — iterating on the real leaderboard from a pinned safe baseline toward an <span style="color:var(--accent);">as-local-as-possible, near-zero-token lean optimum</span>.
+  </div>
+
+  <!-- Bottom credits/tagline row -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:120px; top:940px; width:1680px; height:1px; background:var(--line-2); z-index:5;"></div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:120px; top:965px; width:900px; z-index:10; font-family:var(--font-mono); font-size:15px; color:var(--ink-1); letter-spacing:0.14em; text-transform:uppercase;">
+    <span style="color:var(--accent);">▲</span> Local-first. Fireworks-fallback. Tokens → 0.
+  </div>
+
+  <div data-object="true" data-object-type="textbox" class="brand" style="position:absolute; left:1220px; top:1035px; width:580px; text-align:right; z-index:10; font-size:12px;">
+    <span class="accent">AMD</span> HACKATHON · ACT II · TRACK 01
+  </div>
+  <div data-object="true" data-object-type="textbox" class="page-num" style="position:absolute; left:120px; top:1035px; width:400px; z-index:10; font-size:12px;">
+    END · 18 / 18
+  </div>
+
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* Track 1 Agent — Hackathon deck chrome */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-0:       #0A0D12;   /* page bg */
+  --bg-1:       #0F131A;   /* card bg */
+  --bg-2:       #161B24;   /* elevated */
+  --line:       #232A36;   /* hairline */
+  --line-2:     #2F3947;   /* stronger hairline */
+  --ink-0:      #F5F7FA;   /* primary text */
+  --ink-1:      #B8C0CC;   /* secondary text */
+  --ink-2:      #6E7787;   /* tertiary / caption */
+  --ink-3:      #454C58;   /* dim */
+
+  --accent:     #ED1C24;   /* AMD red */
+  --accent-2:   #FF6B35;   /* amber */
+  --accent-3:   #FFD166;   /* soft yellow */
+  --ok:         #34D399;   /* green */
+  --warn:       #F59E0B;   /* amber warn */
+  --info:       #7DD3FC;   /* cyan */
+  --purple:     #A78BFA;
+
+  --font-sans:  'Space Grotesk', system-ui, sans-serif;
+  --font-mono:  'JetBrains Mono', ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--bg-0);
+  color: var(--ink-0);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Chrome primitives ---------- */
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.tag .dot {
+  display: inline-block; width: 8px; height: 8px;
+  background: var(--accent); border-radius: 50%;
+  margin-right: 10px; vertical-align: middle;
+}
+
+.page-num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-2);
+  letter-spacing: 0.1em;
+}
+
+.brand {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-1);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.brand .accent { color: var(--accent); }
+
+/* Diagonal grid texture (subtle) */
+.grid-bg {
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.35;
+}
+
+/* Card / panel */
+.card {
+  background: var(--bg-1);
+  border: 1px solid var(--line);
+}
+.card-strong { border-color: var(--line-2); background: var(--bg-2); }
+
+/* Header rule */
+.rule-top {
+  border-top: 1px solid var(--line-2);
+}
+
+/* Mono block */
+.mono {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ink-1);
+}
+
+/* Numbered marker (kbd style) */
+.kbd {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  min-width: 30px; height: 30px; padding: 0 8px;
+  font-family: var(--font-mono); font-size: 14px;
+  color: var(--ink-0);
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-radius: 4px;
+}
+
+/* Chip */
+.chip {
+  display: inline-flex; align-items: center;
+  padding: 4px 10px;
+  font-family: var(--font-mono); font-size: 12px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  border: 1px solid var(--line-2);
+  color: var(--ink-1);
+  border-radius: 2px;
+}
+.chip.accent { color: var(--accent); border-color: var(--accent); }
+.chip.ok     { color: var(--ok);     border-color: rgba(52,211,153,0.5); }
+.chip.warn   { color: var(--warn);   border-color: rgba(245,158,11,0.5); }
+.chip.info   { color: var(--info);   border-color: rgba(125,211,252,0.5); }
