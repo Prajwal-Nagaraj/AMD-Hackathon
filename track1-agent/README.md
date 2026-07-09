@@ -14,7 +14,7 @@ gate failure. See `../TRACK-1-IMPLEMENTATION-PLAN.md` and
 src/agent/
   main.py        orchestrator: deadline guard, concurrency, JSON I/O
   router.py      local heuristic classification into 8 categories
-  strategies.py  per-category prompt/model/max_tokens/stop/escalation
+  strategies.py  per-category prompt/tier/max_tokens/stop/escalation
   fireworks.py   OpenAI-compatible client -> FIREWORKS_BASE_URL
   validate.py    local validation + coercion (free format fixes)
   telemetry.py   in-process token accounting (stderr only, not scored)
@@ -41,6 +41,11 @@ Optional tuning knobs (defaults shown):
 - `DEADLINE_SECONDS` (`570`, i.e. 9m30s of the 10-minute budget)
 - `MAX_CONCURRENCY` (`8`)
 - `PER_TASK_TIMEOUT` (`28`, under the 30s per-request rule)
+- `REASONING_EFFORT` (`none`) — suppresses hidden reasoning tokens on every
+  Fireworks call; models that reject the param are auto-retried without it.
+- `MODEL` / `MODEL_CHEAP` / `MODEL_MID` / `MODEL_STRONG` / `MODEL_CODE` — override
+  the model inferred for a tier (or, via `MODEL`, force one model everywhere).
+  Handy for local dev when a tier's inferred model 404s on a personal key.
 
 ## Local development
 

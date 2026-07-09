@@ -49,14 +49,14 @@ async def run_task(client, telemetry: Telemetry, task: dict, deadline: float) ->
         validator = VALIDATORS[category.value]
         user_msg = strategy.build_user(prompt)
 
+        primary_model = client.model_for_tier(strategy.primary_tier)
         timeout = min(PER_TASK_TIMEOUT, max(1.0, deadline - time.monotonic()))
         result = await client.complete(
-            model=strategy.model,
+            model=primary_model,
             system=strategy.system,
             user=user_msg,
             max_tokens=strategy.max_tokens,
             stop=strategy.stop,
-            extra_body=strategy.extra_body,
             timeout=timeout,
         )
         ok, answer = validator(result.text)
@@ -64,28 +64,31 @@ async def run_task(client, telemetry: Telemetry, task: dict, deadline: float) ->
             task_id, category.value, result.model, result.prompt_tokens, result.completion_tokens
         )
 
-        if not ok and strategy.escalation_model and time.monotonic() < deadline:
-            timeout = min(PER_TASK_TIMEOUT, max(1.0, deadline - time.monotonic()))
-            esc_result = await client.complete(
-                model=strategy.escalation_model,
-                system=strategy.system,
-                user=user_msg,
-                max_tokens=strategy.max_tokens,
-                stop=strategy.stop,
-                extra_body=strategy.escalation_extra_body,
-                timeout=timeout,
-            )
-            esc_ok, esc_answer = validator(esc_result.text)
-            telemetry.record(
-                task_id,
-                category.value,
-                esc_result.model,
-                esc_result.prompt_tokens,
-                esc_result.completion_tokens,
-                escalated=True,
-            )
-            if esc_ok or esc_answer:
-                answer = esc_answer
+        if not ok and strategy.escalation_tier and time.monotonic() < deadline:
+            esc_model = client.model_for_tier(strategy.escalation_tier)
+            # Skip a pointless retry when the tier collapses onto the same model
+            # (e.g. a short ALLOWED_MODELS list).
+            if esc_model != result.model:
+                timeout = min(PER_TASK_TIMEOUT, max(1.0, deadline - time.monotonic()))
+                esc_result = await client.complete(
+                    model=esc_model,
+                    system=strategy.system,
+                    user=user_msg,
+                    max_tokens=strategy.max_tokens,
+                    stop=strategy.stop,
+                    timeout=timeout,
+                )
+                esc_ok, esc_answer = validator(esc_result.text)
+                telemetry.record(
+                    task_id,
+                    category.value,
+                    esc_result.model,
+                    esc_result.prompt_tokens,
+                    esc_result.completion_tokens,
+                    escalated=True,
+                )
+                if esc_ok or esc_answer:
+                    answer = esc_answer
 
         if not answer:
             answer = result.text.strip()
@@ -97,6 +100,9 @@ async def run_task(client, telemetry: Telemetry, task: dict, deadline: float) ->
 async def run_all(tasks: list, client=None) -> list:
     if client is None:
         client = FireworksClient()
+    tiers = getattr(client, "tiers", None)
+    if tiers:
+        sys.stderr.write(json.dumps({"tiers": tiers}) + "\n")
     telemetry = Telemetry()
     deadline = time.monotonic() + DEADLINE_SECONDS
     sem = asyncio.Semaphore(MAX_CONCURRENCY)

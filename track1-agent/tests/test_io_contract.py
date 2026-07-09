@@ -12,6 +12,10 @@ class FakeClient:
         self.text = text
         self.raise_for = raise_for or set()
         self.calls = 0
+        self.tiers = {"cheap": "cheap", "mid": "mid", "strong": "strong", "code": "code"}
+
+    def model_for_tier(self, tier):
+        return tier
 
     async def complete(self, *, model, user, system=None, max_tokens, stop=None,
                         temperature=0.0, extra_body=None, timeout=25.0):
@@ -45,7 +49,8 @@ def test_run_all_produces_valid_results_for_every_task():
 
 def test_run_all_never_crashes_on_a_failing_task():
     tasks = [{"task_id": "t1", "prompt": "What is 2 + 2?"}]
-    client = FakeClient(raise_for={"gemma-4-31b-it"})
+    # "mid" is the tier the MATH primary resolves to; FakeClient maps tier -> name.
+    client = FakeClient(raise_for={"mid"})
     results = asyncio.run(agent_main.run_all(tasks, client=client))
 
     assert results == [{"task_id": "t1", "answer": ""}]

@@ -1,38 +1,37 @@
-"""Per-category strategy: prompt template, model, token limits, escalation.
+"""Per-category strategy: prompt template, model tier, token limits, escalation.
 
-Model choices follow the Gemma-first doctrine from TRACK-1-MODEL-RESEARCH.md:
-the Gemma variants are non-reasoning by default and share the densest
-tokenizer, so they're cheapest on every axis. `minimax-m3` / `kimi-k2p7-code`
-are reserved as escalation targets for tasks the Gemma pass fails to clear
-the accuracy gate on -- every reasoning-model call is a token tax taken on
-purpose, not the default.
+Strategies name a *tier* (cheap / mid / strong / code), never a concrete model
+ID -- `fireworks.infer_tiers` derives the real model from ALLOWED_MODELS at
+runtime (competition rule: read model IDs from ALLOWED_MODELS, don't hardcode).
 
-These are starting hypotheses (plan doc SS5) -- tune model choice, max_tokens
-and prompts against eval/sweep.py once real Fireworks access is available.
+Doctrine (see ../TRACK-1-MODEL-RESEARCH.md): answer on the cheapest tier that
+can clear the accuracy gate, and escalate to a stronger tier only when local
+validation predicts a gate failure -- every strong/reasoning call is a token
+tax taken on purpose, not the default. Reasoning-token suppression is applied
+globally in fireworks.py, so the strong tier no longer pays the hidden-reasoning
+tax that previously made it return blank.
 
-TODO (confirm at kickoff, see plan SS13 / research SS10): once the exact
-Fireworks extra_body param for toggling `minimax-m3` "thinking" off is
-known, set it in MATH/LOGIC's `extra_body` so the default (non-escalated)
-path never pays the reasoning-token tax. Left empty until confirmed rather
-than guessing an unverified param name.
+These are starting hypotheses -- tune tier choice, max_tokens and prompts
+against eval/sweep.py.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Callable, Optional
 
 from .router import Category
 
+# Tier names; concrete models are inferred from ALLOWED_MODELS at runtime.
+CHEAP, MID, STRONG, CODE = "cheap", "mid", "strong", "code"
+
 
 @dataclass
 class Strategy:
-    model: str
+    primary_tier: str
     max_tokens: int
     build_user: Callable[[str], str]
     system: Optional[str] = None
     stop: Optional[list] = None
-    extra_body: dict = field(default_factory=dict)
-    escalation_model: Optional[str] = None
-    escalation_extra_body: dict = field(default_factory=dict)
+    escalation_tier: Optional[str] = None
 
 
 def _factual_user(prompt: str) -> str:
@@ -79,55 +78,57 @@ def _code_gen_user(prompt: str) -> str:
     return f"{prompt}\nOutput only the function in a single fenced code block. No prose."
 
 
+# Primary tier / escalation tier per category. The escalation tier is only
+# reached when the local validator predicts a gate failure (main.run_task).
 STRATEGIES = {
     Category.FACTUAL: Strategy(
-        model="gemma-4-26b-a4b-it",
+        primary_tier=CHEAP,
         max_tokens=120,
         stop=["\n\n"],
         build_user=_factual_user,
-        escalation_model="gemma-4-31b-it",
+        escalation_tier=MID,
     ),
     Category.MATH: Strategy(
-        model="gemma-4-31b-it",
+        primary_tier=MID,
         max_tokens=300,
         build_user=_math_user,
-        escalation_model="minimax-m3",
+        escalation_tier=STRONG,
     ),
     Category.SENTIMENT: Strategy(
-        model="gemma-4-26b-a4b-it",
+        primary_tier=CHEAP,
         max_tokens=20,
         stop=["\n"],
         build_user=_sentiment_user,
-        escalation_model="gemma-4-31b-it",
+        escalation_tier=MID,
     ),
     Category.SUMMARIZATION: Strategy(
-        model="gemma-4-31b-it-nvfp4",
+        primary_tier=MID,
         max_tokens=250,
         build_user=_summarization_user,
-        escalation_model="gemma-4-31b-it",
+        escalation_tier=STRONG,
     ),
     Category.NER: Strategy(
-        model="gemma-4-26b-a4b-it",
+        primary_tier=CHEAP,
         max_tokens=150,
         build_user=_ner_user,
-        escalation_model="gemma-4-31b-it",
+        escalation_tier=MID,
     ),
     Category.CODE_DEBUG: Strategy(
-        model="gemma-4-31b-it",
+        primary_tier=MID,
         max_tokens=400,
         build_user=_code_debug_user,
-        escalation_model="kimi-k2p7-code",
+        escalation_tier=CODE,
     ),
     Category.LOGIC: Strategy(
-        model="gemma-4-31b-it",
+        primary_tier=MID,
         max_tokens=300,
         build_user=_logic_user,
-        escalation_model="minimax-m3",
+        escalation_tier=STRONG,
     ),
     Category.CODE_GEN: Strategy(
-        model="gemma-4-31b-it",
+        primary_tier=MID,
         max_tokens=400,
         build_user=_code_gen_user,
-        escalation_model="kimi-k2p7-code",
+        escalation_tier=CODE,
     ),
 }
