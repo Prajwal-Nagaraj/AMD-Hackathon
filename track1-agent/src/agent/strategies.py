@@ -4,15 +4,20 @@ Strategies name a *tier* (cheap / mid / strong / code), never a concrete model
 ID -- `fireworks.infer_tiers` derives the real model from ALLOWED_MODELS at
 runtime (competition rule: read model IDs from ALLOWED_MODELS, don't hardcode).
 
-Doctrine (see ../TRACK-1-MODEL-RESEARCH.md): answer on the cheapest tier that
-can clear the accuracy gate, and escalate to a stronger tier only when local
-validation predicts a gate failure -- every strong/reasoning call is a token
-tax taken on purpose, not the default. Reasoning-token suppression is applied
-globally in fireworks.py, so the strong tier no longer pays the hidden-reasoning
-tax that previously made it return blank.
+Doctrine (safe baseline, after the first submission missed the accuracy gate):
+the correctness-critical categories -- factual, math, logic -- answer directly
+on the *strong* tier, and code_debug / code_gen on the *code* tier, instead of
+starting cheap and hoping the local validator catches a wrong answer (it only
+checks format, not correctness -- see validate.py). Only the genuinely easy
+extraction categories (sentiment, ner) stay on cheap, with summarization on mid.
+Escalation is now a blank/format safety net -- it retries on a *different* model
+when the primary's output fails local validation -- not a correctness upgrade.
+Token budgets are sized to avoid truncating a full answer; reasoning-token
+suppression (fireworks.py) keeps the strong/reasoning tier from paying a
+hidden-reasoning tax that previously made it return blank.
 
-These are starting hypotheses -- tune tier choice, max_tokens and prompts
-against eval/sweep.py.
+Once we clear the gate, push categories back toward cheaper tiers as
+eval/sweep.py measurements justify it.
 """
 
 from dataclasses import dataclass
@@ -82,21 +87,20 @@ def _code_gen_user(prompt: str) -> str:
 # reached when the local validator predicts a gate failure (main.run_task).
 STRATEGIES = {
     Category.FACTUAL: Strategy(
-        primary_tier=CHEAP,
-        max_tokens=120,
-        stop=["\n\n"],
+        primary_tier=STRONG,
+        max_tokens=300,
         build_user=_factual_user,
         escalation_tier=MID,
     ),
     Category.MATH: Strategy(
-        primary_tier=MID,
-        max_tokens=300,
+        primary_tier=STRONG,
+        max_tokens=400,
         build_user=_math_user,
-        escalation_tier=STRONG,
+        escalation_tier=MID,
     ),
     Category.SENTIMENT: Strategy(
         primary_tier=CHEAP,
-        max_tokens=20,
+        max_tokens=120,
         stop=["\n"],
         build_user=_sentiment_user,
         escalation_tier=MID,
@@ -114,21 +118,21 @@ STRATEGIES = {
         escalation_tier=MID,
     ),
     Category.CODE_DEBUG: Strategy(
-        primary_tier=MID,
-        max_tokens=400,
+        primary_tier=CODE,
+        max_tokens=520,
         build_user=_code_debug_user,
-        escalation_tier=CODE,
-    ),
-    Category.LOGIC: Strategy(
-        primary_tier=MID,
-        max_tokens=300,
-        build_user=_logic_user,
         escalation_tier=STRONG,
     ),
+    Category.LOGIC: Strategy(
+        primary_tier=STRONG,
+        max_tokens=420,
+        build_user=_logic_user,
+        escalation_tier=MID,
+    ),
     Category.CODE_GEN: Strategy(
-        primary_tier=MID,
-        max_tokens=400,
+        primary_tier=CODE,
+        max_tokens=520,
         build_user=_code_gen_user,
-        escalation_tier=CODE,
+        escalation_tier=STRONG,
     ),
 }

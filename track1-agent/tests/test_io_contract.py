@@ -49,8 +49,9 @@ def test_run_all_produces_valid_results_for_every_task():
 
 def test_run_all_never_crashes_on_a_failing_task():
     tasks = [{"task_id": "t1", "prompt": "What is 2 + 2?"}]
-    # "mid" is the tier the MATH primary resolves to; FakeClient maps tier -> name.
-    client = FakeClient(raise_for={"mid"})
+    # Fail every tier the MATH task could touch (primary=strong, escalation=mid)
+    # so nothing can rescue it; run_all must still return a blank answer, not crash.
+    client = FakeClient(raise_for={"strong", "mid"})
     results = asyncio.run(agent_main.run_all(tasks, client=client))
 
     assert results == [{"task_id": "t1", "answer": ""}]
